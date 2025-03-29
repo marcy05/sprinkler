@@ -1,0 +1,24 @@
+@startuml
+
+title "Sprinkler flow 0.1.0"
+
+
+start
+
+
+repeat :10-Setup;
+    repeat
+
+    :20-Watering period;
+    :50-Reset handling;
+
+    repeat while (Wakeup period?) is (yes) not (no)
+:30-Send current stauts to backend;
+:40-Enter Deep Sleep;
+
+repeat while (Button Wakeup || Sleep period expired) is (yes)
+
+
+
+
+@enduml
