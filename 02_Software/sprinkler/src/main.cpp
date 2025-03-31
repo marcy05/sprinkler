@@ -3,16 +3,18 @@
 #include <sleep_manager.h>
 #include <hw_abstraction.h>
 #include <sw_timer.h>
+#include <logger.h>
 
 #define DEVELOPMENT 1
 #define PRODUCTION 2
+
 
 void setup() {
   Serial.begin(9600);
   
   // test led setup
   setup_leds();
-  Serial.println("Led setup completed.");
+  debugln("Led setup completed.");
 
   // Timer related initialization
   systemTimeHandler.wakeupTimestamp = millis();
@@ -20,7 +22,7 @@ void setup() {
   // Deep sleep
   setupDeepSleep();
   setupDeepSleepWakeupAfterMins(1);
-  Serial.println("Deep spleep setup completed.");
+  debugln("Deep spleep setup completed.");
 
   esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_cause();
 
@@ -28,20 +30,20 @@ void setup() {
     case ESP_SLEEP_WAKEUP_EXT1:
       wakeup_from_sleep_sequence();
       Buttons::DEEP_SLEEP_BUTTON.pressed = true;
-      Serial.println("Wakeup due to button");
+      debugln("Wakeup due to button");
       break;
     case ESP_SLEEP_WAKEUP_TIMER:
       wakeup_from_sleep_sequence();
-      Serial.println("Wakeup caused by timer");
+      debugln("Wakeup caused by timer");
       break;
     default:
-      Serial.println("Standard wakeup");
+      debugln("Standard wakeup");
   }
 
   
   //Reset
   setup_reset_button();
-  Serial.println("Reset button setup completed.");
+  debugln("Reset button setup completed.");
   
   turn_on_running_led();
 
@@ -50,15 +52,15 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   static int counter = 0;
-  Serial.print("Cycle: ");
-  Serial.println(counter);
+  debug("Cycle: ");
+  debugln(counter);
 
 
-  Serial.print("RESET button status is: ");
-  Serial.println(Buttons::RESET_BUTTON.pressed);
+  debug("RESET button status is: ");
+  debugln(Buttons::RESET_BUTTON.pressed);
   if (Buttons::RESET_BUTTON.pressed){
     reset_led_running_sequence();
-    Serial.println("Reset operations");
+    debugln("Reset operations");
 
     Buttons::RESET_BUTTON.pressed = false;
   }
@@ -66,9 +68,9 @@ void loop() {
 
   
   if (systemTimeHandler.isWakeupTimeExpired()){
-    Serial.print("System wakeup expire after: ");
-    Serial.println(systemTimeHandler.minutesWakeupPeriod);
-    Serial.println("Entering Deep Sleep...");
+    debug("System wakeup expire after: ");
+    debugln(systemTimeHandler.minutesWakeupPeriod);
+    debugln("Entering Deep Sleep...");
     esp_deep_sleep_start();
   }
 
@@ -76,18 +78,18 @@ void loop() {
 
   if (counter%2==0){
     #if BUILD_TYPE == DEVELOPMENT
-      Serial.print("Current computation: ");
-      Serial.print(millis());
-      Serial.print(" - ");
-      Serial.print(systemTimeHandler.wakeupTimestamp);
-      Serial.print(" >= ");
-      Serial.println(systemTimeHandler.minutesWakeupPeriod * 60 * 1000);
+      debug("Current computation: ");
+      debug(millis());
+      debug(" - ");
+      debug(systemTimeHandler.wakeupTimestamp);
+      debug(" >= ");
+      debugln(systemTimeHandler.minutesWakeupPeriod * 60 * 1000);
     #elif BUILD_TYPE==PRODUCTION
-      Serial.println("Production build.");
+      debugln("Production build.");
     #endif
   }
 
-  Serial.println();
+  debugln();
   ++counter;
   delay(2000);
 }

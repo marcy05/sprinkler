@@ -2,6 +2,7 @@
 #include "esp_sleep.h"
 #include <Arduino.h>
 #include <hw_abstraction.h>
+#include <logger.h>
 
 
 void setupDeepSleep(){
@@ -9,7 +10,7 @@ void setupDeepSleep(){
     pinMode(Buttons::DEEP_SLEEP_BUTTON.PIN, INPUT_PULLUP);
 
     esp_sleep_enable_ext1_wakeup((1ULL << Buttons::DEEP_SLEEP_BUTTON.PIN), ESP_EXT1_WAKEUP_ALL_LOW);
-    Serial.println("Configured push button for Deep sleep.");
+    debugln("Configured push button for Deep sleep.");
 }
 
 void setupDeepSleepWakeupAfterMins(uint16_t minutes){
