@@ -96,7 +96,8 @@ void WiFiManager::handleSave() {
     String ssid = server.arg("ssid");
     String password = server.arg("password");
 
-    if (ssid.length() > 0 && password.length() > 0) {
+    if (ssid.length() > 0 && ssid.length() < 50 &&
+         password.length() > 0 && password.length() < 50) {
         preferences.putString("ssid", ssid);
         preferences.putString("password", password);
         server.send(200, "text/html", "<h1>Saved! Restarting...</h1>");
