@@ -6,6 +6,7 @@ class TimeHandler {
     public:
         static unsigned long minutesWakeupPeriod;
         static unsigned long wakeupTimestamp;
+        unsigned int deepSleepWakeupAfterMinutes;
     
     public:
         TimeHandler();

@@ -9,11 +9,26 @@
 #define DEVELOPMENT 1
 #define PRODUCTION 2
 
+#if BUILD_TYPE == PRODUCTION
+  #include <nvs_flash.h>
+#endif
+
 #define SWVERSION "0.1.0"
 
 void setup() {
   Serial.begin(9600);
   Serial.println(SWVERSION);
+
+  // Remove persisted variables if we flash for production
+  // TODO find a way to run this only once.
+  /*
+  #if BUILD_TYPE == PRODUCTION
+    Serial.println("Erasing persistency...");
+    nvs_flash_erase();
+    nvs_flash_init();
+    Serial.println("Persistency erased.");
+  #endif
+  */
   
   // test led setup
   setup_leds();
@@ -24,7 +39,12 @@ void setup() {
 
   // Deep sleep
   setupDeepSleep();
-  setupDeepSleepWakeupAfterMins(15);
+
+  #if BUILD_TYPE == DEVELOPMENT
+    systemTimeHandler.deepSleepWakeupAfterMinutes = 1;
+  #endif
+
+  setupDeepSleepWakeupAfterMins(systemTimeHandler.deepSleepWakeupAfterMinutes);
   debugln("Deep spleep setup completed.");
 
   esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_cause();
@@ -78,21 +98,24 @@ void loop() {
   
   if (systemTimeHandler.isWakeupTimeExpired()){
     debug("System wakeup expire after: ");
-    debugln(systemTimeHandler.minutesWakeupPeriod);
-    debugln("Entering Deep Sleep...");
+    debug(systemTimeHandler.minutesWakeupPeriod);
+    debugln(" minute(s).");
+    debug("Entering Deep Sleep for: ");
+    debug(systemTimeHandler.deepSleepWakeupAfterMinutes);
+    debugln(" minute(s).");
     esp_deep_sleep_start();
   }
 
 
 
-  /*if (counter%2==0){
+  if (counter%2==0){
     debug("Current computation: ");
     debug(millis());
     debug(" - ");
     debug(systemTimeHandler.wakeupTimestamp);
     debug(" >= ");
     debugln(systemTimeHandler.minutesWakeupPeriod * 60 * 1000);
-  }*/
+  }
 
   //debugln("");
   ++counter;
