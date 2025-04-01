@@ -4,13 +4,16 @@
 #include <hw_abstraction.h>
 #include <sw_timer.h>
 #include <logger.h>
+#include <wifi_manager.h>
 
 #define DEVELOPMENT 1
 #define PRODUCTION 2
 
+#define SWVERSION "0.1.0"
 
 void setup() {
   Serial.begin(9600);
+  Serial.println(SWVERSION);
   
   // test led setup
   setup_leds();
@@ -21,7 +24,7 @@ void setup() {
 
   // Deep sleep
   setupDeepSleep();
-  setupDeepSleepWakeupAfterMins(1);
+  setupDeepSleepWakeupAfterMins(15);
   debugln("Deep spleep setup completed.");
 
   esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_cause();
@@ -40,10 +43,12 @@ void setup() {
       debugln("Standard wakeup");
   }
 
-  
   //Reset
   setup_reset_button();
   debugln("Reset button setup completed.");
+
+  //WiFi setup
+  wifiManager.begin();
   
   turn_on_running_led();
 
@@ -52,16 +57,20 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   static int counter = 0;
-  debug("Cycle: ");
-  debugln(counter);
+  //debug("Cycle: ");
+  //debugln(counter);
+
+  wifiManager.handleClient();
 
 
-  debug("RESET button status is: ");
-  debugln(Buttons::RESET_BUTTON.pressed);
+  //debug("RESET button status is: ");
+  //debugln(Buttons::RESET_BUTTON.pressed);
   if (Buttons::RESET_BUTTON.pressed){
     reset_led_running_sequence();
     debugln("Reset operations");
-
+    debugln("Resetting WiFi...");
+    wifiManager.resetWiFi();
+    reset_led_running_sequence();
     Buttons::RESET_BUTTON.pressed = false;
   }
   
@@ -76,20 +85,16 @@ void loop() {
 
 
 
-  if (counter%2==0){
-    #if BUILD_TYPE == DEVELOPMENT
-      debug("Current computation: ");
-      debug(millis());
-      debug(" - ");
-      debug(systemTimeHandler.wakeupTimestamp);
-      debug(" >= ");
-      debugln(systemTimeHandler.minutesWakeupPeriod * 60 * 1000);
-    #elif BUILD_TYPE==PRODUCTION
-      debugln("Production build.");
-    #endif
-  }
+  /*if (counter%2==0){
+    debug("Current computation: ");
+    debug(millis());
+    debug(" - ");
+    debug(systemTimeHandler.wakeupTimestamp);
+    debug(" >= ");
+    debugln(systemTimeHandler.minutesWakeupPeriod * 60 * 1000);
+  }*/
 
-  debugln();
+  //debugln("");
   ++counter;
   delay(2000);
 }
