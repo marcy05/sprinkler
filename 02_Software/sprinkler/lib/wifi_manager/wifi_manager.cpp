@@ -1,6 +1,7 @@
 #include <wifi_manager.h>
 #include <hw_abstraction.h>
 #include <logger.h>
+#include <ESPmDNS.h>
 
 
 WiFiManager::WiFiManager() : server(80) {}
@@ -42,6 +43,12 @@ void WiFiManager::connectToWiFi() {
         debug("IP Address: ");
         debugln(WiFi.localIP());
         turn_on_wifi_led();
+
+        if (!MDNS.begin("sprinklersystem")){
+            debugln("Error setting up MDNS responder!");
+        } else {
+            debugln("mDNS responder started! Access via http://sprinklersystem.local");
+        }
     } else {
         debugln("\nWi-Fi Failed. Starting AP mode.");
         debugln("Resetting Wi-Fi credentials...");
@@ -61,6 +68,12 @@ void WiFiManager::startAPMode() {
     IPAddress IP = WiFi.softAPIP();
     debug("AP Mode IP: ");
     debugln(IP);
+
+    if (!MDNS.begin("sprinklersystem")){
+        debugln("Error setting up MDNS responder!");
+    } else {
+        debugln("mDNS responder started! Access via http://sprinklersystem.local");
+    }
 
     server.on("/", std::bind(&WiFiManager::handleRoot, this));
     server.on("/save", HTTP_POST, std::bind(&WiFiManager::handleSave, this));

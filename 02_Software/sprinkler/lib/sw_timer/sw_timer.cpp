@@ -1,7 +1,7 @@
 #include <sw_timer.h>
 #include <Arduino.h>
 
-unsigned long TimeHandler::minutesWakeupPeriod = 1;
+unsigned long TimeHandler::minutesWakeupPeriod = 15;
 unsigned long TimeHandler::wakeupTimestamp = 0;
 
 TimeHandler::TimeHandler(){
