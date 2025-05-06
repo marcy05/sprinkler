@@ -4,7 +4,6 @@
 #include <hw_abstraction.h>
 #include <sw_timer.h>
 #include <logger.h>
-#include <wifi_manager.h>
 
 #define DEVELOPMENT 1
 #define PRODUCTION 2
@@ -66,9 +65,6 @@ void setup() {
   //Reset
   setup_reset_button();
   debugln("Reset button setup completed.");
-
-  //WiFi setup
-  wifiManager.begin();
   
   turn_on_running_led();
 
@@ -80,16 +76,12 @@ void loop() {
   //debug("Cycle: ");
   //debugln(counter);
 
-  wifiManager.handleClient();
-
 
   //debug("RESET button status is: ");
   //debugln(Buttons::RESET_BUTTON.pressed);
   if (Buttons::RESET_BUTTON.pressed){
     reset_led_running_sequence();
     debugln("Reset operations");
-    debugln("Resetting WiFi...");
-    wifiManager.resetWiFi();
     reset_led_running_sequence();
     Buttons::RESET_BUTTON.pressed = false;
   }

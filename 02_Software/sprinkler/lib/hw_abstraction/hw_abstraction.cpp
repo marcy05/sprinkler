@@ -11,11 +11,9 @@ namespace Buttons {
 void setup_leds()
 {
     pinMode(Constants::LED_RUNNING, OUTPUT);
-    pinMode(Constants::LED_WIFI, OUTPUT);
     pinMode(Constants::LED_BATTERY, OUTPUT);
 
     digitalWrite(Constants::LED_RUNNING, HIGH);
-    digitalWrite(Constants::LED_WIFI, HIGH);
     digitalWrite(Constants::LED_BATTERY, HIGH);
 }
 
@@ -49,16 +47,6 @@ void wakeup_from_sleep_sequence()
         turn_on_running_led();
         delay(100);
     }
-}
-
-void turn_on_wifi_led()
-{
-    digitalWrite(Constants::LED_WIFI, LOW);
-}
-
-void turn_off_wifi_led()
-{
-    digitalWrite(Constants::LED_WIFI, HIGH);
 }
 
 void turn_on_battery_led()
