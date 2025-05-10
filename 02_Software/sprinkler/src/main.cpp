@@ -5,6 +5,8 @@
 #include <sw_timer.h>
 #include <logger.h>
 #include <display.h>
+#include <pumpManager.h>
+
 
 #define DEVELOPMENT 1
 #define PRODUCTION 2
@@ -23,9 +25,11 @@
 
 DisplayManager myDisplay;
 
+
 void setup() {
   Serial.begin(9600);
   Serial.println(SWVERSION);
+
 
   // Remove persisted variables if we flash for production
   // TODO find a way to run this only once.
@@ -77,6 +81,13 @@ void setup() {
   
   setup_pump_switch_button();
   debugln("Switch Pump button setup completed.");
+
+  setup_hour_button();
+  setup_min_button();
+  debugln("Setup Hour and Min buttons.");
+
+  setup_start_button();
+  debugln("Setup start button");
   
 
   if (myDisplay.begin()){
@@ -103,7 +114,6 @@ void loop() {
     ESP.restart();
   }
   
-
   
   if (systemTimeHandler.isWakeupTimeExpired()){
     debug("System wakeup expire after: ");
@@ -119,6 +129,41 @@ void loop() {
     Buttons::SWITCH_PUMP_BUTTON.pressed = false;
     myDisplay.change_pump();
     debugln("Pump pressed");
+  }
+
+  if (Buttons::START_BUTTON.pressed){
+    Buttons::START_BUTTON.pressed = false;
+    debugln("Pressed Start Button");
+    if (myDisplay.selected_pump == 1){
+      debugln("Toggle pump1");
+      pump1.activate_toggle();
+    }
+    else if (myDisplay.selected_pump == 2){
+      debugln("Toggle pump2");
+      pump2.activate_toggle();
+    }
+  }
+  
+  if (pump1.active_status != myDisplay.pump1_last_status){
+    myDisplay.pump1_last_status = pump1.active_status;
+    if (pump1.active_status){
+      debugln("Change START for pump 1");
+      myDisplay.running_pump1();
+    } else {
+      debugln("Change STOP for pump 1");
+      myDisplay.stop_pump1();
+    }
+  }
+
+  if (pump2.active_status != myDisplay.pump2_last_status){
+    myDisplay.pump2_last_status = pump2.active_status;
+    if (pump2.active_status){
+      debugln("Change START for pump 2");
+      myDisplay.running_pump2();
+    } else {
+      debugln("Change STOP for pump 1");
+      myDisplay.stop_pump2();
+    }
   }
 
 

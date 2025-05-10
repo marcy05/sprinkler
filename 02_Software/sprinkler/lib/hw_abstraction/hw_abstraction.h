@@ -20,6 +20,15 @@ void isr_reset();
 void setup_pump_switch_button();
 void isr_switch_pump();
 
+void setup_hour_button();
+void isr_hour();
+
+void setup_min_button();
+void isr_min();
+
+void setup_start_button();
+void isr_start();
+
 struct Button
 {
     const int PIN;
@@ -30,6 +39,9 @@ namespace Buttons {
     extern Button RESET_BUTTON;
     extern Button DEEP_SLEEP_BUTTON;
     extern Button SWITCH_PUMP_BUTTON;
+    extern Button HOUR_BUTTON;
+    extern Button MIN_BUTTON;
+    extern Button START_BUTTON;
 };
 
 
