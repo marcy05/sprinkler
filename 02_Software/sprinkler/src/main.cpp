@@ -100,8 +100,7 @@ void loop() {
   if (Buttons::RESET_BUTTON.pressed){
     reset_led_running_sequence();
     debugln("Reset operations");
-    reset_led_running_sequence();
-    Buttons::RESET_BUTTON.pressed = false;
+    ESP.restart();
   }
   
 
