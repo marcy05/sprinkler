@@ -15,7 +15,10 @@ void turn_off_battery_led();
 
 
 void setup_reset_button();
-void isr();
+void isr_reset();
+
+void setup_pump_switch_button();
+void isr_switch_pump();
 
 struct Button
 {
@@ -26,7 +29,8 @@ struct Button
 namespace Buttons {
     extern Button RESET_BUTTON;
     extern Button DEEP_SLEEP_BUTTON;
-}
+    extern Button SWITCH_PUMP_BUTTON;
+};
 
 
 #endif // HW_ABSTRACTION_H

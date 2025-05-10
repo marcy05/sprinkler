@@ -5,7 +5,8 @@
 
 namespace Buttons {
     Button RESET_BUTTON = {Constants::RESET_BUTTON_PIN, false};
-    Button DEEP_SLEEP_BUTTON = {Constants::DEEP_SLEEP, false};
+    Button DEEP_SLEEP_BUTTON = {Constants::DEEP_SLEEP_WAKEUP_BUTTON, false};
+    Button SWITCH_PUMP_BUTTON = {Constants::SWITCH_PUMP_PIN, false};
 }
 
 void setup_leds()
@@ -62,10 +63,10 @@ void turn_off_battery_led()
 void setup_reset_button()
 {
     pinMode(Buttons::RESET_BUTTON.PIN, INPUT_PULLUP);
-    attachInterrupt(Buttons::RESET_BUTTON.PIN, isr, FALLING);
+    attachInterrupt(Buttons::RESET_BUTTON.PIN, isr_reset, FALLING);
 }
 
-void IRAM_ATTR isr()
+void IRAM_ATTR isr_reset()
 {
     static unsigned long last_interrupt_time = 0;
     unsigned long interrupt_time = millis();
@@ -81,5 +82,24 @@ void IRAM_ATTR isr()
     }
 }
 
+void setup_pump_switch_button()
+{
+    pinMode(Buttons::SWITCH_PUMP_BUTTON.PIN, INPUT_PULLUP);
+    attachInterrupt(Buttons::SWITCH_PUMP_BUTTON.PIN, isr_switch_pump, FALLING);
+}
 
-
+void isr_switch_pump()
+{
+    static unsigned long last_interrupt_time = 0;
+    unsigned long interrupt_time = millis();
+  
+    if (interrupt_time - last_interrupt_time > 1000) {
+      if (!Buttons::SWITCH_PUMP_BUTTON.pressed){
+        Buttons::SWITCH_PUMP_BUTTON.pressed = true;
+      } else {
+        Buttons::SWITCH_PUMP_BUTTON.pressed = false;
+      }
+      
+      last_interrupt_time = interrupt_time;
+    }
+}
