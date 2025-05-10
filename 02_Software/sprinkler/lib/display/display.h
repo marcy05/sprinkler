@@ -24,8 +24,10 @@ class DisplayManager{
     
     private:
         Adafruit_SSD1306 display;
-
-        uint8_t change_pump_var = 2;
+        
+        const uint8_t pump1_line = 3;
+        const uint8_t pump2_line = 4;
+        uint8_t selected_pump_line = 3;
 };
 
 
