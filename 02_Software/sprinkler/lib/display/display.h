@@ -21,7 +21,7 @@ class DisplayManager{
         bool begin();
         void main_screen();
         
-        void change_pump();
+        void change_line();
 
         void running_pump1();
         void running_pump2();
@@ -29,7 +29,7 @@ class DisplayManager{
         void stop_pump1();
         void stop_pump2();
         
-        uint8_t selected_pump = 1;
+        uint8_t selected_pump = 0;
 
         bool pump1_last_status = 0;
         bool pump2_last_status = 0;
@@ -40,7 +40,7 @@ class DisplayManager{
         const uint8_t time_line = 2;
         const uint8_t pump1_line = 3;
         const uint8_t pump2_line = 4;
-        uint8_t selected_pump_line = 3;
+        uint8_t selected_line = 2;
 
         const uint8_t start_stop_position = 50;
 };

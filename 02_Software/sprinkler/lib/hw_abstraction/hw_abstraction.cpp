@@ -9,7 +9,7 @@
 namespace Buttons {
   Button RESET_BUTTON = {Constants::RESET_BUTTON_PIN, false};
   Button DEEP_SLEEP_BUTTON = {Constants::DEEP_SLEEP_WAKEUP_BUTTON_PIN, false};
-  Button SWITCH_PUMP_BUTTON = {Constants::SWITCH_PUMP_PIN, false};
+  Button SELECT_LINE_BUTTON = {Constants::SELECT_LINE_PIN, false};
   Button HOUR_BUTTON = {Constants::HOUR_PIN, false};
   Button MIN_BUTTON = {Constants::MIN_PIN, false};
   Button START_BUTTON = {Constants::START_BUTTON_PIN, false};
@@ -90,13 +90,13 @@ void IRAM_ATTR isr_reset()
 
 void setup_pump_switch_button()
 {
-  pinMode(Buttons::SWITCH_PUMP_BUTTON.PIN, INPUT_PULLUP);
-  attachInterrupt(Buttons::SWITCH_PUMP_BUTTON.PIN, isr_switch_pump, FALLING);
+  pinMode(Buttons::SELECT_LINE_BUTTON.PIN, INPUT_PULLUP);
+  attachInterrupt(Buttons::SELECT_LINE_BUTTON.PIN, isr_switch_pump, FALLING);
 }
 
 void IRAM_ATTR isr_switch_pump()
 {
-  Buttons::SWITCH_PUMP_BUTTON.pressed = true;
+  Buttons::SELECT_LINE_BUTTON.pressed = true;
 }
 
 

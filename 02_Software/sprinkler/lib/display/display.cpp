@@ -23,41 +23,49 @@ void DisplayManager::main_screen()
     display.setCursor(0, 0);
     display.print("Sprinker v0.1");
 
-    display.setCursor(0, this->time_line * 10);
+    display.setCursor(10, time_line * 10);
     display.print("Time:");
 
-    display.setCursor(0, this->pump1_line * 10);
+    display.setCursor(0, time_line * 10);
     display.print(">");
 
-    display.setCursor(10, this->pump1_line * 10);
+    display.setCursor(10, pump1_line * 10);
     display.print("Pump1");
 
-    display.setCursor(10, this->pump2_line * 10);
+    display.setCursor(10, pump2_line * 10);
     display.print("Pump2");
 
-    display.setCursor(this->start_stop_position, this->pump1_line * 10);
+    display.setCursor(start_stop_position, pump1_line * 10);
     display.print("STOP");
 
-    display.setCursor(this->start_stop_position, this->pump2_line * 10);
+    display.setCursor(start_stop_position, pump2_line * 10);
     display.print("STOP");
 
     display.display();
     delay(100);
 }
 
-void DisplayManager::change_pump()
+void DisplayManager::change_line()
 {
     display.setTextSize(1);
     display.setTextColor(SSD1306_WHITE);
 
-    display.fillRect(0, this->selected_pump_line * 10, 6, 8, SSD1306_BLACK);
+    display.fillRect(0, selected_line * 10, 6, 8, SSD1306_BLACK);
 
-    this->selected_pump_line = (this->selected_pump_line == this->pump1_line) ? this->pump2_line : this->pump1_line;
+    if (selected_line == time_line){
+        selected_line = pump1_line;
+    } else if (selected_line == pump1_line){
+        selected_line = pump2_line;
+    } else if (selected_line == pump2_line){
+        selected_line = time_line;
+    }
 
-    display.setCursor(0, this->selected_pump_line * 10);
+    display.setCursor(0, selected_line * 10);
     display.print(">");
 
-    this->selected_pump = this->selected_pump_line - 2; // 2 is the offeset between the line and the pump selected
+
+    selected_pump = selected_line - 2; // 2 is the offeset between the line and the pump selected
+
 
     display.display();
     delay(100);
@@ -65,8 +73,8 @@ void DisplayManager::change_pump()
 
 void DisplayManager::running_pump1()
 {
-    display.fillRect(this->start_stop_position, this->selected_pump_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(this->start_stop_position, this->selected_pump_line * 10);
+    display.fillRect(start_stop_position, selected_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(start_stop_position, selected_line * 10);
     display.print("START");
     display.display();
     delay(100);
@@ -74,8 +82,8 @@ void DisplayManager::running_pump1()
 
 void DisplayManager::running_pump2()
 {
-    display.fillRect(this->start_stop_position, this->selected_pump_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(this->start_stop_position, this->selected_pump_line * 10);
+    display.fillRect(start_stop_position, selected_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(start_stop_position, selected_line * 10);
     display.print("START");
     display.display();
     delay(100);
@@ -83,8 +91,8 @@ void DisplayManager::running_pump2()
 
 void DisplayManager::stop_pump1()
 {
-    display.fillRect(this->start_stop_position, this->selected_pump_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(this->start_stop_position, this->selected_pump_line * 10);
+    display.fillRect(start_stop_position, selected_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(start_stop_position, selected_line * 10);
     display.print("STOP");
     display.display();
     delay(100);
@@ -92,8 +100,8 @@ void DisplayManager::stop_pump1()
 
 void DisplayManager::stop_pump2()
 {
-    display.fillRect(this->start_stop_position, this->selected_pump_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(this->start_stop_position, this->selected_pump_line * 10);
+    display.fillRect(start_stop_position, selected_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(start_stop_position, selected_line * 10);
     display.print("STOP");
     display.display();
     delay(100);

@@ -9,7 +9,7 @@ namespace Constants {
     constexpr uint8_t PUMP1_PIN = 19;
     constexpr uint8_t PUMP2_PIN = 18;
 
-    constexpr uint8_t SWITCH_PUMP_PIN = 25;
+    constexpr uint8_t SELECT_LINE_PIN = 25;
     constexpr uint8_t MIN_PIN = 26;
     constexpr uint8_t HOUR_PIN = 27;
 

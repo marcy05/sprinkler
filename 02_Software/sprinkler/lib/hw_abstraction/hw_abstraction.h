@@ -38,7 +38,7 @@ struct Button
 namespace Buttons {
     extern Button RESET_BUTTON;
     extern Button DEEP_SLEEP_BUTTON;
-    extern Button SWITCH_PUMP_BUTTON;
+    extern Button SELECT_LINE_BUTTON;
     extern Button HOUR_BUTTON;
     extern Button MIN_BUTTON;
     extern Button START_BUTTON;
