@@ -98,6 +98,7 @@ void setup() {
     myDisplay.main_screen();
     delay(100);
   }
+  
 
   rtc.begin();
   debugln("Setup RTC");
