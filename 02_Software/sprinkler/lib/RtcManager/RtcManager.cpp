@@ -8,7 +8,9 @@
 #include "RtcManager.h"
 #include <Arduino.h>
 
-RtcManager::RtcManager(RTC_DS3231 &rtcRef) : rtc(rtcRef) {}
+RtcManager::RtcManager(RTC_DS3231 &rtcRef) : rtc(rtcRef) {
+
+}
 
 void RtcManager::increaseOneHour()
 {

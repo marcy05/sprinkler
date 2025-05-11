@@ -11,6 +11,8 @@ public:
     void increaseOneHour();
     void increaseOneMinute();
 
+    void setTimeFromCompile();
+
 private:
     RTC_DS3231 &rtc;
 };

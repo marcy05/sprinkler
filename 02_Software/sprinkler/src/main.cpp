@@ -92,14 +92,16 @@ void setup()
   debugln("Setup start button");
 
   Wire.begin();
-  if (myDisplay.begin())
-  {
-    myDisplay.main_screen();
-    delay(100);
-  }
 
   rtc.begin();
   debugln("Setup RTC");
+
+  if (myDisplay.begin())
+  {
+
+    myDisplay.main_screen(rtc.now());
+    delay(100);
+  }
 
   turn_on_running_led();
 }
@@ -112,6 +114,7 @@ void loop()
   // debugln(counter);
 
   DateTime now = rtc.now();
+  myDisplay.update_time(now);
 
   debug("Hour: ");
   debug(now.hour());

@@ -35,10 +35,47 @@ void DisplayManager::main_screen()
     display.setCursor(10, pump2_line * 10);
     display.print("Pump2");
 
-    display.setCursor(start_stop_position, pump1_line * 10);
+    display.setCursor(firts_column_pos, pump1_line * 10);
     display.print("STOP");
 
-    display.setCursor(start_stop_position, pump2_line * 10);
+    display.setCursor(firts_column_pos, pump2_line * 10);
+    display.print("STOP");
+
+    display.display();
+    delay(100);
+}
+
+void DisplayManager::main_screen(DateTime now)
+{
+
+    display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(SSD1306_WHITE);
+    display.setCursor(0, 0);
+    display.print("Sprinker v0.1");
+
+    display.setCursor(0, time_line * 10);
+    display.print(">");
+
+    display.setCursor(10, time_line * 10);
+    display.print("Time:");
+
+    display.setCursor(firts_column_pos, time_line * 10);
+    String hour = String(now.hour());
+    String min = String(now.minute());
+    String time = hour + ":" + min;
+    display.print(time);
+
+    display.setCursor(10, pump1_line * 10);
+    display.print("Pump1");
+
+    display.setCursor(10, pump2_line * 10);
+    display.print("Pump2");
+
+    display.setCursor(firts_column_pos, pump1_line * 10);
+    display.print("STOP");
+
+    display.setCursor(firts_column_pos, pump2_line * 10);
     display.print("STOP");
 
     display.display();
@@ -73,8 +110,8 @@ void DisplayManager::change_line()
 
 void DisplayManager::running_pump1()
 {
-    display.fillRect(start_stop_position, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(start_stop_position, selected_line * 10);
+    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, selected_line * 10);
     display.print("START");
     display.display();
     delay(100);
@@ -82,8 +119,8 @@ void DisplayManager::running_pump1()
 
 void DisplayManager::running_pump2()
 {
-    display.fillRect(start_stop_position, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(start_stop_position, selected_line * 10);
+    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, selected_line * 10);
     display.print("START");
     display.display();
     delay(100);
@@ -91,8 +128,8 @@ void DisplayManager::running_pump2()
 
 void DisplayManager::stop_pump1()
 {
-    display.fillRect(start_stop_position, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(start_stop_position, selected_line * 10);
+    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, selected_line * 10);
     display.print("STOP");
     display.display();
     delay(100);
@@ -100,9 +137,21 @@ void DisplayManager::stop_pump1()
 
 void DisplayManager::stop_pump2()
 {
-    display.fillRect(start_stop_position, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(start_stop_position, selected_line * 10);
+    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, selected_line * 10);
     display.print("STOP");
+    display.display();
+    delay(100);
+}
+
+void DisplayManager::update_time(DateTime now)
+{
+    display.fillRect(firts_column_pos, time_line * 10, 6 * 5, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, time_line * 10);
+    String hour = String(now.hour());
+    String min = String(now.minute());
+    String time = hour + ":" + min;
+    display.print(time);
     display.display();
     delay(100);
 }

@@ -20,6 +20,7 @@ class DisplayManager{
 
         bool begin();
         void main_screen();
+        void main_screen(DateTime now);
         
         void change_line();
 
@@ -28,6 +29,8 @@ class DisplayManager{
 
         void stop_pump1();
         void stop_pump2();
+
+        void update_time(DateTime now);
         
         uint8_t selected_pump = 0;
 
@@ -42,7 +45,7 @@ class DisplayManager{
         const uint8_t pump2_line = 4;
         uint8_t selected_line = 2;
 
-        const uint8_t start_stop_position = 50;
+        const uint8_t firts_column_pos = 50;
 };
 
 
