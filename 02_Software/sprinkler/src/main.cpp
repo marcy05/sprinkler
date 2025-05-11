@@ -7,6 +7,8 @@
 #include <display.h>
 #include <pumpManager.h>
 
+//#include <RTClib.h>
+#include <RtcManager.h>
 
 #define DEVELOPMENT 1
 #define PRODUCTION 2
@@ -24,6 +26,8 @@
 
 
 DisplayManager myDisplay;
+RTC_DS3231 rtc;
+RtcManager rtcManager(rtc);
 
 
 void setup() {
@@ -89,11 +93,14 @@ void setup() {
   setup_start_button();
   debugln("Setup start button");
   
-
+  Wire.begin();
   if (myDisplay.begin()){
     myDisplay.main_screen();
     delay(100);
   }
+
+  rtc.begin();
+  debugln("Setup RTC");
 
   turn_on_running_led();
 
@@ -105,6 +112,12 @@ void loop() {
   //debug("Cycle: ");
   //debugln(counter);
 
+  DateTime now = rtc.now();
+
+  debug("Hour: ");
+  debug(now.hour());
+  debug(" Min: ");
+  debugln(now.minute());
 
   //debug("RESET button status is: ");
   //debugln(Buttons::RESET_BUTTON.pressed);
@@ -142,6 +155,22 @@ void loop() {
       debugln("Toggle pump2");
       pump2.activate_toggle();
     }
+  }
+
+  if (Buttons::HOUR_BUTTON.pressed){
+    Buttons::HOUR_BUTTON.pressed = false;
+
+    debugln("Pressed Hour button");
+    rtcManager.increaseOneHour();
+
+  }
+
+  if (Buttons::MIN_BUTTON.pressed){
+    Buttons::MIN_BUTTON.pressed = false;
+
+    debugln("Pressed Min button");
+    rtcManager.increaseOneMinute();
+    
   }
   
   if (pump1.active_status != myDisplay.pump1_last_status){

@@ -1,40 +1,33 @@
 #include <RtcManager.h>
 #include <logger.h>
 
-RtcManager::RtcManager(){
-    Wire.begin();
-    if (!this->rtc.begin()) {
-        Serial.println("RTC not found!");
-        while (1);  // halt
-    } else {
-        debugln("RTC intialized.");
-    }
+#include <Wire.h>
+#include <RTClib.h>
+#include "RtcManager.h"
 
-    if (this->rtc.lostPower()) {
-        Serial.println("RTC lost power, setting time to compile time.");
-        //rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
-    }
+#include "RtcManager.h"
+#include <Arduino.h>
+
+RtcManager::RtcManager(RTC_DS3231 &rtcRef) : rtc(rtcRef) {}
+
+void RtcManager::increaseOneHour()
+{
+    DateTime now = rtc.now();
+    int newHour = (now.hour() + 1) % 24;
+    DateTime newTime(now.year(), now.month(), now.day(), newHour, now.minute(), now.second());
+    rtc.adjust(newTime);
+    Serial.print("New time set: ");
+    Serial.println(rtc.now().timestamp(DateTime::TIMESTAMP_TIME));
 }
 
-void RtcManager::increase_hour(){
-    DateTime now = this->rtc.now();
+void RtcManager::increaseOneMinute()
+{
+    DateTime now = rtc.now();
+    int newHMin = (now.minute() + 1) % 60;
+    DateTime newTime(now.year(), now.month(), now.day(), now.hour(), newHMin, now.second());
 
-    this->rtc.adjust(DateTime(now.year(),
-                              now.month(),
-                              now.day(),
-                              now.hour() + 1,
-                              now.minute(), 0));
+    rtc.adjust(newTime);
+    Serial.print("New time set: ");
+    Serial.println(rtc.now().timestamp(DateTime::TIMESTAMP_TIME));
 }
 
-void RtcManager::increase_min(){
-    DateTime now = this->rtc.now();
-
-    this->rtc.adjust(DateTime(now.year(),
-                              now.month(),
-                              now.day(),
-                              now.hour(),
-                              now.minute() + 1, 0));
-}
-
-
-RtcManager myRTC = RtcManager();

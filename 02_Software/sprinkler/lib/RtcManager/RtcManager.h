@@ -2,19 +2,18 @@
 #define MYRTC_H
 
 #include <RTClib.h>
+#include <logger.h>
 
+class RtcManager
+{
+public:
+    RtcManager(RTC_DS3231 &rtcRef);
+    void increaseOneHour();
+    void increaseOneMinute();
 
-class RtcManager{
-    public:
-        RtcManager();
-
-        RTC_DS3231 rtc;
-
-        void increase_hour();
-        void increase_min();
+private:
+    RTC_DS3231 &rtc;
 };
 
-extern RtcManager myRTC;
 
-
-#endif //MYRTC_H
+#endif // MYRTC_H
