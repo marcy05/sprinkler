@@ -1,0 +1,64 @@
+#include <daily_timer.h>
+
+DailyTimer::DailyTimer(RTC_DS3231 &rtc_instance)
+    : rtc(rtc_instance), user_h(0), user_m(0),
+      already_triggered_today(false), last_checked_day(0) {}
+
+void DailyTimer::begin(){
+    prefs.begin("daily-timer", false);
+    _load_state();
+    prefs.end();
+}
+
+void DailyTimer::set_target_time(uint8_t hour, uint8_t minute){
+    user_h = hour;
+    user_m = minute;
+}
+
+bool DailyTimer::is_time_expired(){
+    DateTime now = rtc.now();
+
+    // If the day has changed, reset the trigger flag
+    if (now.day() != last_checked_day){
+        already_triggered_today = false;
+        last_checked_day = now.day();
+
+        prefs.begin("daily-timer", false);
+        _save_state(already_triggered_today, last_checked_day);
+        prefs.end();
+    }
+
+    DateTime target(now.year(), now.month(), now.day(), user_h, user_m, 0);
+
+    if (!already_triggered_today && now >= target){
+        already_triggered_today = true;
+
+        prefs.begin("daily-timer", false);
+        _save_state(already_triggered_today, last_checked_day);
+        prefs.end();
+
+        return true;
+    }
+
+    return false;
+}
+
+void DailyTimer::_load_state(){
+    prefs.begin("daily-timer", true);
+    already_triggered_today = prefs.getBool("triggered", false);
+    last_checked_day = prefs.getShort("last_day", 0);
+    prefs.end();
+}
+
+void DailyTimer::_save_state(bool triggered, uint16_t last_day){
+    prefs.begin("daily-timer", false);
+    prefs.putBool("triggered", triggered);
+    prefs.putShort("last_day", last_day);
+    prefs.end();
+}
+
+// void DailyTimer::print_now(){
+//     DateTime now = rtc.now();
+// }
+
+

@@ -7,8 +7,8 @@
 #include <display.h>
 #include <pump_manager.h>
 
-// #include <RTClib.h>
 #include <rtc_manager.h>
+#include <daily_timer.h>
 
 #define DEVELOPMENT 1
 #define PRODUCTION 2
@@ -26,6 +26,9 @@
 DisplayManager myDisplay;
 RTC_DS3231 rtc;
 RtcManager rtcManager(rtc);
+
+DailyTimer pump1_timer(rtc);
+DailyTimer pump2_timer(rtc);
 
 void setup()
 {
@@ -102,6 +105,10 @@ void setup()
     myDisplay.main_screen(rtc.now());
     delay(100);
   }
+
+  pump1_timer.begin();
+  pump2_timer.begin();
+  debugln("Setup pump Timers");
 
   turn_on_running_led();
 }
