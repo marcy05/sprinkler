@@ -1,11 +1,9 @@
-#include <RtcManager.h>
+#include <rtc_manager.h>
 #include <logger.h>
 
 #include <Wire.h>
 #include <RTClib.h>
-#include "RtcManager.h"
 
-#include "RtcManager.h"
 #include <Arduino.h>
 
 RtcManager::RtcManager(RTC_DS3231 &rtcRef) : rtc(rtcRef) {

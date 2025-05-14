@@ -5,10 +5,10 @@
 #include <sw_timer.h>
 #include <logger.h>
 #include <display.h>
-#include <pumpManager.h>
+#include <pump_manager.h>
 
 // #include <RTClib.h>
-#include <RtcManager.h>
+#include <rtc_manager.h>
 
 #define DEVELOPMENT 1
 #define PRODUCTION 2
