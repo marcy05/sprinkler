@@ -15,6 +15,20 @@ void DailyTimer::set_target_time(uint8_t hour, uint8_t minute){
     user_m = minute;
 }
 
+void DailyTimer::increase_one_hour(){
+    user_h = user_h + 1;
+    prefs.begin("daily-timer", false);
+    prefs.putShort("hour", user_h);
+    prefs.end();
+}
+
+void DailyTimer::increase_one_min(){
+    user_m = user_m + 1;
+    prefs.begin("daily-timer", false);
+    prefs.putShort("minute", user_m);
+    prefs.end();
+}
+
 bool DailyTimer::is_time_expired(){
     DateTime now = rtc.now();
 
@@ -47,6 +61,8 @@ void DailyTimer::_load_state(){
     prefs.begin("daily-timer", true);
     already_triggered_today = prefs.getBool("triggered", false);
     last_checked_day = prefs.getShort("last_day", 0);
+    user_h = prefs.getShort("hour", 0);
+    user_m = prefs.getShort("minute", 0);
     prefs.end();
 }
 
@@ -57,6 +73,13 @@ void DailyTimer::_save_state(bool triggered, uint16_t last_day){
     prefs.end();
 }
 
+uint8_t DailyTimer::get_hour(){
+    return user_h;
+}
+
+uint8_t DailyTimer::get_min(){
+    return user_m;
+}
 // void DailyTimer::print_now(){
 //     DateTime now = rtc.now();
 // }

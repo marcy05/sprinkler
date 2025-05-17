@@ -8,9 +8,12 @@ class DailyTimer{
     public:
         DailyTimer(RTC_DS3231 &rtc_instance);
         void begin();
-        void set_target_time(uint8_t hour, uint8_t minute);
+        void increase_one_hour();
+        void increase_one_min();
         bool is_time_expired();
         //void print_now();
+        uint8_t get_hour();
+        uint8_t get_min();
     
     private:
         RTC_DS3231 &rtc;

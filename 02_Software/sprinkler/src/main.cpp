@@ -152,7 +152,7 @@ void loop()
   {
     Buttons::SELECT_LINE_BUTTON.pressed = false;
     myDisplay.change_line();
-    debugln("Pump pressed");
+    debugln("Line changed");
   }
 
   if (Buttons::START_BUTTON.pressed)
