@@ -10,11 +10,6 @@ void DailyTimer::begin(){
     prefs.end();
 }
 
-void DailyTimer::set_target_time(uint8_t hour, uint8_t minute){
-    user_h = hour;
-    user_m = minute;
-}
-
 void DailyTimer::increase_one_hour(){
     user_h = user_h + 1;
     prefs.begin("daily-timer", false);
