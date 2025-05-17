@@ -31,6 +31,8 @@ class DisplayManager{
         void stop_pump2();
 
         void update_time(DateTime now);
+
+        void sleep_screen();
         
         uint8_t selected_pump = 0;
 

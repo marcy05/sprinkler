@@ -155,3 +155,12 @@ void DisplayManager::update_time(DateTime now)
     display.display();
     delay(100);
 }
+
+void DisplayManager::sleep_screen()
+{
+    display.clearDisplay();
+    display.setCursor(0,0);
+    display.print("Deep sleep.");
+    display.display();
+    delay(100);
+}

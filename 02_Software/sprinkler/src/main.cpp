@@ -145,6 +145,7 @@ void loop()
     debug("Entering Deep Sleep for: ");
     debug(systemTimeHandler.deepSleepWakeupAfterMinutes);
     debugln(" minute(s).");
+    myDisplay.sleep_screen();
     esp_deep_sleep_start();
   }
 
