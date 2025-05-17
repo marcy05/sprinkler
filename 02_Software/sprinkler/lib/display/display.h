@@ -38,14 +38,16 @@ class DisplayManager{
 
         bool pump1_last_status = 0;
         bool pump2_last_status = 0;
-    
-    private:
-        Adafruit_SSD1306 display;
-        
+
         const uint8_t time_line = 2;
         const uint8_t pump1_line = 3;
         const uint8_t pump2_line = 4;
         uint8_t selected_line = 2;
+    
+    private:
+        Adafruit_SSD1306 display;
+        
+        
 
         const uint8_t firts_column_pos = 50;
 };

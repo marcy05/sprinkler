@@ -156,11 +156,42 @@ void loop()
     debugln("Line changed");
   }
 
+  if (myDisplay.selected_line == myDisplay.time_line)
+  {
+    if (Buttons::HOUR_BUTTON.pressed)
+    {
+      Buttons::HOUR_BUTTON.pressed = false;
+      rtcManager.increaseOneHour();
+    }
+    if (Buttons::MIN_BUTTON.pressed)
+    {
+      Buttons::MIN_BUTTON.pressed = false;
+      rtcManager.increaseOneMinute();
+    }
+  }
+  else if (myDisplay.selected_line == myDisplay.pump1_line)
+  {
+    if (Buttons::START_BUTTON.pressed)
+    {
+      Buttons::START_BUTTON.pressed = false;
+      pump1.activate_toggle();
+    }
+  }
+  else if (myDisplay.selected_line == myDisplay.pump2_line)
+  {
+    if (Buttons::START_BUTTON.pressed)
+    {
+      Buttons::START_BUTTON.pressed = false;
+      pump2.activate_toggle();
+    }
+  }
+/*
   if (Buttons::START_BUTTON.pressed)
   {
     Buttons::START_BUTTON.pressed = false;
     debugln("Pressed Start Button");
-    if (myDisplay.selected_pump > 0 && myDisplay.selected_pump < 3){
+    if (myDisplay.selected_pump > 0 && myDisplay.selected_pump < 3)
+    {
       if (myDisplay.selected_pump == 1)
       {
         debugln("Toggle pump1");
@@ -172,9 +203,8 @@ void loop()
         pump2.activate_toggle();
       }
     }
-    
   }
-
+*/
   if (pump1.active_status != myDisplay.pump1_last_status)
   {
     myDisplay.pump1_last_status = pump1.active_status;
@@ -204,7 +234,7 @@ void loop()
       myDisplay.stop_pump2();
     }
   }
-
+/*
   if (Buttons::HOUR_BUTTON.pressed)
   {
     Buttons::HOUR_BUTTON.pressed = false;
@@ -220,7 +250,7 @@ void loop()
     debugln("Pressed Min button");
     rtcManager.increaseOneMinute();
   }
-
+*/
   if (counter % 2 == 0)
   {
     debug("Current computation: ");
@@ -233,5 +263,5 @@ void loop()
 
   // debugln("");
   ++counter;
-  delay(1000);
+  delay(500);
 }
