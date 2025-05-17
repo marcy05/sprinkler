@@ -3,15 +3,17 @@
 
 
 namespace Constants {
-    
+    constexpr uint8_t WATER_SENSOR_EN = 0;
+    constexpr uint8_t WATER_SENSOR_SIG = 4;
+    constexpr uint8_t DISPLAY_EN = 2;
 
     constexpr uint8_t START_BUTTON_PIN = 14;
-    constexpr uint8_t PUMP1_PIN = 19;
-    constexpr uint8_t PUMP2_PIN = 18;
+    constexpr uint8_t PUMP1_PIN_EN = 19;
+    constexpr uint8_t PUMP2_PIN_EN = 18;
 
-    constexpr uint8_t SELECT_LINE_PIN = 25;
-    constexpr uint8_t MIN_PIN = 26;
-    constexpr uint8_t HOUR_PIN = 27;
+    constexpr uint8_t SELECT_LINE_BUTTON_PIN = 25;
+    constexpr uint8_t MIN_BUTTON_PIN = 26;
+    constexpr uint8_t HOUR_BUTTON_PIN = 27;
 
     constexpr uint8_t DEEP_SLEEP_WAKEUP_BUTTON_PIN = 32; // It requires a pull-up resistor
     constexpr uint8_t RESET_BUTTON_PIN = 33;

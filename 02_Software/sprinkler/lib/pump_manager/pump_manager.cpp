@@ -20,5 +20,5 @@ void PumpManager::activate_toggle(){
 
 
 
-PumpManager pump1 = PumpManager(Constants::PUMP1_PIN);
-PumpManager pump2 = PumpManager(Constants::PUMP2_PIN);
+PumpManager pump1 = PumpManager(Constants::PUMP1_PIN_EN);
+PumpManager pump2 = PumpManager(Constants::PUMP2_PIN_EN);

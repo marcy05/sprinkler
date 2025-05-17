@@ -9,9 +9,9 @@
 namespace Buttons {
   Button RESET_BUTTON = {Constants::RESET_BUTTON_PIN, false};
   Button DEEP_SLEEP_BUTTON = {Constants::DEEP_SLEEP_WAKEUP_BUTTON_PIN, false};
-  Button SELECT_LINE_BUTTON = {Constants::SELECT_LINE_PIN, false};
-  Button HOUR_BUTTON = {Constants::HOUR_PIN, false};
-  Button MIN_BUTTON = {Constants::MIN_PIN, false};
+  Button SELECT_LINE_BUTTON = {Constants::SELECT_LINE_BUTTON_PIN, false};
+  Button HOUR_BUTTON = {Constants::HOUR_BUTTON_PIN, false};
+  Button MIN_BUTTON = {Constants::MIN_BUTTON_PIN, false};
   Button START_BUTTON = {Constants::START_BUTTON_PIN, false};
 }
 
@@ -133,4 +133,19 @@ void setup_start_button()
 void IRAM_ATTR isr_start()
 {
   Buttons::START_BUTTON.pressed = true;
+}
+
+void setup_water_sensor_enable()
+{
+  pinMode(Constants::WATER_SENSOR_EN, OUTPUT);
+}
+
+void setup_water_sensor_signal_input()
+{
+  pinMode(Constants::WATER_SENSOR_SIG, INPUT_PULLUP);
+}
+
+void setup_display_enable()
+{
+  pinMode(Constants::DISPLAY_EN, OUTPUT);
 }

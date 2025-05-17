@@ -5,6 +5,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <RTClib.h>
+#include <daily_timer.h>
 
 // https://lastminuteengineers.com/oled-display-esp32-tutorial/
 
@@ -33,6 +34,8 @@ class DisplayManager{
         void update_time(DateTime now);
 
         void sleep_screen();
+
+        void update_pump_timer(uint8_t pump_numb, DailyTimer &timer);
         
         uint8_t selected_pump = 0;
 
@@ -47,9 +50,9 @@ class DisplayManager{
     private:
         Adafruit_SSD1306 display;
         
-        
-
         const uint8_t firts_column_pos = 50;
+
+        const uint8_t second_column_pos = 90;
 };
 
 

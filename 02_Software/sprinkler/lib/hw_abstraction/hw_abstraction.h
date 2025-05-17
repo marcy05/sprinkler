@@ -29,6 +29,11 @@ void isr_min();
 void setup_start_button();
 void isr_start();
 
+void setup_water_sensor_enable();
+void setup_water_sensor_signal_input();
+
+void setup_display_enable();
+
 struct Button
 {
     const int PIN;

@@ -6,8 +6,8 @@ DailyTimer::DailyTimer(RTC_DS3231 &rtc_instance)
 
 void DailyTimer::begin(){
     prefs.begin("daily-timer", false);
-    _load_state();
     prefs.end();
+    _load_state();
 }
 
 void DailyTimer::increase_one_hour(){

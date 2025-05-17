@@ -110,7 +110,14 @@ void setup()
   pump2_timer.begin();
   debugln("Setup pump Timers");
 
+  myDisplay.update_pump_timer(1, pump1_timer);
+  myDisplay.update_pump_timer(2, pump2_timer);
+
   turn_on_running_led();
+
+  setup_water_sensor_enable();
+  setup_water_sensor_signal_input();
+  setup_display_enable();
 }
 
 void loop()
@@ -122,6 +129,8 @@ void loop()
 
   DateTime now = rtc.now();
   myDisplay.update_time(now);
+  //myDisplay.update_pump_timer(1, pump1_timer);
+  //myDisplay.update_pump_timer(2, pump2_timer);
 
   debug("Hour: ");
   debug(now.hour());
@@ -168,6 +177,9 @@ void loop()
       Buttons::MIN_BUTTON.pressed = false;
       rtcManager.increaseOneMinute();
     }
+    if (Buttons::START_BUTTON.pressed){
+      Buttons::START_BUTTON.pressed = false;
+    }
   }
   else if (myDisplay.selected_line == myDisplay.pump1_line)
   {
@@ -175,6 +187,16 @@ void loop()
     {
       Buttons::START_BUTTON.pressed = false;
       pump1.activate_toggle();
+    }
+    if (Buttons::HOUR_BUTTON.pressed){
+      Buttons::HOUR_BUTTON.pressed = false;
+      pump1_timer.increase_one_hour();
+      myDisplay.update_pump_timer(1, pump1_timer);
+    }
+    if (Buttons::MIN_BUTTON.pressed){
+      Buttons::MIN_BUTTON.pressed = false;
+      pump1_timer.increase_one_min();
+      myDisplay.update_pump_timer(1, pump1_timer);
     }
   }
   else if (myDisplay.selected_line == myDisplay.pump2_line)
@@ -184,27 +206,18 @@ void loop()
       Buttons::START_BUTTON.pressed = false;
       pump2.activate_toggle();
     }
-  }
-/*
-  if (Buttons::START_BUTTON.pressed)
-  {
-    Buttons::START_BUTTON.pressed = false;
-    debugln("Pressed Start Button");
-    if (myDisplay.selected_pump > 0 && myDisplay.selected_pump < 3)
-    {
-      if (myDisplay.selected_pump == 1)
-      {
-        debugln("Toggle pump1");
-        pump1.activate_toggle();
-      }
-      else if (myDisplay.selected_pump == 2)
-      {
-        debugln("Toggle pump2");
-        pump2.activate_toggle();
-      }
+    if (Buttons::HOUR_BUTTON.pressed){
+      Buttons::HOUR_BUTTON.pressed = false;
+      pump2_timer.increase_one_hour();
+      myDisplay.update_pump_timer(2, pump2_timer);
+    }
+    if (Buttons::MIN_BUTTON.pressed){
+      Buttons::MIN_BUTTON.pressed = false;
+      pump2_timer.increase_one_min();
+      myDisplay.update_pump_timer(2, pump2_timer);
     }
   }
-*/
+
   if (pump1.active_status != myDisplay.pump1_last_status)
   {
     myDisplay.pump1_last_status = pump1.active_status;
@@ -234,23 +247,7 @@ void loop()
       myDisplay.stop_pump2();
     }
   }
-/*
-  if (Buttons::HOUR_BUTTON.pressed)
-  {
-    Buttons::HOUR_BUTTON.pressed = false;
 
-    debugln("Pressed Hour button");
-    rtcManager.increaseOneHour();
-  }
-
-  if (Buttons::MIN_BUTTON.pressed)
-  {
-    Buttons::MIN_BUTTON.pressed = false;
-
-    debugln("Pressed Min button");
-    rtcManager.increaseOneMinute();
-  }
-*/
   if (counter % 2 == 0)
   {
     debug("Current computation: ");
@@ -259,6 +256,8 @@ void loop()
     debug(systemTimeHandler.wakeupTimestamp);
     debug(" >= ");
     debugln(systemTimeHandler.minutesWakeupPeriod * 60 * 1000);
+    debug("Water sensor read: ");
+    debugln(digitalRead(Constants::WATER_SENSOR_SIG));
   }
 
   // debugln("");
