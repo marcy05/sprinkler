@@ -15760,6 +15760,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
+		(at 255.27 217.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c875d1f-7e69-47a9-a2bf-d7c4256e199a")
+		(property "Reference" "J1"
+			(at 256.54 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x05_Odd_Even"
+			(at 256.54 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 255.27 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "621d5792-f2dd-4d92-ad98-66ad9f7bc5fd")
+		)
+		(pin "6"
+			(uuid "3ecf543f-6ddb-4840-8aa5-aff6b0f3acd2")
+		)
+		(pin "1"
+			(uuid "b29ebf3a-e712-4ea8-84ce-303cceb3d7df")
+		)
+		(pin "3"
+			(uuid "78077556-31c7-48b3-b35b-a90c6d892478")
+		)
+		(pin "5"
+			(uuid "fb1fd927-1694-42d0-815c-286b585a2558")
+		)
+		(pin "7"
+			(uuid "632f9f69-6880-482b-a6b6-1b446456a7e3")
+		)
+		(pin "9"
+			(uuid "9fbfafda-3523-4748-bc38-9dd8e9f008ab")
+		)
+		(pin "4"
+			(uuid "7c6a3c26-8513-457b-af1d-7fa9a328e63a")
+		)
+		(pin "10"
+			(uuid "74b375aa-d30f-4fcb-8a0c-175b14742670")
+		)
+		(pin "8"
+			(uuid "3ff78bf4-5899-43bd-8844-111858258839")
+		)
+		(instances
+			(project ""
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 72.39 229.87 90)
 		(unit 1)
