@@ -1,0 +1,1 @@
+https://www.circuitstate.com/pinouts/espressif-esp-prog-esp32-jtag-debug-probe-pinout-diagram/ 

@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="24.7.16">
+  <diagram name="Page-1" id="o4-jhdKzkbq9EyH3elU6">
+    <mxGraphModel dx="1816" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TscSvuVYJ4AFXfUfsHNb-1" target="TscSvuVYJ4AFXfUfsHNb-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-1" value="LiPo 3.3V - 4.2V nominal 3.7V 10Ah" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TscSvuVYJ4AFXfUfsHNb-3" target="TscSvuVYJ4AFXfUfsHNb-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TscSvuVYJ4AFXfUfsHNb-3" target="TscSvuVYJ4AFXfUfsHNb-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="320" />
+              <mxPoint x="400" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-3" value="nPM1300 PMIC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TscSvuVYJ4AFXfUfsHNb-4" target="TscSvuVYJ4AFXfUfsHNb-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-4" value="USB-C 5V" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TscSvuVYJ4AFXfUfsHNb-7" target="TscSvuVYJ4AFXfUfsHNb-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TscSvuVYJ4AFXfUfsHNb-7" target="TscSvuVYJ4AFXfUfsHNb-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-7" value="3V3&amp;nbsp;&lt;div&gt;XC6220B331MR Linear Regulator&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="440" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TscSvuVYJ4AFXfUfsHNb-10" target="TscSvuVYJ4AFXfUfsHNb-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TscSvuVYJ4AFXfUfsHNb-10" target="TscSvuVYJ4AFXfUfsHNb-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TscSvuVYJ4AFXfUfsHNb-10" target="TscSvuVYJ4AFXfUfsHNb-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-10" value="12V Boost converter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="440" y="400" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-12" value="1.3A MAX on Battery" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-20" value="ESP32" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="610" y="290" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-21" value="Tank Sensor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="610" y="410" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-23" value="Pump 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="610" y="500" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-24" value="Pump 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="610" y="590" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TscSvuVYJ4AFXfUfsHNb-28" value="USB to Serial" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="610" y="180" width="70" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
