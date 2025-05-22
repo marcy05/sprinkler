@@ -19,17 +19,28 @@
 
 #define SWVERSION "0.1.0"
 
-// Declaration for SSD1306 display connected using I2C
 
-#define SCREEN_ADDRESS 0x3C
+/******************************************************************************
+                                GLOBAL VARIABLES
+******************************************************************************/
 
 DisplayManager myDisplay;
 RTC_DS3231 rtc;
 RtcManager rtcManager(rtc);
 
-DailyTimer pump1_timer(rtc);
-DailyTimer pump2_timer(rtc);
+DailyTimer pump1_timer(1, rtc);
+DailyTimer pump2_timer(2, rtc);
 
+
+/******************************************************************************
+                                    FUNCTIONS
+******************************************************************************/
+
+
+
+/******************************************************************************
+                                      SETUP
+******************************************************************************/
 void setup()
 {
   Serial.begin(9600);
@@ -48,7 +59,7 @@ void setup()
 
   // test led setup
   setup_leds();
-  debugln("Led setup completed.");
+  debugln("M-Led setup completed.");
 
   // Timer related initialization
   systemTimeHandler.wakeupTimestamp = millis();
@@ -56,12 +67,12 @@ void setup()
   // Deep sleep
   setupDeepSleep();
 
-#if BUILD_TYPE == DEVELOPMENT
-  systemTimeHandler.deepSleepWakeupAfterMinutes = 1;
-#endif
+  #if BUILD_TYPE == DEVELOPMENT
+    systemTimeHandler.deepSleepWakeupAfterMinutes = 1;
+  #endif
 
   setupDeepSleepWakeupAfterMins(systemTimeHandler.deepSleepWakeupAfterMinutes);
-  debugln("Deep spleep setup completed.");
+  debugln("M-Deep spleep setup completed.");
 
   esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_cause();
 
@@ -70,34 +81,35 @@ void setup()
   case ESP_SLEEP_WAKEUP_EXT1:
     wakeup_from_sleep_sequence();
     Buttons::DEEP_SLEEP_BUTTON.pressed = true;
-    debugln("Wakeup due to button");
+    debugln("M-Wakeup due to button");
     break;
   case ESP_SLEEP_WAKEUP_TIMER:
     wakeup_from_sleep_sequence();
-    debugln("Wakeup caused by timer");
+    debugln("M-Wakeup caused by timer");
     break;
   default:
-    debugln("Standard wakeup");
+    debugln("M-Standard wakeup");
   }
 
   // Reset
   setup_reset_button();
-  debugln("Reset button setup completed.");
+  debugln("M-Reset button setup completed.");
 
   setup_pump_switch_button();
-  debugln("Switch Pump button setup completed.");
+  debugln("M-Switch Pump button setup completed.");
 
   setup_hour_button();
   setup_min_button();
-  debugln("Setup Hour and Min buttons.");
+  debugln("M-Setup Hour and Min buttons.");
 
   setup_start_button();
-  debugln("Setup start button");
+  debugln("M-Setup start button");
 
   Wire.begin();
+  debugln("M-I2C setup done.");
 
   rtc.begin();
-  debugln("Setup RTC");
+  debugln("M-Setup RTC done.");
 
   if (myDisplay.begin())
   {
@@ -106,14 +118,15 @@ void setup()
     delay(100);
   }
 
-  // TODO remove if after tests
-  pump1_timer.reset_persistency();
-  pump2_timer.reset_persistency();
+  #if BUILD_TYPE == DEVELOPMENT
+    pump1_timer.reset_persistency();
+    pump2_timer.reset_persistency();
+  #endif
   
   pump1_timer.begin();
   pump2_timer.begin();
 
-  debugln("Setup pump Timers");
+  debugln("M-Setup pump Timers done.");
 
   myDisplay.update_pump_timer(1, pump1_timer);
   myDisplay.update_pump_timer(2, pump2_timer);
@@ -127,36 +140,29 @@ void setup()
 
 void loop()
 {
-  // put your main code here, to run repeatedly:
-  static int counter = 0;
-  // debug("Cycle: ");
-  // debugln(counter);
 
   DateTime now = rtc.now();
   myDisplay.update_time(now);
   //myDisplay.update_pump_timer(1, pump1_timer);
   //myDisplay.update_pump_timer(2, pump2_timer);
-
-  debug("Hour: ");
-  debug(now.hour());
-  debug(" Min: ");
-  debugln(now.minute());
+  debugln();
+  debugln(now.timestamp());
 
   // debug("RESET button status is: ");
   // debugln(Buttons::RESET_BUTTON.pressed);
   if (Buttons::RESET_BUTTON.pressed)
   {
-    reset_led_running_sequence();
     debugln("Reset operations");
+    reset_led_running_sequence();
     ESP.restart();
   }
 
   if (systemTimeHandler.isWakeupTimeExpired())
   {
-    debug("System wakeup expire after: ");
+    debug("M-System wakeup expire after: ");
     debug(systemTimeHandler.minutesWakeupPeriod);
     debugln(" minute(s).");
-    debug("Entering Deep Sleep for: ");
+    debug("M-Entering Deep Sleep for: ");
     debug(systemTimeHandler.deepSleepWakeupAfterMinutes);
     debugln(" minute(s).");
     myDisplay.sleep_screen();
@@ -167,7 +173,7 @@ void loop()
   {
     Buttons::SELECT_LINE_BUTTON.pressed = false;
     myDisplay.change_line();
-    debugln("Line changed");
+    debugln("M-Line changed");
   }
 
   if (myDisplay.selected_line == myDisplay.time_line)
@@ -228,12 +234,12 @@ void loop()
     myDisplay.pump1_last_status = pump1.get_activate_status();
     if (pump1.get_activate_status())
     {
-      debugln("Change START for pump 1");
+      debugln("M-Pump1 activated.");
       myDisplay.running_pump1();
     }
     else
     {
-      debugln("Change STOP for pump 1");
+      debugln("M-Pump1 stopped.");
       myDisplay.stop_pump1();
     }
   }
@@ -243,54 +249,38 @@ void loop()
     myDisplay.pump2_last_status = pump2.get_activate_status();
     if (pump2.get_activate_status())
     {
-      debugln("Change START for pump 2");
+      debugln("M-Pump2 activated.");
       myDisplay.running_pump2();
     }
     else
     {
-      debugln("Change STOP for pump 1");
+      debugln("M-Pump2 stopped.");
       myDisplay.stop_pump2();
     }
   }
 
   if (pump1_timer.is_activation_time()){
-    debugln("Pump1 timer - Activation start");
+    debugln("M-Pump1 timer - Activation start");
     pump1.activate_toggle();
-    debug("Display act status1: ");
-    debugln(myDisplay.pump1_last_status);
   }
 
   if (pump2_timer.is_activation_time()){
-    debugln("Pump2 timer - Activation start");
+    debugln("M-Pump2 timer - Activation start");
     pump2.activate_toggle();
-    debug("Display act status2: ");
-    debugln(myDisplay.pump2_last_status);
+
   }
 
   if (pump1_timer.is_activation_timeout()){
-    debugln("Pump1 timer - Activation period finished");
+    debugln("M-Pump1 timer - Activation period finished");
     pump1.activate_toggle();
   }
 
   if (pump2_timer.is_activation_timeout()){
-    debugln("Pump2 timer - Activation period finished");
+    debugln("M-Pump2 timer - Activation period finished");
     pump2.activate_toggle();
   }
 
-  /*
-  if (counter % 2 == 0)
-  {
-    debug("Current computation: ");
-    debug(millis());
-    debug(" - ");
-    debug(systemTimeHandler.wakeupTimestamp);
-    debug(" >= ");
-    debugln(systemTimeHandler.minutesWakeupPeriod * 60 * 1000);
-    debug("Water sensor read: ");
-    debugln(digitalRead(Constants::WATER_SENSOR_SIG));
-  }*/
 
-  // debugln("");
-  ++counter;
-  delay(500);
+
+  delay(100);
 }

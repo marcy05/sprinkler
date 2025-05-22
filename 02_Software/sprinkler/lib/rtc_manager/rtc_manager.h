@@ -1,6 +1,8 @@
 #ifndef MYRTC_H
 #define MYRTC_H
 
+#include <Arduino.h>
+#include <Wire.h>
 #include <RTClib.h>
 #include <logger.h>
 
@@ -11,11 +13,8 @@ public:
     void increaseOneHour();
     void increaseOneMinute();
 
-    void setTimeFromCompile();
-
 private:
     RTC_DS3231 &rtc;
 };
-
 
 #endif // MYRTC_H

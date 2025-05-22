@@ -1,20 +1,25 @@
 #include <pump_manager.h>
-#include <pin_config.h>
 
-PumpManager::PumpManager(const uint8_t gpio){
+PumpManager::PumpManager(const uint8_t gpio)
+{
     this->gpio = gpio;
     pinMode(this->gpio, OUTPUT);
     digitalWrite(this->gpio, LOW);
 }
 
-void PumpManager::activate_toggle(){
+void PumpManager::activate_toggle()
+{
 
-    if (this->active_status){
+    if (this->active_status)
+    {
         digitalWrite(this->gpio, LOW);
         this->active_status = false;
-    } else {
+    }
+    else
+    {
         digitalWrite(this->gpio, HIGH);
         this->active_status = true;
+        debugln("PUM-Active status=true");
     }
 }
 

@@ -1,12 +1,7 @@
 #include <hw_abstraction.h>
-#include <Arduino.h>
-#include <pin_config.h>
-//#include <sync_utils.h>
 
-//portMUX_TYPE buttonMux = portMUX_INITIALIZER_UNLOCKED;
-
-
-namespace Buttons {
+namespace Buttons
+{
   Button RESET_BUTTON = {Constants::RESET_BUTTON_PIN, false};
   Button DEEP_SLEEP_BUTTON = {Constants::DEEP_SLEEP_WAKEUP_BUTTON_PIN, false};
   Button SELECT_LINE_BUTTON = {Constants::SELECT_LINE_BUTTON_PIN, false};
@@ -27,6 +22,7 @@ void setup_leds()
 void turn_on_running_led()
 {
   digitalWrite(Constants::LED_RUNNING, LOW);
+  debugln("HWA-Running led ON.");
 }
 
 void turn_off_running_led()
@@ -37,23 +33,27 @@ void turn_off_running_led()
 void reset_led_running_sequence()
 {
   const uint8_t iterations = 3;
-  for (u_int8_t i=0; i<iterations; i++){
-      turn_off_running_led();
-      delay(300);
-      turn_on_running_led();
-      delay(300);
+  for (u_int8_t i = 0; i < iterations; i++)
+  {
+    turn_off_running_led();
+    delay(300);
+    turn_on_running_led();
+    delay(300);
   }
+  debugln("HWA-Reset running sequence completed.");
 }
 
 void wakeup_from_sleep_sequence()
 {
   const uint8_t iterations = 2;
-  for (u_int8_t i=0; i<iterations; i++){
-      turn_off_running_led();
-      delay(100);
-      turn_on_running_led();
-      delay(100);
+  for (u_int8_t i = 0; i < iterations; i++)
+  {
+    turn_off_running_led();
+    delay(100);
+    turn_on_running_led();
+    delay(100);
   }
+  debugln("HWA-Wakeup from sleep sequence completed.");
 }
 
 void turn_on_battery_led()
@@ -77,13 +77,17 @@ void IRAM_ATTR isr_reset()
   static unsigned long last_interrupt_time = 0;
   unsigned long interrupt_time = millis();
 
-  if (interrupt_time - last_interrupt_time > 1000) {
-    if (!Buttons::RESET_BUTTON.pressed){
+  if (interrupt_time - last_interrupt_time > 1000)
+  {
+    if (!Buttons::RESET_BUTTON.pressed)
+    {
       Buttons::RESET_BUTTON.pressed = true;
-    } else {
+    }
+    else
+    {
       Buttons::RESET_BUTTON.pressed = false;
     }
-    
+
     last_interrupt_time = interrupt_time;
   }
 }
@@ -99,7 +103,6 @@ void IRAM_ATTR isr_switch_pump()
   Buttons::SELECT_LINE_BUTTON.pressed = true;
 }
 
-
 void setup_hour_button()
 {
   pinMode(Buttons::HOUR_BUTTON.PIN, INPUT_PULLUP);
@@ -111,7 +114,6 @@ void IRAM_ATTR isr_hour()
   Buttons::HOUR_BUTTON.pressed = true;
 }
 
-
 void setup_min_button()
 {
   pinMode(Buttons::MIN_BUTTON.PIN, INPUT_PULLUP);
@@ -122,7 +124,6 @@ void IRAM_ATTR isr_min()
 {
   Buttons::MIN_BUTTON.pressed = true;
 }
-
 
 void setup_start_button()
 {
@@ -138,14 +139,17 @@ void IRAM_ATTR isr_start()
 void setup_water_sensor_enable()
 {
   pinMode(Constants::WATER_SENSOR_EN, OUTPUT);
+  debugln("HWA-Setup water sensor enable GPIO.");
 }
 
 void setup_water_sensor_signal_input()
 {
   pinMode(Constants::WATER_SENSOR_SIG, INPUT_PULLUP);
+  debugln("HWA-Setup water sensor signal GPIO.");
 }
 
 void setup_display_enable()
 {
   pinMode(Constants::DISPLAY_EN, OUTPUT);
+  debugln("HWA-Setup display enable GPIO.");
 }

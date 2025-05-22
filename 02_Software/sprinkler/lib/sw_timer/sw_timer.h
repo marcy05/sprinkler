@@ -1,18 +1,18 @@
 #ifndef SW_TIMER_H
 #define SW_TIMER_H
 
+#include <Arduino.h>
+class TimeHandler
+{
+public:
+    static unsigned long minutesWakeupPeriod;
+    static unsigned long wakeupTimestamp;
+    unsigned int deepSleepWakeupAfterMinutes;
 
-class TimeHandler {
-    public:
-        static unsigned long minutesWakeupPeriod;
-        static unsigned long wakeupTimestamp;
-        unsigned int deepSleepWakeupAfterMinutes;
-    
-    public:
-        TimeHandler();
-        bool isWakeupTimeExpired();
+public:
+    TimeHandler();
+    bool isWakeupTimeExpired();
 };
-
 
 extern TimeHandler systemTimeHandler;
 

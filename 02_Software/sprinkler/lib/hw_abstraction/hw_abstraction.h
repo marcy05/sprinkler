@@ -1,6 +1,9 @@
 #ifndef HW_ABSTRACTION_H
 #define HW_ABSTRACTION_H
 
+#include <Arduino.h>
+#include <pin_config.h>
+#include <logger.h>
 
 void setup_leds();
 
@@ -12,7 +15,6 @@ void wakeup_from_sleep_sequence();
 
 void turn_on_battery_led();
 void turn_off_battery_led();
-
 
 void setup_reset_button();
 void isr_reset();
@@ -40,7 +42,8 @@ struct Button
     volatile bool pressed;
 };
 
-namespace Buttons {
+namespace Buttons
+{
     extern Button RESET_BUTTON;
     extern Button DEEP_SLEEP_BUTTON;
     extern Button SELECT_LINE_BUTTON;
@@ -48,6 +51,5 @@ namespace Buttons {
     extern Button MIN_BUTTON;
     extern Button START_BUTTON;
 };
-
 
 #endif // HW_ABSTRACTION_H
