@@ -106,8 +106,13 @@ void setup()
     delay(100);
   }
 
+  // TODO remove if after tests
+  pump1_timer.reset_persistency();
+  pump2_timer.reset_persistency();
+  
   pump1_timer.begin();
   pump2_timer.begin();
+
   debugln("Setup pump Timers");
 
   myDisplay.update_pump_timer(1, pump1_timer);
@@ -218,10 +223,10 @@ void loop()
     }
   }
 
-  if (pump1.active_status != myDisplay.pump1_last_status)
+  if (pump1.get_activate_status() != myDisplay.pump1_last_status)
   {
-    myDisplay.pump1_last_status = pump1.active_status;
-    if (pump1.active_status)
+    myDisplay.pump1_last_status = pump1.get_activate_status();
+    if (pump1.get_activate_status())
     {
       debugln("Change START for pump 1");
       myDisplay.running_pump1();
@@ -233,10 +238,10 @@ void loop()
     }
   }
 
-  if (pump2.active_status != myDisplay.pump2_last_status)
+  if (pump2.get_activate_status() != myDisplay.pump2_last_status)
   {
-    myDisplay.pump2_last_status = pump2.active_status;
-    if (pump2.active_status)
+    myDisplay.pump2_last_status = pump2.get_activate_status();
+    if (pump2.get_activate_status())
     {
       debugln("Change START for pump 2");
       myDisplay.running_pump2();
@@ -248,6 +253,31 @@ void loop()
     }
   }
 
+  if (pump1_timer.is_activation_time()){
+    debugln("Pump1 timer - Activation start");
+    pump1.activate_toggle();
+    debug("Display act status1: ");
+    debugln(myDisplay.pump1_last_status);
+  }
+
+  if (pump2_timer.is_activation_time()){
+    debugln("Pump2 timer - Activation start");
+    pump2.activate_toggle();
+    debug("Display act status2: ");
+    debugln(myDisplay.pump2_last_status);
+  }
+
+  if (pump1_timer.is_activation_timeout()){
+    debugln("Pump1 timer - Activation period finished");
+    pump1.activate_toggle();
+  }
+
+  if (pump2_timer.is_activation_timeout()){
+    debugln("Pump2 timer - Activation period finished");
+    pump2.activate_toggle();
+  }
+
+  /*
   if (counter % 2 == 0)
   {
     debug("Current computation: ");
@@ -258,7 +288,7 @@ void loop()
     debugln(systemTimeHandler.minutesWakeupPeriod * 60 * 1000);
     debug("Water sensor read: ");
     debugln(digitalRead(Constants::WATER_SENSOR_SIG));
-  }
+  }*/
 
   // debugln("");
   ++counter;

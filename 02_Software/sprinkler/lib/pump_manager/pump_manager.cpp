@@ -18,7 +18,10 @@ void PumpManager::activate_toggle(){
     }
 }
 
-
+bool PumpManager::get_activate_status()
+{
+    return this->active_status;
+}
 
 PumpManager pump1 = PumpManager(Constants::PUMP1_PIN_EN);
 PumpManager pump2 = PumpManager(Constants::PUMP2_PIN_EN);

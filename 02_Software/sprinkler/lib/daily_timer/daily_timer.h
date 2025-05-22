@@ -10,10 +10,13 @@ class DailyTimer{
         void begin();
         void increase_one_hour();
         void increase_one_min();
-        bool is_time_expired();
-        //void print_now();
+        bool is_activation_time();
+        bool is_activation_timeout();
+        
         uint8_t get_hour();
         uint8_t get_min();
+
+        void reset_persistency();
     
     private:
         RTC_DS3231 &rtc;
@@ -21,6 +24,10 @@ class DailyTimer{
 
         uint8_t user_h = 0;
         uint8_t user_m = 0;
+
+        uint32_t start_time_sec = 0;
+
+        uint32_t timer_activation_period = 1 * 60; // min in sec
         
         bool already_triggered_today = false;
         uint16_t last_checked_day = 0;

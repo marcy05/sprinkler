@@ -9,9 +9,10 @@ class PumpManager{
 
         void activate_toggle();
 
-        bool active_status = false;
+        bool get_activate_status();
     
     private:
+        bool active_status = false;
         uint8_t gpio = 0;
 };
 

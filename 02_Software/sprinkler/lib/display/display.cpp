@@ -116,8 +116,8 @@ void DisplayManager::change_line()
 
 void DisplayManager::running_pump1()
 {
-    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(firts_column_pos, selected_line * 10);
+    display.fillRect(firts_column_pos, pump1_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump1_line * 10);
     display.print("START");
     display.display();
     delay(100);
@@ -125,8 +125,8 @@ void DisplayManager::running_pump1()
 
 void DisplayManager::running_pump2()
 {
-    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(firts_column_pos, selected_line * 10);
+    display.fillRect(firts_column_pos, pump2_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump2_line * 10);
     display.print("START");
     display.display();
     delay(100);
@@ -134,8 +134,8 @@ void DisplayManager::running_pump2()
 
 void DisplayManager::stop_pump1()
 {
-    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(firts_column_pos, selected_line * 10);
+    display.fillRect(firts_column_pos, pump1_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump1_line * 10);
     display.print("STOP");
     display.display();
     delay(100);
@@ -143,8 +143,8 @@ void DisplayManager::stop_pump1()
 
 void DisplayManager::stop_pump2()
 {
-    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(firts_column_pos, selected_line * 10);
+    display.fillRect(firts_column_pos, pump2_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump2_line * 10);
     display.print("STOP");
     display.display();
     delay(100);
