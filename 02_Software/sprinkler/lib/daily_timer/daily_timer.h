@@ -3,33 +3,44 @@
 
 #include <RTClib.h>
 #include <Preferences.h>
+#include <logger.h>
 
-class DailyTimer{
-    public:
-        DailyTimer(RTC_DS3231 &rtc_instance);
-        void begin();
-        void increase_one_hour();
-        void increase_one_min();
-        bool is_time_expired();
-        //void print_now();
-        uint8_t get_hour();
-        uint8_t get_min();
-    
-    private:
-        RTC_DS3231 &rtc;
-        Preferences prefs;
+#define SCREEN_ADDRESS 0x3C
 
-        uint8_t user_h = 0;
-        uint8_t user_m = 0;
-        
-        bool already_triggered_today = false;
-        uint16_t last_checked_day = 0;
+class DailyTimer
+{
+public:
+    DailyTimer(uint8_t id, RTC_DS3231 &rtc_instance);
+    void begin();
+    void increase_one_hour();
+    void increase_one_min();
+    bool is_activation_time();
+    bool is_activation_timeout();
 
-        void _load_state();
-        void _save_state(bool triggered, uint16_t last_day);
+    uint8_t get_hour();
+    uint8_t get_min();
+
+    void reset_persistency();
+
+private:
+    RTC_DS3231 &rtc;
+    Preferences prefs;
+
+    uint8_t user_h = 0;
+    uint8_t user_m = 0;
+
+    uint32_t start_time_sec = 0;
+
+    uint32_t timer_activation_period = 1 * 60; // min in sec
+
+    bool already_triggered_today = false;
+    uint16_t last_checked_day = 0;
+
+    uint8_t id = 0;
+
+    void _load_state();
+    void _save_state(bool triggered, uint16_t last_day);
+    void _debug_loaded_state();
 };
-
-
-
 
 #endif // DAILY_TIMER_H

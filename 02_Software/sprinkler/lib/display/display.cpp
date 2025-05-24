@@ -1,12 +1,11 @@
 #include <display.h>
-#include <logger.h>
 
 DisplayManager::DisplayManager()
     : display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET) {}
 
 bool DisplayManager::begin()
 {
-    if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C))
+    if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS))
     { // default I2C address
         return false;
     }
@@ -116,8 +115,8 @@ void DisplayManager::change_line()
 
 void DisplayManager::running_pump1()
 {
-    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(firts_column_pos, selected_line * 10);
+    display.fillRect(firts_column_pos, pump1_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump1_line * 10);
     display.print("START");
     display.display();
     delay(100);
@@ -125,8 +124,8 @@ void DisplayManager::running_pump1()
 
 void DisplayManager::running_pump2()
 {
-    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(firts_column_pos, selected_line * 10);
+    display.fillRect(firts_column_pos, pump2_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump2_line * 10);
     display.print("START");
     display.display();
     delay(100);
@@ -134,8 +133,8 @@ void DisplayManager::running_pump2()
 
 void DisplayManager::stop_pump1()
 {
-    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(firts_column_pos, selected_line * 10);
+    display.fillRect(firts_column_pos, pump1_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump1_line * 10);
     display.print("STOP");
     display.display();
     delay(100);
@@ -143,8 +142,8 @@ void DisplayManager::stop_pump1()
 
 void DisplayManager::stop_pump2()
 {
-    display.fillRect(firts_column_pos, selected_line * 10, 30, 8, SSD1306_BLACK);
-    display.setCursor(firts_column_pos, selected_line * 10);
+    display.fillRect(firts_column_pos, pump2_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump2_line * 10);
     display.print("STOP");
     display.display();
     delay(100);
@@ -154,20 +153,35 @@ void DisplayManager::update_time(DateTime now)
 {
     String hour = "";
     String min = "";
-    if (now.hour() < 10 ){
+    String sec = "";
+    if (now.hour() < 10)
+    {
         hour = "0" + String(now.hour());
-    } else {
+    }
+    else
+    {
         hour = String(now.hour());
     }
-    if (now.minute() < 10){
+    if (now.minute() < 10)
+    {
         min = "0" + String(now.minute());
-    } else {
+    }
+    else
+    {
         min = String(now.minute());
     }
-    display.fillRect(firts_column_pos, time_line * 10, 6 * 5, 8, SSD1306_BLACK);
+    if (now.second() < 10)
+    {
+        sec = "0" + String(now.second());
+    }
+    else
+    {
+        sec = now.second();
+    }
+    display.fillRect(firts_column_pos, time_line * 10, 6 * 8, 8, SSD1306_BLACK);
     display.setCursor(firts_column_pos, time_line * 10);
 
-    String time = hour + ":" + min;
+    String time = hour + ":" + min + ":" + sec;
     display.print(time);
     display.display();
     delay(100);
@@ -184,18 +198,25 @@ void DisplayManager::sleep_screen()
 
 void DisplayManager::update_pump_timer(uint8_t pump_numb, DailyTimer &timer)
 {
+    debugln("DSP-Update pump timer.");
     String hour_str = "";
     String min_str = "";
 
-    if (timer.get_hour() < 10){
+    if (timer.get_hour() < 10)
+    {
         hour_str = "0" + String(timer.get_hour());
-    } else {
+    }
+    else
+    {
         hour_str = String(timer.get_hour());
     }
-    
-    if (timer.get_min() < 10){
+
+    if (timer.get_min() < 10)
+    {
         min_str = "0" + String(timer.get_min());
-    } else {
+    }
+    else
+    {
         min_str = String(timer.get_min());
     }
 
@@ -211,7 +232,7 @@ void DisplayManager::update_pump_timer(uint8_t pump_numb, DailyTimer &timer)
         display.setCursor(second_column_pos, pump2_line * 10);
         display.print(hour_str + ":" + min_str);
     }
-    
+
     display.display();
     delay(100);
 }

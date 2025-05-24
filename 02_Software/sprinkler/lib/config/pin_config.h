@@ -1,8 +1,8 @@
 #ifndef PIN_CONFIG_H
 #define PIN_CONFIG_H
 
-
-namespace Constants {
+namespace Constants
+{
     constexpr uint8_t WATER_SENSOR_EN = 0;
     constexpr uint8_t WATER_SENSOR_SIG = 4;
     constexpr uint8_t DISPLAY_EN = 2;
@@ -22,10 +22,5 @@ namespace Constants {
     constexpr uint8_t LED_RUNNING = 13;
 
 }
-
-
-
-
-
 
 #endif // PIN_CONFIG_H
