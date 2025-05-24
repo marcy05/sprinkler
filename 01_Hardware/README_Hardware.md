@@ -10,9 +10,25 @@ This folder collects all the Hardware related information.
 
 * water sensor current limit resistor to 1 GPIO (Water is open, no water is closed)(Water measure 1, no water measure 0)
 
-* enable water sensor mosfets
-
 * Integrate RTC clock module with battery
 
-* OLED display enable with mosfet
+* Low pass filter for boost output
+
+* Make footprint for powerFet and Boost Converter
+
+* Find connectors for pumps, buttons, display and water sensor (JST-XH connectors)
+
+* Add enable circuit for display
+
+* Add enable circuit for water sensor
+
+* Add enable circuit for the Boost converter (it might be a good idea to power it off)
+
+* Add LED's
+
+* Schematic annotation
+
+* Footprint assignment
+
+* PCB design (more stuff here)
 
