@@ -3,7 +3,7 @@ R109,Vishay-Dale,CRCW040214K3FKED,1,0.01,3,Resistance:,14.3,kΩ,,Tolerance:,1.0%
 R110,Yageo,RC0201FR-0710KL,1,0.01,2.08,Resistance:,10,kΩ,,Tolerance:,1.0%,,Power:,50,mW,,,,,,,,,,
 C127,MuRata,GRM188R71A225KE15D,1,0.02,4.68,Cap:,2.2,µF,,Total,Derated,Cap:,2.2,µF,,VDC:,10,V,,ESR:,9,mΩ,,Package:,603
 C123,Kemet,C0805C106K8PACTU,1,0.03,6.75,Cap:,10,µF,,Total,Derated,Cap:,7.3,µF,,VDC:,10,V,,ESR:,3,mΩ,,Package:,805
-R111,Vishay-Dale,CRCW040220K0FKED,1,0.01,3,Resistance:,20,kΩ,,Tolerance:,1.0%,,Power:,63,mW,,,,,,,,,,
+R111,Vishay-Dale,CRCW040220K0FKED,1,0.01,3,Resistance:,40,kΩ,,Tolerance:,1.0%,,Power:,63,mW,,,,,,,,,,
 Q103,Texas,Instruments,CSD17571Q2,1,0.08,9,VdsMax:,30,V,,IdsMax:,22,Amps,,,,,,,,,,,,
 R158,Vishay-Dale,CRCW0402158KFKED,1,0.01,3,Resistance:,158,kΩ,,Tolerance:,1.0%,,Power:,63,mW,,,,,,,,,,
 U1,Texas,Instruments,TPS61287RZPR,1,0.75,14,,,,,,,,,,,,,,,,,,,
