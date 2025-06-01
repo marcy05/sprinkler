@@ -5,17 +5,6 @@
 #include <pin_config.h>
 #include <logger.h>
 
-void setup_leds();
-
-void turn_on_running_led();
-void turn_off_running_led();
-
-void reset_led_running_sequence();
-void wakeup_from_sleep_sequence();
-
-void turn_on_battery_led();
-void turn_off_battery_led();
-
 void setup_reset_button();
 void isr_reset();
 

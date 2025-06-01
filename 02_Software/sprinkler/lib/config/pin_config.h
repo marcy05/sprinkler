@@ -3,7 +3,7 @@
 
 namespace Constants
 {
-    constexpr uint8_t WATER_SENSOR_EN = 0;
+    constexpr uint8_t WATER_SENSOR_EN = 23;
     constexpr uint8_t WATER_SENSOR_SIG = 4;
     constexpr uint8_t DISPLAY_EN = 2;
 
@@ -18,8 +18,7 @@ namespace Constants
     constexpr uint8_t DEEP_SLEEP_WAKEUP_BUTTON_PIN = 32; // It requires a pull-up resistor
     constexpr uint8_t RESET_BUTTON_PIN = 33;
 
-    constexpr uint8_t LED_BATTERY = 12;
-    constexpr uint8_t LED_RUNNING = 13;
+    constexpr uint8_t BOOST_EN = 34;
 
 }
 

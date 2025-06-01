@@ -10,61 +10,7 @@ namespace Buttons
   Button START_BUTTON = {Constants::START_BUTTON_PIN, false};
 }
 
-void setup_leds()
-{
-  pinMode(Constants::LED_RUNNING, OUTPUT);
-  pinMode(Constants::LED_BATTERY, OUTPUT);
 
-  digitalWrite(Constants::LED_RUNNING, HIGH);
-  digitalWrite(Constants::LED_BATTERY, HIGH);
-}
-
-void turn_on_running_led()
-{
-  digitalWrite(Constants::LED_RUNNING, LOW);
-  debugln("HWA-Running led ON.");
-}
-
-void turn_off_running_led()
-{
-  digitalWrite(Constants::LED_RUNNING, HIGH);
-}
-
-void reset_led_running_sequence()
-{
-  const uint8_t iterations = 3;
-  for (u_int8_t i = 0; i < iterations; i++)
-  {
-    turn_off_running_led();
-    delay(300);
-    turn_on_running_led();
-    delay(300);
-  }
-  debugln("HWA-Reset running sequence completed.");
-}
-
-void wakeup_from_sleep_sequence()
-{
-  const uint8_t iterations = 2;
-  for (u_int8_t i = 0; i < iterations; i++)
-  {
-    turn_off_running_led();
-    delay(100);
-    turn_on_running_led();
-    delay(100);
-  }
-  debugln("HWA-Wakeup from sleep sequence completed.");
-}
-
-void turn_on_battery_led()
-{
-  digitalWrite(Constants::LED_BATTERY, LOW);
-}
-
-void turn_off_battery_led()
-{
-  digitalWrite(Constants::LED_BATTERY, HIGH);
-}
 
 void setup_reset_button()
 {

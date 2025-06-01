@@ -57,9 +57,6 @@ void setup()
   #endif
   */
 
-  // test led setup
-  setup_leds();
-  debugln("M-Led setup completed.");
 
   // Timer related initialization
   systemTimeHandler.wakeupTimestamp = millis();
@@ -79,12 +76,10 @@ void setup()
   switch (wakeup_reason)
   {
   case ESP_SLEEP_WAKEUP_EXT1:
-    wakeup_from_sleep_sequence();
     Buttons::DEEP_SLEEP_BUTTON.pressed = true;
     debugln("M-Wakeup due to button");
     break;
   case ESP_SLEEP_WAKEUP_TIMER:
-    wakeup_from_sleep_sequence();
     debugln("M-Wakeup caused by timer");
     break;
   default:
@@ -131,8 +126,6 @@ void setup()
   myDisplay.update_pump_timer(1, pump1_timer);
   myDisplay.update_pump_timer(2, pump2_timer);
 
-  turn_on_running_led();
-
   setup_water_sensor_enable();
   setup_water_sensor_signal_input();
   setup_display_enable();
@@ -153,7 +146,6 @@ void loop()
   if (Buttons::RESET_BUTTON.pressed)
   {
     debugln("Reset operations");
-    reset_led_running_sequence();
     ESP.restart();
   }
 
