@@ -13,6 +13,9 @@ public:
     void increaseOneHour();
     void increaseOneMinute();
 
+    void activateAlarm();
+    void deactivateAlarm();
+
 private:
     RTC_DS3231 &rtc;
 };

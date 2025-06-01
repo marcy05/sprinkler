@@ -61,15 +61,15 @@ void setup()
   // Timer related initialization
   systemTimeHandler.wakeupTimestamp = millis();
 
-  // Deep sleep
-  setupDeepSleep();
+  // We are going to run, deactivate all alarms to avoid unexpected shutdown.
+  rtcManager.deactivateAlarm();
 
   #if BUILD_TYPE == DEVELOPMENT
     systemTimeHandler.deepSleepWakeupAfterMinutes = 1;
   #endif
 
-  setupDeepSleepWakeupAfterMins(systemTimeHandler.deepSleepWakeupAfterMinutes);
-  debugln("M-Deep spleep setup completed.");
+  // setupDeepSleepWakeupAfterMins(systemTimeHandler.deepSleepWakeupAfterMinutes);
+  // debugln("M-Deep spleep setup completed.");
 
   esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_cause();
 
@@ -158,7 +158,8 @@ void loop()
     debug(systemTimeHandler.deepSleepWakeupAfterMinutes);
     debugln(" minute(s).");
     myDisplay.sleep_screen();
-    esp_deep_sleep_start();
+    // esp_deep_sleep_start();
+    rtcManager.activateAlarm();
   }
 
   if (Buttons::SELECT_LINE_BUTTON.pressed)

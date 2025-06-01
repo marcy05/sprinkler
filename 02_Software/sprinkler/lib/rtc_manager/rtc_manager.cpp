@@ -24,3 +24,31 @@ void RtcManager::increaseOneMinute()
     debug("RTC-New time set: ");
     debugln(rtc.now().timestamp(DateTime::TIMESTAMP_TIME));
 }
+
+void RtcManager::activateAlarm()
+{
+    uint8_t activation_period_min = 15; // activate every n minute
+
+    DateTime now = rtc.now();
+
+    DateTime alarm1 = now + TimeSpan(activation_period_min * 60);
+
+    if (!rtc.setAlarm1(alarm1, DS3231_A1_Minute))
+    {
+        debugln("SLM-Error, alarm wan't set");
+    }
+    else
+    {
+        debug("Alarm will be triggered at: ");
+        debugln(alarm1.timestamp());
+    }
+}
+
+void RtcManager::deactivateAlarm()
+{
+    rtc.clearAlarm(1);
+    rtc.clearAlarm(2); // Even if not used.
+    rtc.disableAlarm(2);
+
+    rtc.writeSqwPinMode(DS3231_OFF);
+}
