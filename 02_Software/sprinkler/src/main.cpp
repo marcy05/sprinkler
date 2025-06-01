@@ -56,13 +56,10 @@ void setup()
     Serial.println("Persistency erased.");
   #endif
   */
-
+  setup_water_sensor_signal_input();
 
   // Timer related initialization
   systemTimeHandler.wakeupTimestamp = millis();
-
-  // We are going to run, deactivate all alarms to avoid unexpected shutdown.
-  rtcManager.deactivateAlarm();
 
   #if BUILD_TYPE == DEVELOPMENT
     systemTimeHandler.deepSleepWakeupAfterMinutes = 1;
@@ -104,6 +101,8 @@ void setup()
   debugln("M-I2C setup done.");
 
   rtc.begin();
+  // We are going to run, deactivate all alarms to avoid unexpected shutdown.
+  rtcManager.deactivateAlarm();
   debugln("M-Setup RTC done.");
 
   if (myDisplay.begin())
@@ -114,8 +113,8 @@ void setup()
   }
 
   #if BUILD_TYPE == DEVELOPMENT
-    pump1_timer.reset_persistency();
-    pump2_timer.reset_persistency();
+    //pump1_timer.reset_persistency();
+    //pump2_timer.reset_persistency();
   #endif
   
   pump1_timer.begin();
@@ -138,8 +137,8 @@ void loop()
   myDisplay.update_time(now);
   //myDisplay.update_pump_timer(1, pump1_timer);
   //myDisplay.update_pump_timer(2, pump2_timer);
-  debugln();
-  debugln(now.timestamp());
+  //debugln();
+  //debugln(now.timestamp());
 
   // debug("RESET button status is: ");
   // debugln(Buttons::RESET_BUTTON.pressed);
@@ -158,7 +157,6 @@ void loop()
     debug(systemTimeHandler.deepSleepWakeupAfterMinutes);
     debugln(" minute(s).");
     myDisplay.sleep_screen();
-    // esp_deep_sleep_start();
     rtcManager.activateAlarm();
   }
 
@@ -273,7 +271,8 @@ void loop()
     pump2.activate_toggle();
   }
 
-
+  debug("Water sensor: ");
+  debugln(digitalRead(Constants::WATER_SENSOR_SIG));;
 
   delay(100);
 }
