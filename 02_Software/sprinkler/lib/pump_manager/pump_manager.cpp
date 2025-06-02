@@ -3,7 +3,6 @@
 PumpManager::PumpManager(const uint8_t gpio)
 {
     this->gpio = gpio;
-    pinMode(this->gpio, OUTPUT);
     digitalWrite(this->gpio, LOW);
 }
 
@@ -26,6 +25,11 @@ void PumpManager::activate_toggle()
 bool PumpManager::get_activate_status()
 {
     return this->active_status;
+}
+
+bool PumpManager::_is_tank_empty()
+{ 
+    return false;
 }
 
 PumpManager pump1 = PumpManager(Constants::PUMP1_PIN_EN);

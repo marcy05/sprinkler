@@ -59,7 +59,9 @@ void setup()
     Serial.println("Persistency erased.");
   #endif
   */
-  setup_water_sensor_signal_input();
+
+  setup_all_gpio();
+  debugln("M-GPIO initialized");
 
   // Timer related initialization
   systemTimeHandler.wakeupTimestamp = millis();
@@ -86,20 +88,6 @@ void setup()
     debugln("M-Standard wakeup");
   }
 
-  // Reset
-  setup_reset_button();
-  debugln("M-Reset button setup completed.");
-
-  setup_pump_switch_button();
-  debugln("M-Switch Pump button setup completed.");
-
-  setup_hour_button();
-  setup_min_button();
-  debugln("M-Setup Hour and Min buttons.");
-
-  setup_start_button();
-  debugln("M-Setup start button");
-
   Wire.begin();
   debugln("M-I2C setup done.");
 
@@ -110,7 +98,6 @@ void setup()
 
   if (myDisplay.begin())
   {
-
     myDisplay.main_screen(rtc.now());
     delay(100);
   }

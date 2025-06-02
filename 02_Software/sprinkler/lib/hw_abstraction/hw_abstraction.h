@@ -5,10 +5,14 @@
 #include <pin_config.h>
 #include <logger.h>
 
+bool setup_all_gpio();
+
 void setup_reset_button();
 void isr_reset();
 
-void setup_pump_switch_button();
+void setup_deep_sleep_wakeup_button();
+
+void setup_select_line_button();
 void isr_switch_pump();
 
 void setup_hour_button();
@@ -24,6 +28,11 @@ void setup_water_sensor_enable();
 void setup_water_sensor_signal_input();
 
 void setup_display_enable();
+
+void setup_pump1();
+void setup_pump2();
+
+void setup_boost_enable();
 
 struct Button
 {

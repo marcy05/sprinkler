@@ -63,7 +63,8 @@ void DisplayManager::main_screen(DateTime now)
     display.setCursor(firts_column_pos, time_line * 10);
     String hour = String(now.hour());
     String min = String(now.minute());
-    String time = hour + ":" + min;
+    String sec = String(now.second());
+    String time = hour + ":" + min + ":" + sec;
     display.print(time);
 
     // Pump1 line

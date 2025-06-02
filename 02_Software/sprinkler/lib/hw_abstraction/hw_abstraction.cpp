@@ -10,7 +10,25 @@ namespace Buttons
   Button START_BUTTON = {Constants::START_BUTTON_PIN, false};
 }
 
+bool setup_all_gpio(){
+  setup_reset_button();
+  setup_deep_sleep_wakeup_button();
+  setup_select_line_button();
+  setup_hour_button();
+  setup_min_button();
+  setup_start_button();
+  setup_water_sensor_enable();
+  setup_water_sensor_signal_input();
+  setup_display_enable();
 
+  setup_pump1();
+  setup_pump2();
+
+  void setup_boost_enable();
+
+  debugln("All used GPIO setup completed.");
+  return true;
+}
 
 void setup_reset_button()
 {
@@ -38,7 +56,11 @@ void IRAM_ATTR isr_reset()
   }
 }
 
-void setup_pump_switch_button()
+void setup_deep_sleep_wakeup_button(){
+  pinMode(Buttons::DEEP_SLEEP_BUTTON.PIN, INPUT_PULLUP);
+}
+
+void setup_select_line_button()
 {
   pinMode(Buttons::SELECT_LINE_BUTTON.PIN, INPUT_PULLUP);
   attachInterrupt(Buttons::SELECT_LINE_BUTTON.PIN, isr_switch_pump, FALLING);
@@ -98,4 +120,16 @@ void setup_display_enable()
 {
   pinMode(Constants::DISPLAY_EN, OUTPUT);
   debugln("HWA-Setup display enable GPIO.");
+}
+
+void setup_pump1(){
+  pinMode(Constants::PUMP1_PIN_EN, OUTPUT);
+}
+
+void setup_pump2(){
+  pinMode(Constants::PUMP2_PIN_EN, OUTPUT);
+}
+
+void setup_boost_enable(){
+  pinMode(Constants::BOOST_EN, OUTPUT);
 }

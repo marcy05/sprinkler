@@ -4,6 +4,7 @@
 #include <Arduino.h>
 #include <pin_config.h>
 #include <logger.h>
+#include <hw_abstraction.h>
 
 class PumpManager
 {
@@ -17,6 +18,9 @@ public:
 private:
     bool active_status = false;
     uint8_t gpio = 0;
+    bool empty_tank = false;
+
+    bool _is_tank_empty();
 };
 
 extern PumpManager pump1;
