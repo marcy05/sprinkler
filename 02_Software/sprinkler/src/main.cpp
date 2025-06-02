@@ -147,8 +147,6 @@ void loop()
   //  debugln();
   debugln(now.timestamp());
 
-  // debug("RESET button status is: ");
-  // debugln(Buttons::RESET_BUTTON.pressed);
   if (Buttons::RESET_BUTTON.pressed)
   {
     debugln("Reset operations");
