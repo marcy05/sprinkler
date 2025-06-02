@@ -27,13 +27,17 @@ DisplayManager myDisplay;
 RTC_DS3231 rtc;
 RtcManager rtcManager(rtc);
 
-DailyTimer pump1_timer(1, rtc);
-DailyTimer pump2_timer(2, rtc);
+constexpr int PUMP1_ID = 1;
+constexpr int PUMP2_ID = 2;
+
+DailyTimer pump1_timer(PUMP1_ID, rtc);
+DailyTimer pump2_timer(PUMP2_ID, rtc);
 
 /******************************************************************************
                                     FUNCTIONS
 ******************************************************************************/
 void manual_handler();
+void handle_pump_line(DailyTimer &timer, PumpManager &pump, int pump_id);
 void timer_activation_handler();
 void display_handler();
 
@@ -205,43 +209,32 @@ void manual_handler()
   }
   else if (myDisplay.selected_line == myDisplay.pump1_line)
   {
-    if (Buttons::START_BUTTON.pressed)
-    {
-      Buttons::START_BUTTON.pressed = false;
-      pump1.activate_toggle();
-    }
-    if (Buttons::HOUR_BUTTON.pressed)
-    {
-      Buttons::HOUR_BUTTON.pressed = false;
-      pump1_timer.increase_one_hour();
-      myDisplay.update_pump_timer(1, pump1_timer);
-    }
-    if (Buttons::MIN_BUTTON.pressed)
-    {
-      Buttons::MIN_BUTTON.pressed = false;
-      pump1_timer.increase_one_min();
-      myDisplay.update_pump_timer(1, pump1_timer);
-    }
+    handle_pump_line(pump1_timer, pump1, PUMP1_ID);
   }
   else if (myDisplay.selected_line == myDisplay.pump2_line)
   {
-    if (Buttons::START_BUTTON.pressed)
-    {
-      Buttons::START_BUTTON.pressed = false;
-      pump2.activate_toggle();
-    }
-    if (Buttons::HOUR_BUTTON.pressed)
-    {
-      Buttons::HOUR_BUTTON.pressed = false;
-      pump2_timer.increase_one_hour();
-      myDisplay.update_pump_timer(2, pump2_timer);
-    }
-    if (Buttons::MIN_BUTTON.pressed)
-    {
-      Buttons::MIN_BUTTON.pressed = false;
-      pump2_timer.increase_one_min();
-      myDisplay.update_pump_timer(2, pump2_timer);
-    }
+    handle_pump_line(pump2_timer, pump2, PUMP2_ID);
+  }
+}
+
+void handle_pump_line(DailyTimer &timer, PumpManager &pump, int pump_id)
+{
+  if (Buttons::START_BUTTON.pressed)
+  {
+    Buttons::START_BUTTON.pressed = false;
+    pump.activate_toggle();
+  }
+  if (Buttons::HOUR_BUTTON.pressed)
+  {
+    Buttons::HOUR_BUTTON.pressed = false;
+    timer.increase_one_hour();
+    myDisplay.update_pump_timer(pump_id, timer);
+  }
+  if (Buttons::MIN_BUTTON.pressed)
+  {
+    Buttons::MIN_BUTTON.pressed = false;
+    timer.increase_one_min();
+    myDisplay.update_pump_timer(pump_id, timer);
   }
 }
 
