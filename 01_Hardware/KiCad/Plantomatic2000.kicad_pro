@@ -445,7 +445,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Custom_Global_Footprints"
+    ],
     "pinned_symbol_libs": [
       "Global_Custom_Libb"
     ]

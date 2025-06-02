@@ -1,4 +1,4 @@
-24803580241086502
+24777415330506609
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55230,13 +55230,6 @@ SMD SMT ceramic resonator filter filter hand-soldering
 3
 3
 Custom_Global_Footprints
-21-100265_MXM
-
-MAX30208CLB+T 
-0
-10
-10
-Custom_Global_Footprints
 150121M173000
 
 
@@ -55251,13 +55244,6 @@ ABM8-20MHz-b2-t
 4
 4
 Custom_Global_Footprints
-Antenna_MIFA
-
-
-0
-2
-2
-Custom_Global_Footprints
 B120AF-13
 
 
@@ -55266,20 +55252,6 @@ B120AF-13
 2
 Custom_Global_Footprints
 B82422H
-
-
-0
-2
-2
-Custom_Global_Footprints
-BM14B-SRSS-TB
-
-
-0
-4
-4
-Custom_Global_Footprints
-D12V0HA1U2LP-7B
 
 
 0
@@ -55307,27 +55279,6 @@ ESP32_C3_Module
 16
 16
 Custom_Global_Footprints
-EVQ_P7_PAN
-
-EVQ-P7A01P 
-0
-4
-4
-Custom_Global_Footprints
-EVQ_P7_PAN-L
-
-EVQ-P7A01P 
-0
-4
-4
-Custom_Global_Footprints
-EVQ_P7_PAN-M
-
-EVQ-P7A01P 
-0
-4
-4
-Custom_Global_Footprints
 G5Q-1A4-EL2-HA
 
 
@@ -55341,20 +55292,6 @@ HF165FD_5_HY1
 0
 4
 4
-Custom_Global_Footprints
-Italdesigh_13_Logo
-
-
-0
-0
-0
-Custom_Global_Footprints
-Italssssdesigh_Logo
-
-
-0
-0
-0
 Custom_Global_Footprints
 LD39200PU33R
 
@@ -55384,54 +55321,26 @@ Littlefuse_Holderù
 2
 2
 Custom_Global_Footprints
-Micro_Molex_Connector_3911560
+MLC156_INductor
 
 
 0
-5
-3
-Custom_Global_Footprints
-Micro_Molex_Connector_3911562
-
-
-0
-4
+2
 2
 Custom_Global_Footprints
-PICOSTAR3_YJM_TEX
+RZP0014A-MFG
 
-CSD13380F3T 
+TPS61287RZPR 
 0
-3
-3
+14
+14
 Custom_Global_Footprints
-PICOSTAR3_YJM_TEX-L
-
-CSD13380F3T 
-0
-3
-3
-Custom_Global_Footprints
-PICOSTAR3_YJM_TEX-M
-
-CSD13380F3T 
-0
-3
-3
-Custom_Global_Footprints
-RGB_LED
+SPM12565VT-4R7M
 
 
 0
-0
-0
-Custom_Global_Footprints
-RGB_LED_150066M153000
-
-
-0
-4
-4
+2
+2
 Custom_Global_Footprints
 SS1P3L-M3
 
@@ -55440,7 +55349,7 @@ SS1P3L-M3
 2
 2
 Custom_Global_Footprints
-SS14
+SS14M_Flyback_Diode
 
 
 0
@@ -55452,7 +55361,7 @@ STS21
 
 0
 7
-7
+6
 Custom_Global_Footprints
 SWPA5040S
 
@@ -55488,20 +55397,6 @@ Terminal_3pins
 0
 3
 3
-Custom_Global_Footprints
-XC6220_USP_6C
-
-
-0
-7
-7
-Custom_Global_Footprints
-sdfsdf
-
-
-0
-0
-0
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
