@@ -1422,7 +1422,7 @@
 				)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "1K"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "ccc51943-2c0a-42a2-aac6-353e128edc06")
@@ -1605,6 +1605,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "06fea486-e4b8-49ba-a7fa-0de2817010cd")
+		(at 198.8 138.85)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP113"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "6e4c0a2d-c8ac-44df-8cba-0bda602042a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "01bd3bef-2742-4fe1-9d9f-571285f187ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0d303ea-47e5-47c2-97e3-3605a20758c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34d90c41-881e-4852-967b-586001d78b16")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/c250aa7a-c0ef-49b1-a8b0-1a783a4e3aca")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "75ac002d-c8e1-4528-857e-3a92a9396b0b")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ff6ab0b6-0943-4362-9300-709e0bfd7ccc")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "afe8b956-dad6-48e5-8603-329d3e12cbd5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 53 "Net-(Q105-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "dbdce9a8-0910-44ab-9eb3-5d3b43075c07")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "LED_SMD:LED_0402_1005Metric"
 		(layer "F.Cu")
@@ -2389,6 +2492,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "0cd56faa-985d-4788-b8b7-946c9b98730e")
+		(at 211 148)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP136"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "107fd69e-0af8-43eb-bf1e-3738c3ffefc1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "ac860c0b-802a-47ee-b5d8-3b54c09bfe96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6eb9ad6f-be1b-4930-aadd-11dab4277585")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93ebf56b-c1bc-46de-ab62-d002687eea91")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/fc134e77-4c23-49eb-9ac5-9cf790c455b1")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "88b60fa2-ee77-4fc2-bb86-77de1fab2ab0")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6284cd69-da46-44b2-afaa-6ef7b74d12e5")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "2789b81b-418c-4c48-867e-3dfe7e8ab89e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 26 "Net-(J111-Pin_2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "f9985ccc-91e9-47b0-ad4b-90a6f920be7b")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -3595,6 +3801,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "152a4aea-076b-47ff-b816-d553ea7dc517")
+		(at 207.95 135.8)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP127"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "5d3cf47f-8339-4ea1-a3d2-4343c1fa35a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "b6b40039-bff4-4c3f-997f-d1977512d9ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec916aa1-9f19-4e6e-ae33-64504d5732ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88f29b2c-af0e-4dbd-8afb-36fd8e63944b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/6aa3c181-93a2-4a88-8225-43db101cb816")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "17aa83b6-5b97-40be-936a-0ebd2356a589")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "adaad12e-ca9b-4a42-aa51-4d9130924c38")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "025cacd3-26a5-4d32-9c92-59b8c5a24a07")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 57 "Net-(Q107-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "fcf4967e-0d63-4edc-9010-45c0af41b73e")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -4819,6 +5128,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "1be61850-fce0-4656-9d8c-a1ff24aae231")
+		(at 201.85 141.9)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP119"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "b58c9086-d03f-4f18-a08c-b38dc7b75ba5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "8df249bb-19f1-49d0-aa8f-6afaa95d3f5a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1aa3128c-f769-4bc1-874a-3f9b0ae7580a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75afa1e4-81a4-43dc-8fe6-44e5237ec9ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/410670b4-f193-4127-8d39-300cad19abb8")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "af7e3dd7-1756-490d-8dab-1c5c64990c7c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "0516aec1-b599-4979-9d37-119943357b97")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "31bd9e8f-ccfc-48be-8fab-063be7538900")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 5 "VBUS")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "82070236-9f1e-49f5-aa3e-7c44b1b2af6d")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-323_SC-70"
 		(layer "F.Cu")
@@ -6155,7 +6567,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "1K"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "bc4f0e51-9789-40cd-b4b7-6dbb93256b2d")
@@ -7344,6 +7756,212 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "295b4a31-e74a-4c36-96b9-9d7114769d40")
+		(at 204.9 141.9)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP124"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "0ff9e5b2-886a-4a26-b7d9-1ba15af4e8a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "6a2a0fcb-a1d1-4b1e-8ff6-5d3163ac93bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f474ecb-ac3a-42f4-a92a-9b5288885519")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c38e21f6-dfef-430d-b77f-9f8a33b0bfe8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/23f94629-a436-4a74-b57e-21c5172985ea")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "76ce8dbf-5f1f-463f-95d4-bd41f311ea9f")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "80a307a0-e317-465b-803a-10f2cb6141dc")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "13fb8b2c-22e3-4060-b6bc-c94b06b91075")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 71 "Net-(U104-FB)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "69374762-c788-4c81-b1f3-3266a2f8e3b7")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "29d21600-011b-446c-9aeb-6980e211cea5")
+		(at 211 135.8)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP132"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "120339c6-61c9-4293-8275-e59c09ad0129")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "15484084-5464-4034-9c37-7e46872e844f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "399aa313-0569-4113-9807-d911aa3fa878")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "493bf976-af5d-4224-b405-6d68a9e41486")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/b7e0195d-a36e-4925-bab9-f88353afa0c4")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "8953b2ec-01de-4333-a8e9-2f47314933c1")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "a05fe6ff-e53d-451a-a6af-7f90abebedba")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "bdebb693-a57b-4e7c-8712-bfff96770fe0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 22 "Net-(J106-Pin_2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "e372cac5-7020-473d-9f2d-3d83b393bb8e")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "2a47b5ac-acf4-4207-b006-75a2a590ca06")
@@ -7999,6 +8617,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "2ee7e425-30a6-473c-a6b9-89ee6544d738")
+		(at 204.9 148)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP126"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "968a3e69-0290-4e57-a7eb-fdba44eadd38")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "339a9010-8f44-4352-b51a-465cf81db9ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "374dc881-0749-40bd-898b-0e21c1862893")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6a0e152-341b-4056-8df6-8b2196f6a30e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/3dde2e63-7035-457f-9994-3620eb1e5385")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "42f946bf-3309-48f4-b61d-31e5642513ed")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "12d97693-a4ec-49a8-a523-41954ce7f01e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "5da27fcf-7fe2-459c-99a9-946c37927ad4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 58 "Net-(Q108-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "333c11e2-3f18-4b75-bdc0-2d3d6c1029c3")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD"
 		(layer "F.Cu")
 		(uuid "2f2489a1-0dea-41c4-91d1-5cb229a1aa4f")
@@ -8631,6 +9352,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "2f7f7a90-6dec-46e0-a0da-5b6c45214374")
+		(at 207.95 148)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP131"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "b2903a5c-2bce-4fbd-b859-e1ae3bbe58c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "f0462952-3440-4cd0-9ddb-5f6da9f3a1ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c674e7e-c50e-4229-ae9a-fc76da77ba28")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac791941-cc4f-482c-8495-c44f2a9a1532")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/8d454751-6930-48a0-a084-d0a8e594ecf9")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "08028d84-1cad-4fdc-9a6e-ab8679be351c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "2a53850e-df07-42fa-bc5c-b292744671e3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "544744c7-d0ac-4489-8416-0b8788760b04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 21 "Net-(J114-Pin_2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "9e984949-d232-413d-a9d6-0568fe39ea3b")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -10516,6 +11340,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "3911e93a-1d33-4a53-a1b9-3fc8b5394f89")
+		(at 195.75 148)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP111"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "e7c23f76-f4c5-42e1-8c19-4cd2d849ee21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "3fd5936a-412e-4962-8250-34de4a92946b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f24e0d32-2aaa-4ff3-89e4-dbbf2b0d40ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d523765-eb87-45cf-be62-7c18c3010b20")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/dcf4448d-25dc-4d5f-977e-e082c0e79868")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "38c63878-d44f-4950-8860-d0ef5e974bab")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "97f8aa2a-500a-44ec-bdf8-e2ff13ce7308")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "b23442eb-c06a-4841-b73c-98035dcd05fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 62 "Net-(Q110-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "fb845939-ca8b-4ba7-9514-89cd43bb2b75")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "3c539e23-af67-4980-b160-e0c22d4eae21")
@@ -10716,6 +11643,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "3ce6180d-6036-4774-a311-7e833c0c9d5a")
+		(at 195.75 144.95)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP110"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "0e83c7b4-015a-4349-94ae-d33e380a58ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "4e232a11-a899-4457-9f8e-44d9d311b1b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c72e08e1-bb50-4b38-865c-5ff6c3f0003e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf1c0667-65c0-40f3-a669-fdf8b13dd4fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/4b6e01de-8854-4459-aa39-470eba40de2d")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "814895ad-3859-4ae0-b48a-1b5e9db26807")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "001f61cd-2de8-45f1-bbc4-4ecb93480696")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "99e476bf-c3e5-4ceb-9e4b-6ca311ed5491")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 61 "Net-(Q109-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "9cda2aa6-0c61-4a89-bd72-8e93ec23459f")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -12526,6 +13556,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "41533874-55b9-4dba-bf70-9895e5cd7e10")
+		(at 207.95 144.95)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP130"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "96a8a4ba-88e3-4f1b-a197-d883d73a8734")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "ee45241b-8f3f-4617-b3e6-13afd7cc8256")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31e805a6-15d8-4872-b6ce-6ba319f7b462")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b106e0be-e83a-4617-b1bd-0a6f705b1d80")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/1a1c372f-af08-44ad-b764-adfd1251e327")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "5ac49428-4bc5-46c8-83b6-a9da128c0d12")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "69848b28-cf37-44c1-b2a7-844be8f5a69b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "a047793f-deac-424b-90f8-2f6549864e6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 7 "/ESP_EN")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "df57bbf2-7814-4211-8ef6-590a0eeea0e1")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "43ef4abf-2bb1-453e-a9df-5a223bf4b7a2")
@@ -13129,6 +14262,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "456e2713-f4fd-4dc3-b807-20f870bf567c")
+		(at 195.75 135.8)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP107"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "fac076eb-9861-4de8-af91-1f20ce08e5c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "f4347f6d-fd14-4f13-9fd8-4b850c51d3b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "907fe383-a37c-41d9-bbb9-ccb4ef64e032")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce910fc0-9bb7-4fdc-bec3-a0ba6849053e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/673f1f8c-b6ae-488f-86e5-0716fcedc1da")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "056ff505-0eb5-4e60-b016-5d80122b2bce")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "905aba50-509a-44da-a879-75af607bf41b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "e6fcf8b3-47e1-44d3-af66-06446e175bf9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 49 "Net-(Q101-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "cc88d429-391a-4f2b-8739-cd08c7fed886")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "49956e45-85ac-4ddd-9b2a-f169b2d1b254")
@@ -13329,6 +14565,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "4c10c8d8-d903-4a01-ac5e-496dfb4f8c39")
+		(at 198.8 141.9)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP114"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "bd452d25-38e8-4e84-ae90-93fbda24383b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "a79ac8b4-684b-4631-befa-4e6a71dea14e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f532e728-2e8b-4d5a-9681-1c9908f4c007")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9a8d65e-f2e8-42ce-aa1a-ac8248c1e3ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/2dca4bd2-7f78-4d41-9c2b-864bca7190e3")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "f8cc88e2-9045-45cc-981b-34fe36defac6")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "e1d38097-2b82-4275-8b44-2ebf729f8a7f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "8e2c135a-7d88-4b26-bdea-176339e86de9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 41 "Net-(J105-Pin_2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "a0af7fb3-812f-426c-a3bd-cf84a6d99ffb")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G"
 		(layer "F.Cu")
@@ -13981,6 +15320,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "4e217c0e-1cdc-4ffa-8095-3524721ac778")
+		(at 195.75 138.85)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP108"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "11fe27e8-1e4e-462f-a2d3-7dcfc0d679db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "01cbebdf-8ade-4ecf-a44e-613e5ba79aac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8542fa0c-48af-4040-903f-bdbb6673871e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "22dcb807-3bc8-4a97-addc-0f8702f21d29")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/7edfd895-c17d-4831-9768-0a397554889a")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "75a5e2e5-5ac3-4f18-80be-751974961e19")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d103fa66-a369-451d-8879-040a8bb71a16")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "ce5dc172-6c11-40df-a90f-878796a9636e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 52 "Net-(Q104-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "b746a52d-e3e8-43a5-9f5c-98e5645a7f0d")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -18508,6 +19950,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "64968861-9389-48b0-9061-903fd0a60d9d")
+		(at 211 141.9)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP134"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "0d4dc148-df8a-4a53-be61-9bb08c13201b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "9b8f90b3-7c52-4640-afa4-7f8aeb13bebc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7888c5f6-c234-448b-a796-fa1ac9352302")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e7c0503-c192-4afe-a3b7-c751ee1bdab0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/d331d0e5-02af-429a-81b5-7d6927ac7970")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "298538dc-ed29-409a-bfce-a50b9d0de9e9")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ff87ffda-8d36-4545-bd75-f94c1f847c56")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "b9547b46-4cce-4585-b8cf-1f83bf3649ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 24 "Net-(J108-Pin_2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "0539a7a0-5993-4730-8ccf-c0eff22c4873")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Package_TO_SOT_SMD:SOT-223"
 		(layer "F.Cu")
 		(uuid "649ef04e-a2cf-456b-aea1-7b086c1574b4")
@@ -19777,6 +21322,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "6cd2c264-8316-4255-97dd-9f5d33e24e5b")
+		(at 201.85 148)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP121"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "6f872874-e738-4bc7-9b66-e2f8c974bd70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "b3f68aa8-2f46-43e7-9151-6e3fa6f54ad7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2422d65c-4f97-427c-9f5a-1baffa175a05")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ff03430-7d20-4009-a3d9-c9d6cecda979")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/49423c49-e91c-4ee2-b84e-6b11ce92174a")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "a7ad4c7a-8c7d-402a-80ad-a4c14049d24b")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "412bc100-947c-4099-b95d-1e6739e5a06c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "c1840cbf-6e91-4a40-9d51-eef0ff44bf0c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 6 "+VSYS")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "f3dcdae8-7afb-4a58-bf3f-51bbf52923e3")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "LED_SMD:LED_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "713de51c-e7a3-4eb2-a307-a5d0c880c1bf")
@@ -20223,6 +21871,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "748312be-343c-47c6-b10f-03af59873e14")
+		(at 207.95 141.9)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP129"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "fa406aa5-6bd1-4c70-aed2-9094153711fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "43c18dbe-576d-4e77-9d55-a835211edb0b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4062810-ff02-4a1a-a964-fb8395148100")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27ea8595-5e0c-4b6e-81c1-7ecbf3d36b11")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/b310ca66-6402-423f-8c34-0c5c7c2d08d9")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "d6908621-204b-4474-9e21-06d7b156d8c8")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d854e060-07fb-4249-8202-443dc2cc72db")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "38b576b7-72a9-4d8f-870e-e2f7eff4397a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 77 "/ESP_TX")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "cb09c027-58fd-4515-9f93-6bd7348c8dcd")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -20982,6 +22733,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "7a9fbc2e-85c6-43d5-b685-d3bf4e931eb9")
+		(at 198.8 144.95)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP115"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "c23c4ab2-7322-4824-8f81-dbcde8845292")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "f9250497-bbc2-40e6-90ec-ae1410aec1de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30bbeb7b-8546-45a4-897e-7c4a21d6407e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd3710dd-6490-496f-9ecb-f633c4f642a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/ba484627-dcbc-4bd1-8bc3-9882b1929d72")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "7043d771-bbf4-435f-86c3-ad1993beb191")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d2374c52-f504-475d-be70-53165640ef54")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "6938a34f-7e3c-4131-a957-35369ec3635f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 5 "VBUS")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "a92317b7-a6b9-4dc6-a9a8-b2b68809244c")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "7b55d5d3-be0a-47e7-a226-bac615d312a4")
@@ -21182,6 +23036,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "7cb6a346-2e59-4d76-8088-8cd9615de781")
+		(at 207.95 138.85)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP128"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "ce4eb8d0-32e7-4a51-97f4-1ff06a59e2b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "07004e61-f81c-4c54-804f-984513bf5e1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a62d6073-d4b6-4b3f-8663-6db4b867c6c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afda21b7-cf08-46ec-9611-9da37e9684ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/0050f0d9-9fbc-4fb3-8c33-efd52759c432")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "2eee6cfb-8174-41fa-a00a-85e978609574")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "b4dae6a5-cd3b-4326-bcf7-34a88eb5bcf0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "a2ca0363-a19e-4508-9923-ea00a32e7309")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 75 "/ESP_RX")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "cacdad03-a549-4000-9d52-a5dd24f4013f")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -22313,6 +24270,109 @@
 				(xyz -0 -0 180)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "83d18db4-bd9a-4154-9c34-3dac8523f452")
+		(at 198.8 148)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP116"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "cf648594-76ee-43dd-9cc4-78758356210c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "3ade0f5e-3f8c-4495-b493-1e33826e3ec2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2211cad4-92ab-46b2-8369-cb6c77c2f91f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2ada5f5-e3bd-41fb-a08d-387238029690")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/791a295b-ba21-487c-b7b1-eabbff6c95c1")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "fe7e4caf-0767-4b8a-a034-1d1fbbe54581")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "8e7505e2-a3fb-4111-b86c-7f9e926d5914")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "58e23bac-9a81-4d04-8206-37d11bc34e2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 18 "VDD")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "8beaaba5-ce6f-4db4-b44c-0ecf7dbecbf3")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -24305,6 +26365,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "9192bdf3-ac10-4fed-b219-d25c0a318431")
+		(at 211 138.85)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP133"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "83f6b8e6-1967-4eb7-9b97-3ac3162c150b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "d7ba7493-8f1f-4994-b6c2-24b01977c6fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8dc2bd96-83b0-42ac-aa87-c1e7f615120c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee85391d-d0a0-4efe-9f8f-053950688472")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/77473501-17fc-418c-8bd4-6ce5468333d7")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "2fb61731-8c2d-48b8-8cb8-cb911535f1a3")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "23b7a1c8-c11a-4c95-8964-00fc93dd7f96")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "6556bf7b-3294-4efc-bafc-75b906f8f005")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 23 "Net-(J107-Pin_2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "c1768cad-4f18-4f94-bc5e-ef7af6c1db76")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "93d01b44-7073-4272-94b7-85f4bfde12d4")
@@ -24933,6 +27096,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "96c8c3a4-9f3a-4cb9-94f9-0ea3de4ef206")
+		(at 204.9 144.95)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP125"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "44d6360c-1bac-4447-872c-51c7eb0d0b06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "4fb6ba90-762c-4101-8fe8-a804d2ae9e1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2eab634c-6856-4059-9aaf-4bab1fb02acc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24393e8f-766a-4921-a3c1-db9ed65be0e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/63c7e25b-0365-4548-aa5e-e2f15802d54c")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "559b092e-a046-46f0-b460-c53b5f5cc59f")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "1e610fef-362d-4b10-9848-bcb9724a75f3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "91e19fd4-e851-49a3-a242-721b2001b12a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 10 "+12V")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "310b40e8-6fdb-46d5-a661-6c92d2a23f0b")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23-5"
 		(layer "F.Cu")
@@ -26815,6 +29081,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "a29afdfe-b360-4f6f-b23c-a68c2e587ef4")
+		(at 201.85 138.85)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP118"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "e4d8a69f-2af5-48a7-839c-df6667078b12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "c722e416-da90-4183-971f-87cb090d40a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4668615-f5e7-43fa-ac3f-04f6d8e5eaff")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8f135cb-3d71-4eca-abdc-b7e39fc43b7e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/2c04d000-cf9b-4886-bb73-d9fb6020b933")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "b3e0b997-898e-4166-9d29-498ba334d119")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "796885f5-3dc6-42ae-8612-0433f36af577")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "070b10e7-7fe1-4bb9-b9bc-ddeaf302301b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 40 "SDA")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "7155acca-25be-4ab5-a005-6701ce57ac16")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "a29f94c0-fd65-4842-b4e7-c5101021b384")
@@ -27418,6 +29787,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "a5978e20-ce34-4209-98f6-f567de0c3468")
+		(at 195.75 141.9)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP109"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "c7cd9ed7-33f4-4111-b759-de9e426deab9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "3b3d5c19-94c2-4463-bd4d-83b9a6a8baba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce4e1221-0c90-4120-b880-b7d975b1aef8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea99890a-78d5-43f8-b0d6-0e39c1bddc9c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/70687474-1363-48a1-9cf4-3af0521e5262")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "451b5853-ab13-4072-b09b-ee88a90c385c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "c3f0f10f-b450-4200-982c-f7c1e808b013")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "7e4ffa5f-d33b-4b9d-b438-b0d5d17dbf18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 43 "Net-(J110-Pin_1)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "5191ae3c-0e46-40b0-9925-a3b9b7d8fd43")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "a8d5d2d8-89fc-427d-bb26-936127958f19")
@@ -27636,7 +30108,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "1K"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "8d4c3844-5c32-485c-84e8-e30074086bbc")
@@ -29627,6 +32099,212 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "b92399e7-ed4d-438b-9fdf-f13b923e4653")
+		(at 192.7 144.95)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP105"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "12b18736-5e76-4f59-a0be-d046d686f1c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "ec06fcad-ffe5-4f1d-b721-fa9b737dbfe3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8654f0fe-4544-42cc-96ae-7f1e4d2912df")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20c8b49c-1352-46af-8b82-851f1816b4cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/b2c6c232-a363-4404-aafb-6187c2fe6e86")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "cf90016b-7c11-49ea-be49-285f3359fa38")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "c5b837cd-0536-4b87-a3c6-67fad9827a35")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "9849afad-4019-4784-8589-5d601e6b0290")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 9 "Net-(D109-A)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "de3dbebd-c10c-41c4-b5c6-65a0e8aa657b")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "b97271a6-dbb4-45ae-97a3-f2a9fda986c0")
+		(at 192.7 138.85)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP103"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "ee3c2464-3154-4c41-b825-5f0b825ad2e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "83514c9b-9f5b-4b86-95ea-467f6d04050a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36ee18c8-f7fc-43f3-b4bd-272dcc8a591c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d5563183-fe4f-400c-8727-1899f65ccea3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/600123bb-ce94-4b2a-8d68-6d895481495e")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "eec942c8-1b0d-48ab-8528-e1620a79ab6d")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "8a9bd6a5-289b-40ba-a73e-fd052fc968e4")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "eab980ff-948e-40d0-bf76-86e0229c19d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 1 "+3V3")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "ad66809c-7b40-4046-b9dd-b0f899d5bd3b")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "b989844d-42a0-495f-9ba8-64aa748c9753")
@@ -29827,6 +32505,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "ba0fa3be-de43-4dae-a005-3b5b152c6819")
+		(at 204.9 135.8)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP122"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "2650cd0e-04be-43ad-ad3d-bff79fe664b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "fd9e6e93-91a5-40b5-ab8e-fccb0a8ed9ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f730b4f1-018f-4b89-9bed-66a64c66dc80")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c7f56a0-c2a4-488f-b8d7-4cb827889bb0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/e967d465-d4f5-4b16-8ebc-bd7a6eeaf7c9")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "a95866bc-63f5-48f0-b661-6dc15194ad72")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "0717c1d8-6184-4345-99fc-82aefb630cc8")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "8ba6bfc5-89cf-48bf-9a09-51aa1c51ed18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 13 "Net-(U104-SW)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "647f5ef5-8875-4b86-a718-0e360456de17")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
 		(layer "F.Cu")
@@ -31314,6 +34095,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "c03f2b9d-fc95-4621-a052-b93cef3ea4b5")
+		(at 192.7 148)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP106"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "ca94f44b-5c5d-4ff1-85a4-c4b33c68f238")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "21cf448d-bef6-4b26-8067-b0a9701baf80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06942f8b-b0ec-487d-b56b-b03553c19e1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d366191b-2f9d-491b-8125-3caf24c5da31")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/3ac80060-0697-4b29-b6c6-629735ad2e97")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "ae6b457e-fc87-4ca0-ad44-d2d622fe7052")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "752db6ce-7693-4784-a040-b980a05f5f64")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "3eba0a74-ee6a-466c-8f81-1d7336dc02a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 50 "Net-(Q102-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "e6447471-828a-4856-bd9b-b82a394ccb7f")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
 		(layer "F.Cu")
@@ -34885,6 +37769,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "ddcd7bcb-c3b0-4d38-a06a-8638dd9790b5")
+		(at 192.7 135.8)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP102"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "01886421-2f3e-4d14-9b8d-822f14ad8fec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "7e76214f-6e34-4da1-891a-e3af4f3b7fa9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ebb5e6c-6dcd-4b90-a63c-a49c28a7c074")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "628377ae-bf08-4a8a-bf89-5ee91f0d4e6f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/8326c893-15df-4383-9972-582991f95430")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "f2ba162a-37ce-42a1-8724-d7ae770088ff")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "8f69df3b-1f88-4773-b184-d736ca67c166")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "42ffab04-a9d6-4cab-8739-dc9f43ee902e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 6 "+VSYS")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "5e380919-4f14-4ceb-ab2a-cd4f07a424df")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
 		(layer "F.Cu")
 		(uuid "df0379ee-007b-4b40-9fe8-37b71cada2c3")
@@ -35240,6 +38227,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "df38e18a-4447-4427-9f4f-21a026254fae")
+		(at 201.85 135.8)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP117"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "ad7076cc-ea92-40e4-9b5a-08e848eb303c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "3bbaf77b-c15d-4331-9b62-f5a17a8bbe24")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b43285bf-a48a-424d-b976-8709e8a1bc7e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "177209f8-5271-4085-85b6-7b767d8dc845")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/4544b691-08be-4d13-b0af-29acb21569cd")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "43dfd1d2-ce2d-48a3-88e8-9290b3b4b599")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6ea5dc4f-13d1-4761-8962-aa85ff8c01fb")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "11ead64c-864a-45aa-9e8b-fce648a27142")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 42 "SCL")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "5348184f-6f59-4a00-8310-4c7ab4ef64b7")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Diode_SMD:D_SOD-123"
 		(layer "F.Cu")
@@ -35768,7 +38858,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "1K"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "8b3a2059-8bd1-4d5d-a248-b9d90cfc7813")
@@ -37052,6 +40142,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "edcc153e-7af6-4288-9049-02b247fd63d4")
+		(at 201.85 144.95)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP120"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "a3c3ac25-f587-4590-b525-79d92604dbf0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "1bcd2ae1-9e9b-4b2f-893b-2aee387fcd06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c21d75da-04c9-4e88-be49-2c3c666f9815")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2781ad77-7a72-4ac4-9d6e-40795164f52e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/449db202-135d-4057-9fb3-e296ab711997")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "5dea81a0-a210-4c51-abea-5918c509d39c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ac8dde1c-c69f-4a19-840b-a6f4f4e8b880")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "55ff7668-718e-405f-bd01-515a0722a9e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 51 "PMIC_SHPHLD")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "62a66a47-7c6d-48db-8538-9daa395c0e72")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "efb3bbb3-380b-46bd-b05c-e58efc74a7ad")
@@ -37856,6 +41049,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "f1b25473-3db3-4df8-951e-52f7d8feedc7")
+		(at 204.9 138.85)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP123"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "d423af02-6cfa-4a68-b7b7-3730c48c691e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "c48f384c-f8a3-4749-9a6d-085d455b4414")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06d4db45-5c4d-450b-8dbf-75139a4949a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bfbc569-062a-4c5a-b068-b53fa79b78ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/37f7ebdf-f86c-48f7-85b3-bb24017fa846")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "adc38492-c8bd-4e27-847f-9d06cef98263")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "758b0ca6-6bd3-48fc-9b88-68b888a1739f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "e7041897-f50f-4c62-83bc-397e03e6109d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 67 "Net-(Q113-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "d5e5df93-f300-45e5-b738-cd94a9bdc4d8")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Package_TO_SOT_SMD:SOT-23-3"
 		(layer "F.Cu")
 		(uuid "f358d2e1-d376-4aee-91c4-3c045fadac92")
@@ -38511,6 +41807,109 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "f6e5b3d7-bd65-4abd-b7c6-247015267b33")
+		(at 211 144.95)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP135"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "02ce9019-36af-42ee-8e3a-2c8bda75ee2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "aefc5ded-3583-417d-9ea1-51aaadf1830f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32fdf3b7-708b-4b22-a988-b2c8fec060f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8806aa3a-4fec-4679-8763-0d490692fab5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/8a6415c7-2d6a-4e4b-a4b7-4e1f65fc6e30")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "7fcf6465-858c-4fb7-bb07-5fa4acf6d8aa")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "86f38775-272d-49e6-bdc4-33892c2b0092")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "cb9dff60-6fb1-495f-b702-d47e229a62a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 25 "Net-(J109-Pin_2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "215b71ec-362d-4adf-88f4-a8e76d78b42e")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Package_TO_SOT_SMD:SOT-323_SC-70"
 		(layer "F.Cu")
 		(uuid "f88dec3a-2218-40d7-a3b5-5bf92b870d98")
@@ -38765,6 +42164,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "fac994f0-e3fc-4d7d-b86e-508f004d21f8")
+		(at 198.8 135.8)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP112"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "17d1c561-56f0-452f-8ca1-3bde61d6ac2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "002e99aa-39ec-42e5-986a-3285d3c0df13")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c739654a-10ae-48f1-b671-936e1c61a122")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "339d6f55-8804-4cb3-a5be-337b11f5fc88")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/7902a929-d496-494d-b9cf-d990e3e0b537")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "d7627817-3846-4587-a13b-776e3d1ab104")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "1008c8ac-f63c-415c-ab79-ac0b16038063")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "667aa02e-e246-40d7-9c6d-bc106ba02c10")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 55 "Net-(Q106-G)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "e9fec436-2138-4aab-a8c2-c2bf36319c5e")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -39770,6 +43272,109 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+		(layer "F.Cu")
+		(uuid "ff95e290-096b-4744-a6cb-0a77bec62f2d")
+		(at 192.7 141.9)
+		(descr "SMD pad as test Point, diameter 1.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP104"
+			(at 0 -1.448 0)
+			(layer "F.SilkS")
+			(uuid "f30164d8-2353-496b-a946-d1b10096a7e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1.55 0)
+			(layer "F.Fab")
+			(uuid "c5df7a3e-3aaa-4e88-9440-414c2ea7e167")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2b9c0f0-217c-47a1-89dd-087ec1fb25d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21001392-434c-4547-86af-379ebb48894f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/5492ef29-b0d7-41e9-9292-c60ef839c83d")
+		(sheetname "/")
+		(sheetfile "Plantomatic2000.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "9148d2c3-33c2-4224-8dcb-0ea61a7485db")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "9ff81c59-ce42-486b-abfe-d65a3ce2d1c1")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.45 0)
+			(layer "F.Fab")
+			(uuid "cc6dc9ef-2629-4722-96fc-f473477391ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1 1)
+			(layers "F.Cu" "F.Mask")
+			(net 19 "Net-(D108-A)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "0ae1d0e3-1642-4179-8195-c2b4efa62215")
+		)
+		(embedded_fonts no)
 	)
 	(gr_rect
 		(start 25.42 77.29)
