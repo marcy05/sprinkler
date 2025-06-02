@@ -19,7 +19,6 @@
 
 #define SWVERSION "0.1.0"
 
-
 /******************************************************************************
                                 GLOBAL VARIABLES
 ******************************************************************************/
@@ -31,12 +30,12 @@ RtcManager rtcManager(rtc);
 DailyTimer pump1_timer(1, rtc);
 DailyTimer pump2_timer(2, rtc);
 
-
 /******************************************************************************
                                     FUNCTIONS
 ******************************************************************************/
-
-
+void manual_handler();
+void timer_activation_handler();
+void display_handler();
 
 /******************************************************************************
                                       SETUP
@@ -61,9 +60,9 @@ void setup()
   // Timer related initialization
   systemTimeHandler.wakeupTimestamp = millis();
 
-  #if BUILD_TYPE == DEVELOPMENT
-    systemTimeHandler.deepSleepWakeupAfterMinutes = 1;
-  #endif
+#if BUILD_TYPE == DEVELOPMENT
+  systemTimeHandler.deepSleepWakeupAfterMinutes = 1;
+#endif
 
   // setupDeepSleepWakeupAfterMins(systemTimeHandler.deepSleepWakeupAfterMinutes);
   // debugln("M-Deep spleep setup completed.");
@@ -112,11 +111,11 @@ void setup()
     delay(100);
   }
 
-  #if BUILD_TYPE == DEVELOPMENT
-    //pump1_timer.reset_persistency();
-    //pump2_timer.reset_persistency();
-  #endif
-  
+#if BUILD_TYPE == DEVELOPMENT
+  // pump1_timer.reset_persistency();
+  // pump2_timer.reset_persistency();
+#endif
+
   pump1_timer.begin();
   pump2_timer.begin();
 
@@ -130,15 +129,19 @@ void setup()
   setup_display_enable();
 }
 
+/******************************************************************************
+                                  MAIN LOOP
+******************************************************************************/
+
 void loop()
 {
 
   DateTime now = rtc.now();
   myDisplay.update_time(now);
-  //myDisplay.update_pump_timer(1, pump1_timer);
-  //myDisplay.update_pump_timer(2, pump2_timer);
-  //debugln();
-  //debugln(now.timestamp());
+  // myDisplay.update_pump_timer(1, pump1_timer);
+  // myDisplay.update_pump_timer(2, pump2_timer);
+  //  debugln();
+  debugln(now.timestamp());
 
   // debug("RESET button status is: ");
   // debugln(Buttons::RESET_BUTTON.pressed);
@@ -160,6 +163,22 @@ void loop()
     rtcManager.activateAlarm();
   }
 
+  manual_handler();
+  timer_activation_handler();
+  display_handler();
+
+  // debug("Water sensor: ");
+  // debugln(digitalRead(Constants::WATER_SENSOR_SIG));;
+
+  delay(100);
+}
+
+/******************************************************************************
+                            FUNCTIONS DEFINITION
+******************************************************************************/
+
+void manual_handler()
+{
   if (Buttons::SELECT_LINE_BUTTON.pressed)
   {
     Buttons::SELECT_LINE_BUTTON.pressed = false;
@@ -179,7 +198,8 @@ void loop()
       Buttons::MIN_BUTTON.pressed = false;
       rtcManager.increaseOneMinute();
     }
-    if (Buttons::START_BUTTON.pressed){
+    if (Buttons::START_BUTTON.pressed)
+    {
       Buttons::START_BUTTON.pressed = false;
     }
   }
@@ -190,12 +210,14 @@ void loop()
       Buttons::START_BUTTON.pressed = false;
       pump1.activate_toggle();
     }
-    if (Buttons::HOUR_BUTTON.pressed){
+    if (Buttons::HOUR_BUTTON.pressed)
+    {
       Buttons::HOUR_BUTTON.pressed = false;
       pump1_timer.increase_one_hour();
       myDisplay.update_pump_timer(1, pump1_timer);
     }
-    if (Buttons::MIN_BUTTON.pressed){
+    if (Buttons::MIN_BUTTON.pressed)
+    {
       Buttons::MIN_BUTTON.pressed = false;
       pump1_timer.increase_one_min();
       myDisplay.update_pump_timer(1, pump1_timer);
@@ -208,18 +230,50 @@ void loop()
       Buttons::START_BUTTON.pressed = false;
       pump2.activate_toggle();
     }
-    if (Buttons::HOUR_BUTTON.pressed){
+    if (Buttons::HOUR_BUTTON.pressed)
+    {
       Buttons::HOUR_BUTTON.pressed = false;
       pump2_timer.increase_one_hour();
       myDisplay.update_pump_timer(2, pump2_timer);
     }
-    if (Buttons::MIN_BUTTON.pressed){
+    if (Buttons::MIN_BUTTON.pressed)
+    {
       Buttons::MIN_BUTTON.pressed = false;
       pump2_timer.increase_one_min();
       myDisplay.update_pump_timer(2, pump2_timer);
     }
   }
+}
 
+void timer_activation_handler()
+{
+  if (pump1_timer.is_activation_time())
+  {
+    debugln("M-Pump1 timer - Activation start");
+    pump1.activate_toggle();
+  }
+
+  if (pump2_timer.is_activation_time())
+  {
+    debugln("M-Pump2 timer - Activation start");
+    pump2.activate_toggle();
+  }
+
+  if (pump1_timer.is_activation_timeout())
+  {
+    debugln("M-Pump1 timer - Activation period finished");
+    pump1.activate_toggle();
+  }
+
+  if (pump2_timer.is_activation_timeout())
+  {
+    debugln("M-Pump2 timer - Activation period finished");
+    pump2.activate_toggle();
+  }
+}
+
+void display_handler()
+{
   if (pump1.get_activate_status() != myDisplay.pump1_last_status)
   {
     myDisplay.pump1_last_status = pump1.get_activate_status();
@@ -249,30 +303,4 @@ void loop()
       myDisplay.stop_pump2();
     }
   }
-
-  if (pump1_timer.is_activation_time()){
-    debugln("M-Pump1 timer - Activation start");
-    pump1.activate_toggle();
-  }
-
-  if (pump2_timer.is_activation_time()){
-    debugln("M-Pump2 timer - Activation start");
-    pump2.activate_toggle();
-
-  }
-
-  if (pump1_timer.is_activation_timeout()){
-    debugln("M-Pump1 timer - Activation period finished");
-    pump1.activate_toggle();
-  }
-
-  if (pump2_timer.is_activation_timeout()){
-    debugln("M-Pump2 timer - Activation period finished");
-    pump2.activate_toggle();
-  }
-
-  debug("Water sensor: ");
-  debugln(digitalRead(Constants::WATER_SENSOR_SIG));;
-
-  delay(100);
 }
