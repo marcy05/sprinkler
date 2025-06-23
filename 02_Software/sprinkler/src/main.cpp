@@ -40,6 +40,7 @@ void manual_handler();
 void handle_pump_line(DailyTimer &timer, PumpManager &pump, int pump_id);
 void timer_activation_handler();
 void display_handler();
+void monitor_tank_emptiness(PumpManager &pump);
 
 /******************************************************************************
                                       SETUP
@@ -155,9 +156,22 @@ void loop()
   manual_handler();
   timer_activation_handler();
   display_handler();
+  monitor_tank_emptiness(pump1);
+  monitor_tank_emptiness(pump2);
 
-  // debug("Water sensor: ");
-  // debugln(digitalRead(Constants::WATER_SENSOR_SIG));;
+  debug("Water sensor. Digital: ");
+  int value = digitalRead(Constants::WATER_SENSOR_SIG);
+  debug(value);
+  debug(" Analog: ");
+  debug(analogRead(Constants::WATER_SENSOR_SIG));
+  debug(" TankEmpty?: ");
+  debugln(TankSensor::isTankEmpty());
+
+  debug("Pump1 empty? ");
+  debugln(pump1.is_pump_tank_empty());
+  debug("Pump2 empty? ");
+  debugln(pump2.is_pump_tank_empty());
+
 
   delay(100);
 }
@@ -267,6 +281,21 @@ void display_handler()
     }
   }
 
+  if (pump1.is_pump_tank_empty() != myDisplay.pump1_tank_empty_last_status){
+    myDisplay.pump1_tank_empty_last_status = pump1.is_pump_tank_empty();
+    if (myDisplay.pump1_tank_empty_last_status){
+      myDisplay.empty_pump1();
+    }
+    else {
+      if (pump1.get_activate_status()){
+        myDisplay.running_pump1();
+      } else {
+        myDisplay.stop_pump1();
+      }
+    }
+
+  }
+
   if (pump2.get_activate_status() != myDisplay.pump2_last_status)
   {
     myDisplay.pump2_last_status = pump2.get_activate_status();
@@ -279,6 +308,32 @@ void display_handler()
     {
       debugln("M-Pump2 stopped.");
       myDisplay.stop_pump2();
+    }
+  }
+
+  if (pump2.is_pump_tank_empty() != myDisplay.pump2_tank_empty_last_status){
+    myDisplay.pump2_tank_empty_last_status = pump2.is_pump_tank_empty();
+    if (myDisplay.pump2_tank_empty_last_status){
+      myDisplay.empty_pump2();
+    } else {
+      if (pump2.get_activate_status()){
+        myDisplay.running_pump2();
+      } else {
+        myDisplay.stop_pump2();
+      }
+    }
+
+  }
+
+}
+
+void monitor_tank_emptiness(PumpManager &pump){
+  if(TankSensor::isTankEmpty()){
+    pump.set_tank_empty();
+    debugln("Set pump empty");
+  } else {
+    if (pump.is_pump_tank_empty()){
+      pump.set_tank_full();
     }
   }
 }

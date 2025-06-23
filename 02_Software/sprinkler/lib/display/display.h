@@ -32,6 +32,9 @@ public:
     void stop_pump1();
     void stop_pump2();
 
+    void empty_pump1();
+    void empty_pump2();
+
     void update_time(DateTime now);
 
     void sleep_screen();
@@ -42,6 +45,8 @@ public:
 
     bool pump1_last_status = 0;
     bool pump2_last_status = 0;
+    bool pump1_tank_empty_last_status = 0;
+    bool pump2_tank_empty_last_status = 0;
 
     const uint8_t time_line = 2;
     const uint8_t pump1_line = 3;

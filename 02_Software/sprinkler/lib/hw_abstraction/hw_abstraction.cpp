@@ -158,23 +158,17 @@ bool TankSensor::isTankEmpty()
 
   TankSensor::_activateTankSensor();
 
-  // True when water is present.
-  bool water_present = digitalRead(Constants::WATER_SENSOR_SIG);
-  debug("Water sensor reading: ");
-  debugln(water_present);
+  uint16_t analogRead_val = analogRead(Constants::WATER_SENSOR_SIG);
 
-  if (water_present)
-  {
-    debug("Water is present in the tank.");
+  uint16_t vdd_threshold = uint16_t(2 * 4095 / 3.3);
 
+  if (analogRead_val > vdd_threshold){
     TankSensor::_deactivateTankSensor();
     return false;
-  }
-  else
-  {
-    debug("Water is NOT present in the tank.");
-
+  } else {
     TankSensor::_deactivateTankSensor();
     return true;
   }
+
+
 }

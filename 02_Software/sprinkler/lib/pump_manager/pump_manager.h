@@ -14,6 +14,9 @@ public:
     void activate_toggle();
 
     bool get_activate_status();
+    bool is_pump_tank_empty();
+    void set_tank_empty();
+    void set_tank_full();
 
 private:
     bool m_active_status = false;

@@ -16,26 +16,31 @@ void PumpManager::activate_toggle()
     }
     else
     {
-        if (TankSensor::isTankEmpty())
-        {
-            this->m_empty_tank = true;
-            digitalWrite(this->m_gpio, LOW);
-            this->m_active_status = false;
-            debugln("Tank detected empty, no irrigation will start.");
-        }
-        else
-        {
-            this->m_empty_tank = false;
-            digitalWrite(this->m_gpio, HIGH);
-            this->m_active_status = true;
-            debugln("PUM-Active status=true");
-        }
+        digitalWrite(this->m_gpio, HIGH);
+        this->m_active_status = true;
     }
 }
 
 bool PumpManager::get_activate_status()
 {
     return this->m_active_status;
+}
+
+bool PumpManager::is_pump_tank_empty()
+{
+    return this->m_empty_tank;
+}
+
+void PumpManager::set_tank_empty(){
+    this->m_empty_tank = true;
+    this->m_active_status = false;
+    digitalWrite(this->m_gpio, LOW);
+    debugln("The tank is empty, deactivate all.");
+}
+
+void PumpManager::set_tank_full(){
+    this->m_empty_tank = false;
+    debugln("The tank is full, ready for activation.");
 }
 
 PumpManager pump1 = PumpManager(Constants::PUMP1_PIN_EN);
