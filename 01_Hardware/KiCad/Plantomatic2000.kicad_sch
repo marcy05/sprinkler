@@ -5598,6 +5598,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Memory_EEPROM:AT24CS01-SSHM"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -11227,6 +11334,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 355.6) (xy 104.14 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06701194-22a6-4bb2-bf83-11f5be972f0f")
+	)
+	(wire
+		(pts
 			(xy 161.29 193.04) (xy 172.72 193.04)
 		)
 		(stroke
@@ -11824,6 +11941,16 @@
 			(type default)
 		)
 		(uuid "1b4ade03-45ca-40e2-b6d7-a062b88b1bdc")
+	)
+	(wire
+		(pts
+			(xy 162.56 351.79) (xy 162.56 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b7ff4b5-af89-4c8f-9b89-bf13f94ac45c")
 	)
 	(wire
 		(pts
@@ -12934,6 +13061,16 @@
 			(type default)
 		)
 		(uuid "44081d55-a98f-40ec-aae4-5f804a80e7d3")
+	)
+	(wire
+		(pts
+			(xy 130.81 351.79) (xy 130.81 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44412698-342c-4a33-a676-4c572db676ae")
 	)
 	(wire
 		(pts
@@ -16787,6 +16924,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 353.06) (xy 76.2 356.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c80c89f7-a3eb-4319-a33a-efd94d61c7ee")
+	)
+	(wire
+		(pts
 			(xy 77.47 167.64) (xy 77.47 168.91)
 		)
 		(stroke
@@ -17387,6 +17534,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 350.52) (xy 187.96 354.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3e6d0f3-7324-4578-a4d7-f64f8c2ffc94")
+	)
+	(wire
+		(pts
 			(xy 346.71 187.96) (xy 346.71 190.5)
 		)
 		(stroke
@@ -17794,6 +17951,16 @@
 			(type default)
 		)
 		(uuid "f3f1f477-a2b2-43c1-99d4-5cd30b741d5a")
+	)
+	(wire
+		(pts
+			(xy 95.25 342.9) (xy 95.25 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42a80b3-05e8-4e5a-8488-35e06e381046")
 	)
 	(wire
 		(pts
@@ -21826,6 +21993,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 104.14 359.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "141c2908-f5e0-46d3-968e-0374e76dc4f7")
+		(property "Reference" "#PWR0216"
+			(at 104.14 365.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 363.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4052cbd3-04ca-4c58-b187-c98fb7df4604")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "#PWR0216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 519.43 243.84 180)
 		(unit 1)
@@ -24223,6 +24456,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 162.56 355.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e87bf59-1738-4499-a069-b8d0fa11e701")
+		(property "Reference" "#PWR0218"
+			(at 162.56 361.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 162.56 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f042271e-d120-4ee6-bd42-a615aa7fb7dc")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "#PWR0218")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 369.57 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26590,6 +26889,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 76.2 350.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a9c3384-ba97-460b-8235-48153aa0fa13")
+		(property "Reference" "H102"
+			(at 78.74 347.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 78.74 350.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 76.2 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 76.2 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8757fb6-8f86-4c17-b576-4574527f0153")
+		)
+		(instances
+			(project ""
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "H102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 179.07 317.5 0)
 		(unit 1)
@@ -27880,6 +28246,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 95.25 346.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "580d6f2f-8d2f-40e1-8a0e-7db52d2f0cac")
+		(property "Reference" "#PWR0207"
+			(at 95.25 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 346.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 346.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 346.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01d92a7d-a88c-411e-9b2a-4a2605e37fe6")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "#PWR0207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 121.92 82.55 90)
 		(unit 1)
@@ -28343,6 +28775,73 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
 					(reference "TP103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 130.81 349.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60230269-4701-43f0-9ab9-c057cf1a55e0")
+		(property "Reference" "H104"
+			(at 133.35 346.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 133.35 349.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 130.81 349.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 349.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 130.81 349.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "199e1bc8-2b59-45c9-a1bb-003cb61ce98e")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -33049,6 +33548,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 95.25 340.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c282968-5d77-4e84-b3c5-b8058d68a77d")
+		(property "Reference" "H101"
+			(at 97.79 337.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 97.79 340.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 95.25 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 95.25 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45709c12-5f5c-4c0b-a04f-251f740cefe5")
+		)
+		(instances
+			(project ""
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "H101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 306.07 236.22 90)
 		(unit 1)
@@ -33892,6 +34458,72 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
 					(reference "J114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 354.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa2fe269-f4db-4f4a-b2e0-6534147b356e")
+		(property "Reference" "#PWR0219"
+			(at 187.96 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 187.96 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba742b53-7884-45a3-bf3b-2e3bad750ac0")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "#PWR0219")
 					(unit 1)
 				)
 			)
@@ -36941,6 +37573,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 162.56 349.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca538909-b754-48b5-aafc-9a80e8cb5fa0")
+		(property "Reference" "H105"
+			(at 165.1 346.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 165.1 349.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 162.56 349.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 349.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 162.56 349.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9c9c2c0-d52e-40a8-99b0-b341d06be606")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "H105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 233.68 38.1 0)
 		(unit 1)
@@ -37482,6 +38181,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 76.2 356.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d330fb7c-35cd-4c27-917e-24581812cc50")
+		(property "Reference" "#PWR0215"
+			(at 76.2 363.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5462f300-b8c0-4cbb-ac7c-4830eb49db5e")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "#PWR0215")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 142.24 303.53 0)
 		(mirror y)
@@ -37614,6 +38379,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 104.14 353.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d47f35b1-aad5-4360-b8f3-cd2b6fef6a47")
+		(property "Reference" "H103"
+			(at 106.68 350.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 106.68 353.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 104.14 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 104.14 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cfed40f0-5787-4493-bdc6-91f880d9ca6d")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "H103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 293.37 208.28 0)
 		(mirror y)
@@ -37673,6 +38505,72 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
 					(reference "TP137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130.81 355.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7197573-3e3f-4f05-aeeb-cbd3fb21e0d3")
+		(property "Reference" "#PWR0217"
+			(at 130.81 361.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 130.81 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 130.81 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a014e5a-aba1-4c7d-a3b3-eba4b13e95d8")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -41300,6 +42198,73 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
 					(reference "TP136")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 187.96 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc2e6cbd-ce07-4751-aa90-4717b241c288")
+		(property "Reference" "H106"
+			(at 190.5 345.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 190.5 347.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 187.96 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 187.96 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6727285-ef3b-49db-a965-96741d082675")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727"
+					(reference "H106")
 					(unit 1)
 				)
 			)
