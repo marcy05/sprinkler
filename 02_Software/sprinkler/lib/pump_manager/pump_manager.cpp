@@ -19,6 +19,8 @@ void PumpManager::activate_toggle()
         if (TankSensor::isTankEmpty())
         {
             this->m_empty_tank = true;
+            digitalWrite(this->m_gpio, LOW);
+            this->m_active_status = false;
             debugln("Tank detected empty, no irrigation will start.");
         }
         else
