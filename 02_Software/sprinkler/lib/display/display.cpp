@@ -150,6 +150,24 @@ void DisplayManager::stop_pump2()
     delay(100);
 }
 
+void DisplayManager::empty_pump1()
+{
+    display.fillRect(firts_column_pos, pump1_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump1_line * 10);
+    display.print("EMPTY");
+    display.display();
+    delay(100);
+}
+
+void DisplayManager::empty_pump2()
+{
+    display.fillRect(firts_column_pos, pump2_line * 10, 30, 8, SSD1306_BLACK);
+    display.setCursor(firts_column_pos, pump2_line * 10);
+    display.print("EMPTY");
+    display.display();
+    delay(100);
+}
+
 void DisplayManager::update_time(DateTime now)
 {
     String hour = "";

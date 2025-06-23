@@ -50,4 +50,10 @@ namespace Buttons
     extern Button START_BUTTON;
 };
 
+namespace TankSensor{
+    bool _activateTankSensor();
+    bool _deactivateTankSensor();
+    bool isTankEmpty();
+};
+
 #endif // HW_ABSTRACTION_H
