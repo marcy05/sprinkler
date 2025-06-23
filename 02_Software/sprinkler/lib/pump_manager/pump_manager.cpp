@@ -6,19 +6,26 @@ PumpManager::PumpManager(const uint8_t gpio)
     digitalWrite(this->m_gpio, LOW);
 }
 
-void PumpManager::activate_toggle()
+void PumpManager::activate_toggle(PumpManager &other_pump)
 {
+    if(other_pump.get_activate_status()){
+        other_pump.off_pump();
+    }
 
     if (this->m_active_status)
     {
-        digitalWrite(this->m_gpio, LOW);
-        this->m_active_status = false;
+        PumpManager::off_pump();
     }
     else
     {
         digitalWrite(this->m_gpio, HIGH);
         this->m_active_status = true;
     }
+}
+
+void PumpManager::off_pump(){
+    digitalWrite(this->m_gpio, LOW);
+    this->m_active_status = false;
 }
 
 bool PumpManager::get_activate_status()

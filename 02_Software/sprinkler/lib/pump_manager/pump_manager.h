@@ -11,8 +11,8 @@ class PumpManager
 public:
     PumpManager(const uint8_t gpio);
 
-    void activate_toggle();
-
+    void activate_toggle(PumpManager &other_pump);
+    void off_pump();
     bool get_activate_status();
     bool is_pump_tank_empty();
     void set_tank_empty();

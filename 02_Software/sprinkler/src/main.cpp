@@ -37,8 +37,8 @@ DailyTimer pump2_timer(PUMP2_ID, rtc);
                                     FUNCTIONS
 ******************************************************************************/
 void manual_handler();
-void handle_pump_line(DailyTimer &timer, PumpManager &pump, int pump_id);
-void timer_activation_handler();
+void handle_pump_line(DailyTimer &timer, PumpManager &pump, PumpManager &other_pump, int pump_id);
+void timer_activation_handler(DailyTimer &p1_timer, DailyTimer &p2_timer, PumpManager &p1, PumpManager &p2);
 void display_handler();
 void monitor_tank_emptiness(PumpManager &pump);
 
@@ -154,7 +154,7 @@ void loop()
   }
 
   manual_handler();
-  timer_activation_handler();
+  timer_activation_handler(pump1_timer, pump2_timer, pump1, pump2);
   display_handler();
   monitor_tank_emptiness(pump1);
   monitor_tank_emptiness(pump2);
@@ -208,20 +208,20 @@ void manual_handler()
   }
   else if (myDisplay.selected_line == myDisplay.pump1_line)
   {
-    handle_pump_line(pump1_timer, pump1, PUMP1_ID);
+    handle_pump_line(pump1_timer, pump1, pump2, PUMP1_ID);
   }
   else if (myDisplay.selected_line == myDisplay.pump2_line)
   {
-    handle_pump_line(pump2_timer, pump2, PUMP2_ID);
+    handle_pump_line(pump2_timer, pump2, pump1, PUMP2_ID);
   }
 }
 
-void handle_pump_line(DailyTimer &timer, PumpManager &pump, int pump_id)
+void handle_pump_line(DailyTimer &timer, PumpManager &pump, PumpManager &other_pump, int pump_id)
 {
   if (Buttons::START_BUTTON.pressed)
   {
     Buttons::START_BUTTON.pressed = false;
-    pump.activate_toggle();
+    pump.activate_toggle(other_pump);
   }
   if (Buttons::HOUR_BUTTON.pressed)
   {
@@ -237,30 +237,30 @@ void handle_pump_line(DailyTimer &timer, PumpManager &pump, int pump_id)
   }
 }
 
-void timer_activation_handler()
+void timer_activation_handler(DailyTimer &p1_timer, DailyTimer &p2_timer, PumpManager &p1, PumpManager &p2)
 {
-  if (pump1_timer.is_activation_time())
+  if (p1_timer.is_activation_time(p2_timer))
   {
     debugln("M-Pump1 timer - Activation start");
-    pump1.activate_toggle();
+    p1.activate_toggle(p2);
   }
 
-  if (pump2_timer.is_activation_time())
+  if (p2_timer.is_activation_time(p1_timer))
   {
     debugln("M-Pump2 timer - Activation start");
-    pump2.activate_toggle();
+    p2.activate_toggle(p1);
   }
 
-  if (pump1_timer.is_activation_timeout())
+  if (p1_timer.is_activation_timeout())
   {
     debugln("M-Pump1 timer - Activation period finished");
-    pump1.activate_toggle();
+    p1.activate_toggle(p2);
   }
 
-  if (pump2_timer.is_activation_timeout())
+  if (p2_timer.is_activation_timeout())
   {
     debugln("M-Pump2 timer - Activation period finished");
-    pump2.activate_toggle();
+    p2.activate_toggle(p1);
   }
 }
 
