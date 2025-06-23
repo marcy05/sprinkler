@@ -1,0 +1,21 @@
+* C:\Users\noroc\OneDrive\ExiliTech\Marcello_Sprinkler\sprinkler\01_Hardware\Simulations\Draft1.asc
+M1 N002 N007 N001 N001 FDC638P
+R1 N007 N008 47K
+R2 N001 N008 22K
+M2 N008 N010 0 0 AO6408
+R3 N010 N009 470R
+R4 0 N009 10K
+V1 N009 0 PULSE(0 3.3V 100m 1u 1u 300m 600m 5)
+V2 N001 0 5V
+X§U1 N006 N003 N005 0 N004 AD8510
+V3 N006 0 100m
+R5 N004 N003 10K
+R6 N003 0 10K
+C1 N002 0 1µ
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\noroc\AppData\Local\LTspice\lib\cmp\standard.mos
+.tran 1s
+.lib ADI.lib
+.backanno
+.end
