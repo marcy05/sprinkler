@@ -10,7 +10,8 @@ namespace Buttons
   Button START_BUTTON = {Constants::START_BUTTON_PIN, false};
 }
 
-bool setup_all_gpio(){
+bool setup_all_gpio()
+{
   setup_reset_button();
   setup_deep_sleep_wakeup_button();
   setup_select_line_button();
@@ -56,7 +57,8 @@ void IRAM_ATTR isr_reset()
   }
 }
 
-void setup_deep_sleep_wakeup_button(){
+void setup_deep_sleep_wakeup_button()
+{
   pinMode(Buttons::DEEP_SLEEP_BUTTON.PIN, INPUT_PULLUP);
 }
 
@@ -122,14 +124,57 @@ void setup_display_enable()
   debugln("HWA-Setup display enable GPIO.");
 }
 
-void setup_pump1(){
+void setup_pump1()
+{
   pinMode(Constants::PUMP1_PIN_EN, OUTPUT);
 }
 
-void setup_pump2(){
+void setup_pump2()
+{
   pinMode(Constants::PUMP2_PIN_EN, OUTPUT);
 }
 
-void setup_boost_enable(){
+void setup_boost_enable()
+{
   pinMode(Constants::BOOST_EN, OUTPUT);
+}
+
+bool TankSensor::_activateTankSensor()
+{
+  digitalWrite(Constants::WATER_SENSOR_EN, HIGH);
+  delay(50);
+  return true;
+}
+
+bool TankSensor::_deactivateTankSensor()
+{
+  digitalWrite(Constants::WATER_SENSOR_EN, LOW);
+  delay(50);
+  return true;
+}
+
+bool TankSensor::isTankEmpty()
+{
+
+  TankSensor::_activateTankSensor();
+
+  // True when water is present.
+  bool water_present = digitalRead(Constants::WATER_SENSOR_SIG);
+  debug("Water sensor reading: ");
+  debugln(water_present);
+
+  if (water_present)
+  {
+    debug("Water is present in the tank.");
+
+    TankSensor::_deactivateTankSensor();
+    return false;
+  }
+  else
+  {
+    debug("Water is NOT present in the tank.");
+
+    TankSensor::_deactivateTankSensor();
+    return true;
+  }
 }

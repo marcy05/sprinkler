@@ -16,11 +16,9 @@ public:
     bool get_activate_status();
 
 private:
-    bool active_status = false;
-    uint8_t gpio = 0;
-    bool empty_tank = false;
-
-    bool _is_tank_empty();
+    bool m_active_status = false;
+    uint8_t m_gpio = 0;
+    bool m_empty_tank = false;
 };
 
 extern PumpManager pump1;
