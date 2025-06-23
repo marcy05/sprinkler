@@ -41,7 +41,6 @@ void handle_pump_line(DailyTimer &timer, PumpManager &pump, PumpManager &other_p
 void timer_activation_handler(DailyTimer &p1_timer, DailyTimer &p2_timer, PumpManager &p1, PumpManager &p2);
 void display_handler();
 void monitor_tank_emptiness(PumpManager &pump);
-void monitor_one_pump_running_only(PumpManager &pump1, PumpManager &pump2);
 
 /******************************************************************************
                                       SETUP
@@ -240,16 +239,16 @@ void handle_pump_line(DailyTimer &timer, PumpManager &pump, PumpManager &other_p
 
 void timer_activation_handler(DailyTimer &p1_timer, DailyTimer &p2_timer, PumpManager &p1, PumpManager &p2)
 {
-  if (p1_timer.is_activation_time())
+  if (p1_timer.is_activation_time(p2_timer))
   {
     debugln("M-Pump1 timer - Activation start");
     p1.activate_toggle(p2);
   }
 
-  if (p2_timer.is_activation_time())
+  if (p2_timer.is_activation_time(p1_timer))
   {
     debugln("M-Pump2 timer - Activation start");
-    pump2.activate_toggle(p1);
+    p2.activate_toggle(p1);
   }
 
   if (p1_timer.is_activation_timeout())

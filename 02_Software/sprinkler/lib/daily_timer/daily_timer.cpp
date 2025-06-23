@@ -48,8 +48,18 @@ void DailyTimer::increase_one_min()
     debugln("DAT-Increased one minute.");
 }
 
-bool DailyTimer::is_activation_time()
+bool DailyTimer::is_activation_time(DailyTimer &other_timer)
 {
+
+    if(other_timer.get_active_flag()){
+        debug("Pump ");
+        debug(this->id);
+        debug(" will not try to run since Pump ");
+        debug(other_timer.id);
+        debugln(" is already runnig.");
+        return false;
+    }
+
     DateTime now = rtc.now();
     // If the day has changed, reset the trigger flag
     // debug("DAT-Last checked day: ");
@@ -83,6 +93,9 @@ bool DailyTimer::is_activation_time()
         debug("DAT-Set start time at: ");
         debugln(start_time_sec);
 
+        m_activate_flag = true;
+        debug("DAT-Acitvation flag: ");
+        debugln(m_activate_flag);
         return true;
     }
 
@@ -101,6 +114,10 @@ bool DailyTimer::is_activation_timeout()
         if (now.secondstime() - start_time_sec >= timer_activation_period)
         {
             start_time_sec = 0;
+
+            m_activate_flag = false;
+            debug("DAT-Acitvation flag: ");
+            debugln(m_activate_flag);
             return true;
         }
     }
@@ -165,4 +182,9 @@ void DailyTimer::reset_persistency()
     prefs.putShort("hour", 0);
     prefs.putShort("minute", 0);
     prefs.end();
+}
+
+bool DailyTimer::get_active_flag()
+{
+    return this->m_activate_flag;
 }

@@ -14,13 +14,14 @@ public:
     void begin();
     void increase_one_hour();
     void increase_one_min();
-    bool is_activation_time();
+    bool is_activation_time(DailyTimer &other_timer);
     bool is_activation_timeout();
 
     uint8_t get_hour();
     uint8_t get_min();
 
     void reset_persistency();
+    bool get_active_flag();
 
 private:
     RTC_DS3231 &rtc;
@@ -37,6 +38,8 @@ private:
     uint16_t last_checked_day = 0;
 
     uint8_t id = 0;
+
+    bool m_activate_flag = false;
 
     void _load_state();
     void _save_state(bool triggered, uint16_t last_day);
