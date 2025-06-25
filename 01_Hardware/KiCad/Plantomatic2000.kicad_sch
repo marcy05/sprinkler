@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Plantomatic 2000")
-		(date "2025-06-02")
+		(date "2025-06-25")
 		(rev "v0.1")
 	)
 	(lib_symbols
@@ -9879,17 +9879,6 @@
 		)
 		(uuid "ba0908aa-b166-4420-8e2f-31bc2eaaf8a0")
 	)
-	(text "TO DO:\nBOM\nDESIGN PCB"
-		(exclude_from_sim no)
-		(at 16.002 346.456 0)
-		(effects
-			(font
-				(size 5.1308 5.1308)
-			)
-			(justify left)
-		)
-		(uuid "bd073c13-cbb4-4212-971b-b6a982266429")
-	)
 	(text "Pump 1"
 		(exclude_from_sim no)
 		(at 414.528 18.542 0)
@@ -11318,7 +11307,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 355.6) (xy 104.14 359.41)
+			(xy 367.03 250.19) (xy 367.03 251.46)
 		)
 		(stroke
 			(width 0)
@@ -11928,7 +11917,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 351.79) (xy 162.56 355.6)
+			(xy 341.63 262.89) (xy 341.63 264.16)
 		)
 		(stroke
 			(width 0)
@@ -13048,7 +13037,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 351.79) (xy 130.81 355.6)
+			(xy 316.23 262.89) (xy 316.23 264.16)
 		)
 		(stroke
 			(width 0)
@@ -16848,7 +16837,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 353.06) (xy 76.2 356.87)
+			(xy 341.63 250.19) (xy 341.63 251.46)
 		)
 		(stroke
 			(width 0)
@@ -17458,7 +17447,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 350.52) (xy 187.96 354.33)
+			(xy 367.03 262.89) (xy 367.03 264.16)
 		)
 		(stroke
 			(width 0)
@@ -17888,7 +17877,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 342.9) (xy 95.25 346.71)
+			(xy 316.23 250.19) (xy 316.23 251.46)
 		)
 		(stroke
 			(width 0)
@@ -21863,7 +21852,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 359.41 0)
+		(at 367.03 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21871,7 +21860,7 @@
 		(dnp no)
 		(uuid "141c2908-f5e0-46d3-968e-0374e76dc4f7")
 		(property "Reference" "#PWR0216"
-			(at 104.14 365.76 0)
+			(at 367.03 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21880,7 +21869,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 363.22 0)
+			(at 367.03 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21889,7 +21878,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 359.41 0)
+			(at 367.03 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21898,7 +21887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 359.41 0)
+			(at 367.03 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21907,7 +21896,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 359.41 0)
+			(at 367.03 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23943,8 +23932,8 @@
 				)
 			)
 		)
-		(property "Value" "Running LED"
-			(at 225.298 52.07 0)
+		(property "Value" "BATT"
+			(at 229.616 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24196,7 +24185,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 162.56 355.6 0)
+		(at 341.63 264.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24204,7 +24193,7 @@
 		(dnp no)
 		(uuid "2e87bf59-1738-4499-a069-b8d0fa11e701")
 		(property "Reference" "#PWR0218"
-			(at 162.56 361.95 0)
+			(at 341.63 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24213,7 +24202,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 162.56 359.41 0)
+			(at 341.63 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24222,7 +24211,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 355.6 0)
+			(at 341.63 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24231,7 +24220,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 355.6 0)
+			(at 341.63 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24240,7 +24229,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 162.56 355.6 0)
+			(at 341.63 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26565,7 +26554,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 76.2 350.52 0)
+		(at 341.63 247.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -26574,7 +26563,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a9c3384-ba97-460b-8235-48153aa0fa13")
 		(property "Reference" "H102"
-			(at 78.74 347.9799 0)
+			(at 344.17 245.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26583,7 +26572,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 78.74 350.5199 0)
+			(at 344.17 247.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26592,7 +26581,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
-			(at 76.2 350.52 0)
+			(at 341.63 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26601,7 +26590,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 350.52 0)
+			(at 341.63 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26610,7 +26599,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 76.2 350.52 0)
+			(at 341.63 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27922,7 +27911,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 346.71 0)
+		(at 316.23 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27930,7 +27919,7 @@
 		(dnp no)
 		(uuid "580d6f2f-8d2f-40e1-8a0e-7db52d2f0cac")
 		(property "Reference" "#PWR0207"
-			(at 95.25 353.06 0)
+			(at 316.23 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27939,7 +27928,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 350.52 0)
+			(at 316.23 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27948,7 +27937,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 346.71 0)
+			(at 316.23 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27957,7 +27946,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 346.71 0)
+			(at 316.23 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27966,7 +27955,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 346.71 0)
+			(at 316.23 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28457,7 +28446,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 130.81 349.25 0)
+		(at 316.23 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -28466,7 +28455,7 @@
 		(fields_autoplaced yes)
 		(uuid "60230269-4701-43f0-9ab9-c057cf1a55e0")
 		(property "Reference" "H104"
-			(at 133.35 346.7099 0)
+			(at 318.77 257.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28475,7 +28464,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 133.35 349.2499 0)
+			(at 318.77 260.3499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28484,7 +28473,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
-			(at 130.81 349.25 0)
+			(at 316.23 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28493,7 +28482,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 349.25 0)
+			(at 316.23 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28502,7 +28491,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 130.81 349.25 0)
+			(at 316.23 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33224,7 +33213,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 95.25 340.36 0)
+		(at 316.23 247.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -33233,7 +33222,7 @@
 		(fields_autoplaced yes)
 		(uuid "9c282968-5d77-4e84-b3c5-b8058d68a77d")
 		(property "Reference" "H101"
-			(at 97.79 337.8199 0)
+			(at 318.77 245.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33242,7 +33231,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 97.79 340.3599 0)
+			(at 318.77 247.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33251,7 +33240,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
-			(at 95.25 340.36 0)
+			(at 316.23 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33260,7 +33249,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 340.36 0)
+			(at 316.23 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33269,7 +33258,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 95.25 340.36 0)
+			(at 316.23 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34140,7 +34129,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 187.96 354.33 0)
+		(at 367.03 264.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34148,7 +34137,7 @@
 		(dnp no)
 		(uuid "aa2fe269-f4db-4f4a-b2e0-6534147b356e")
 		(property "Reference" "#PWR0219"
-			(at 187.96 360.68 0)
+			(at 367.03 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34157,7 +34146,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 187.96 358.14 0)
+			(at 367.03 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34166,7 +34155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 354.33 0)
+			(at 367.03 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34175,7 +34164,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 354.33 0)
+			(at 367.03 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34184,7 +34173,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 354.33 0)
+			(at 367.03 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37184,7 +37173,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 162.56 349.25 0)
+		(at 341.63 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -37193,7 +37182,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca538909-b754-48b5-aafc-9a80e8cb5fa0")
 		(property "Reference" "H105"
-			(at 165.1 346.7099 0)
+			(at 344.17 257.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37202,7 +37191,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 165.1 349.2499 0)
+			(at 344.17 260.3499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37211,7 +37200,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
-			(at 162.56 349.25 0)
+			(at 341.63 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37220,7 +37209,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 349.25 0)
+			(at 341.63 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37229,7 +37218,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 162.56 349.25 0)
+			(at 341.63 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37792,7 +37781,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 76.2 356.87 0)
+		(at 341.63 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -37800,7 +37789,7 @@
 		(dnp no)
 		(uuid "d330fb7c-35cd-4c27-917e-24581812cc50")
 		(property "Reference" "#PWR0215"
-			(at 76.2 363.22 0)
+			(at 341.63 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37809,7 +37798,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 360.68 0)
+			(at 341.63 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37818,7 +37807,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 356.87 0)
+			(at 341.63 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37827,7 +37816,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 356.87 0)
+			(at 341.63 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37836,7 +37825,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 356.87 0)
+			(at 341.63 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37990,7 +37979,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 104.14 353.06 0)
+		(at 367.03 247.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -37999,7 +37988,7 @@
 		(fields_autoplaced yes)
 		(uuid "d47f35b1-aad5-4360-b8f3-cd2b6fef6a47")
 		(property "Reference" "H103"
-			(at 106.68 350.5199 0)
+			(at 369.57 245.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38008,7 +37997,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 106.68 353.0599 0)
+			(at 369.57 247.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38017,7 +38006,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
-			(at 104.14 353.06 0)
+			(at 367.03 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38026,7 +38015,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 353.06 0)
+			(at 367.03 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38035,7 +38024,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 104.14 353.06 0)
+			(at 367.03 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38122,7 +38111,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 355.6 0)
+		(at 316.23 264.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -38130,7 +38119,7 @@
 		(dnp no)
 		(uuid "d7197573-3e3f-4f05-aeeb-cbd3fb21e0d3")
 		(property "Reference" "#PWR0217"
-			(at 130.81 361.95 0)
+			(at 316.23 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38139,7 +38128,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 359.41 0)
+			(at 316.23 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38148,7 +38137,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 355.6 0)
+			(at 316.23 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38157,7 +38146,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 355.6 0)
+			(at 316.23 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38166,7 +38155,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 355.6 0)
+			(at 316.23 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41815,7 +41804,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 187.96 347.98 0)
+		(at 367.03 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -41824,7 +41813,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc2e6cbd-ce07-4751-aa90-4717b241c288")
 		(property "Reference" "H106"
-			(at 190.5 345.4399 0)
+			(at 369.57 257.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41833,7 +41822,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 190.5 347.9799 0)
+			(at 369.57 260.3499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41842,7 +41831,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
-			(at 187.96 347.98 0)
+			(at 367.03 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41851,7 +41840,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 347.98 0)
+			(at 367.03 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41860,7 +41849,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 187.96 347.98 0)
+			(at 367.03 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
