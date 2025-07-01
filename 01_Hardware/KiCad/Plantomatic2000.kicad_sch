@@ -20671,7 +20671,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Line Select"
+		(property "Value" "JST_B2B"
 			(at 81.788 312.42 0)
 			(effects
 				(font
@@ -21489,7 +21489,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SML-P13PTT86R"
+		(property "Value" "SML-P12U2TT86R"
 			(at 215.392 257.048 0)
 			(effects
 				(font
@@ -23383,7 +23383,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SS14"
+		(property "Value" "SS14M"
 			(at 443.484 76.2 90)
 			(effects
 				(font
@@ -23932,8 +23932,8 @@
 				)
 			)
 		)
-		(property "Value" "BATT"
-			(at 229.616 52.07 0)
+		(property "Value" "JST_B2B"
+			(at 228.092 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24746,7 +24746,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 435.61 161.29 0)
 			(effects
 				(font
@@ -25892,7 +25892,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Minute"
+		(property "Value" "JST_B2B"
 			(at 188.468 312.42 0)
 			(effects
 				(font
@@ -26226,7 +26226,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "JST_4B4"
+		(property "Value" "JST_B4B"
 			(at 218.186 81.28 0)
 			(effects
 				(font
@@ -26838,7 +26838,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLL014NP"
+		(property "Value" "STN3NF06L"
 			(at 464.82 41.9099 0)
 			(effects
 				(font
@@ -27313,7 +27313,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Manual Start"
+		(property "Value" "JST_B2B"
 			(at 118.618 312.42 0)
 			(effects
 				(font
@@ -28119,7 +28119,7 @@
 		(dnp no)
 		(uuid "59b749f7-7638-4511-9fe4-a1cb2475e6c7")
 		(property "Reference" "R116"
-			(at 71.628 225.044 90)
+			(at 70.866 225.298 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29290,8 +29290,8 @@
 				)
 			)
 		)
-		(property "Value" "System Reset"
-			(at 228.092 312.42 0)
+		(property "Value" "JST_B2B"
+			(at 225.298 312.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33088,7 +33088,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "JST_4B4"
+		(property "Value" "JST_B4B"
 			(at 547.624 229.87 0)
 			(effects
 				(font
@@ -33501,7 +33501,7 @@
 		(dnp no)
 		(uuid "a03f089b-879b-459a-b7ae-48e80a53ba03")
 		(property "Reference" "D110"
-			(at 72.644 219.71 0)
+			(at 71.12 220.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33509,8 +33509,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SS14"
-			(at 78.994 219.964 0)
+		(property "Value" "SS14M"
+			(at 78.232 219.964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33799,7 +33799,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLL014NP"
+		(property "Value" "STN3NF06L"
 			(at 464.82 90.1699 0)
 			(effects
 				(font
@@ -34076,7 +34076,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "System Wake Up"
+		(property "Value" "JST_B2B"
 			(at 42.418 312.42 0)
 			(effects
 				(font
@@ -37595,8 +37595,8 @@
 				)
 			)
 		)
-		(property "Value" "Running LED"
-			(at 262.382 313.69 0)
+		(property "Value" "JST_B2B"
+			(at 259.588 313.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39165,7 +39165,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SML-P13PTT86R"
+		(property "Value" "SML-P12U2TT86R"
 			(at 215.392 259.08 0)
 			(effects
 				(font
@@ -39659,7 +39659,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Hour"
+		(property "Value" "JST_B2B"
 			(at 155.448 312.42 0)
 			(effects
 				(font
@@ -41194,7 +41194,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SS14"
+		(property "Value" "SS14M"
 			(at 443.484 27.94 90)
 			(effects
 				(font
