@@ -1,0 +1,125 @@
+//nPM1300 PMIC
+const adr = 0x6B;
+var rgadr = [];
+if(Clear()!=true) return "I2C bus error. Check the pull-ups.";
+
+//Turn ON RED LED
+Write(adr, 0x0A, 0x00, 0x01);
+
+//Write(adr, 0x0A, 0x03, 0x01);
+
+
+//Turn ON GREEN LED
+Write(adr, 0x0A, 0x01, 0x02);
+
+Write(adr, 0x0A, 0x05, 0x01);
+
+
+//Turn ON BLUE LED
+Write(adr, 0x0A, 0x02, 0x00);
+
+//Write(adr, 0x0A, 0x07, 0x01);
+
+
+
+
+//Turn ON LDO1
+
+Write(adr, 0x08, 0x08, 0x01);
+
+Write(adr, 0x08, 0x0C, 0x08);
+
+Write(adr, 0x08, 0x00, 0x01);
+
+
+
+//Turn OFF RED LED
+
+//Write(adr, 0x0A, 0x04, 0x01);
+
+//Turn OFF GREEN LED
+
+Write(adr, 0x0A, 0x06, 0x01);
+
+//Turn OFF BLUE LED
+
+//Write(adr, 0x0A, 0x08, 0x01);
+
+
+
+//Disable charging before configuring the Charge Registers
+Write(adr, 0x03, 0x05, 0x03);
+
+
+//Clear error register
+Write(adr, 0x03, 0x01, 0x01);
+
+
+//disable battery temp
+Write(adr, 0x03, 0x06, 0x02);
+
+
+
+//set charging voltage threshold
+Write(adr, 0x03, 0x0C, 0x08);
+
+//Set current charge limit to 240mA
+Write(adr, 0x03, 0x09, 0x67);
+
+//Enable Charging
+Write(adr, 0x03, 0x04, 0x03);
+
+
+
+
+//Read battery status register
+rgadr = Read(adr, [0x03, 0x34], 0x01);
+
+return rgadr;
+
+// Clear( )
+//      Returns true when the bus is free. Tries to resolve SDA hold down issue.
+// Read(address)
+//      Returns true when acknowledged otherwise false.
+// Read(address, count of bytes)
+//      Returns the read bytes array from the specified address.
+// Read(address, [sub address byte1, byte2...], count of bytes)
+//      Returns the read bytes array from the specified device address and subaddress using repeated start.
+// Write(address)
+//      Returns true when acknowledged otherwise false.
+// Write(address, [byte1, byte2... ])
+// Write(address, byte1, byte2...)
+//      Returns zero on success or -1 on address NAK or the NAK byte index.
+// SlaveConfig(address, wr-bytes, [rd-byte1,rd-byte2,...], repeat)
+//      address: 7bit format and for any use -1
+//      wr-bytes: number of written bytes to ACK, 0 will NACK address write, negative will ACK unlimited bytes
+//      [rd-byte#]: array of bytes to return on read, empty array will NAK read
+//      repeat: true to respond multiple times, false for once, to stop after the first I2C stop
+// SlaveStart(address, WR-ACK, RD-ACK)
+//      Start slave pausing for software processing after each word.
+// SlaveStop()
+//      Stop started or configured slave.
+// SlaveStatus() [id, data, ack]
+//      id: 0 nop, 1 write, 2 read, 3 data, others error
+//      data: 7bit address or byte
+//      ack: true for ACK and false for NACK.
+// SlaveReceive(ack)
+//      Continue to receive and acknowledge or NACK.
+// SlaveRespond(byte, ack)
+//      Respond with data and acknowledge or NACK.
+
+
+/*
+var rgadr = [];
+
+if(Clear()!=true)  return "I2C bus error. Check the pull-ups.";
+
+for(var i = 8; i < 120 && wait(); i++){
+    //Write(address) return true when acknowledged
+    var f = Write(i);
+    if(f == true) rgadr.push("0x"+i.toString(16));
+}
+
+if(rgadr.length) return rgadr;
+else return "No I2C device found";
+*/

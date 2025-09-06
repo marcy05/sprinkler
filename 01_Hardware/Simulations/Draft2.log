@@ -1,6 +1,6 @@
 LTspice 24.1.1 for Windows
-Circuit: C:\Users\noroc\OneDrive\ExiliTech\Marcello_Sprinkler\sprinkler\01_Hardware\Simulations\Draft1.net
-Start Time: Sun Jul 13 10:32:04 2025
+Circuit: C:\Users\noroc\OneDrive\ExiliTech\Marcello_Sprinkler\sprinkler\01_Hardware\Simulations\Draft2.net
+Start Time: Sat Aug 30 10:22:15 2025
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -10,7 +10,7 @@ Direct Newton iteration for .op point succeeded.
 Total elapsed time: 0.115 seconds.
 
 Files loaded:
-C:\Users\noroc\OneDrive\ExiliTech\Marcello_Sprinkler\sprinkler\01_Hardware\Simulations\Draft1.net
+C:\Users\noroc\OneDrive\ExiliTech\Marcello_Sprinkler\sprinkler\01_Hardware\Simulations\Draft2.net
 C:\Users\noroc\AppData\Local\LTspice\lib\cmp\standard.dio
 C:\Users\noroc\AppData\Local\LTspice\lib\cmp\standard.mos
 
