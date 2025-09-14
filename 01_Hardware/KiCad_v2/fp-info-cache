@@ -1,4 +1,4 @@
-24777415330694802
+24780931058197597
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55258,6 +55258,13 @@ B82422H
 2
 2
 Custom_Global_Footprints
+BSS314PE
+SOT-416, https://www.nxp.com/docs/en/package-information/SOT416.pdf
+SOT-416
+0
+3
+3
+Custom_Global_Footprints
 DR74_2R2_R
 
 
@@ -55327,6 +55334,13 @@ MLC156_INductor
 0
 2
 2
+Custom_Global_Footprints
+NVTA7002N
+SOT-416, https://www.nxp.com/docs/en/package-information/SOT416.pdf
+SOT-416
+0
+3
+3
 Custom_Global_Footprints
 RZP0014A-MFG
 
