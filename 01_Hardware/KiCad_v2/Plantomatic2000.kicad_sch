@@ -48100,10 +48100,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d9fe883e-faa9-4812-934d-2aebccbbf323")
 		(property "Reference" "U107"
-			(at 511.4133 359.41 0)
+			(at 498.856 340.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48112,7 +48111,7 @@
 			)
 		)
 		(property "Value" "DS3231M"
-			(at 511.4133 361.95 0)
+			(at 510.794 358.394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
