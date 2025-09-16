@@ -1,4 +1,4 @@
-24780931058197597
+24789721099055862
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55286,6 +55286,13 @@ ESP32_C3_Module
 16
 16
 Custom_Global_Footprints
+ETQ-P5M100YFM
+
+ETQ-P5M100YFM 
+0
+2
+2
+Custom_Global_Footprints
 G5Q-1A4-EL2-HA
 
 
@@ -55299,6 +55306,20 @@ HF165FD_5_HY1
 0
 4
 4
+Custom_Global_Footprints
+IND_BOURNS_SRR1208
+
+SRR1208-100ML 
+0
+2
+2
+Custom_Global_Footprints
+IND_EXL1V0505-100-R_COB-M
+
+EXL1V0505-100-R 
+0
+2
+2
 Custom_Global_Footprints
 LD39200PU33R
 
@@ -55342,6 +55363,13 @@ SOT-416
 3
 3
 Custom_Global_Footprints
+PA5002.102NLT_1uH
+
+PA5002.152NLT 
+0
+2
+2
+Custom_Global_Footprints
 RZP0014A-MFG
 
 TPS61287RZPR 
@@ -55352,6 +55380,13 @@ Custom_Global_Footprints
 SPM12565VT-4R7M
 
 
+0
+2
+2
+Custom_Global_Footprints
+SRN6045HA-1R0Y
+
+SRN6045HA-1R5Y 
 0
 2
 2
