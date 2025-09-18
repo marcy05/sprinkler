@@ -1,4 +1,4 @@
-24789721099055862
+24791479205560675
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55376,6 +55376,13 @@ TPS61287RZPR
 0
 14
 14
+Custom_Global_Footprints
+SBR3U40S1F-7
+Nexperia CFP3 (SOD-123W), https://assets.nexperia.com/documents/outline-drawing/SOD123W.pdf
+CFP3 SOD-123W
+0
+2
+2
 Custom_Global_Footprints
 SPM12565VT-4R7M
 
