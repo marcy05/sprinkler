@@ -117,6 +117,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_Small"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_Small_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_Small_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -242,168 +349,6 @@
 					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:C_Polarized_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized_Small"
-				(at 0.254 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Polarized capacitor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Polarized_Small_0_1"
-				(rectangle
-					(start -1.524 0.6858)
-					(end 1.524 0.3048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.524) (xy -0.762 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy -1.016 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.8542)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.8542)
-					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2818,22 +2763,10 @@
 		(uuid "0c709906-2bb0-4c21-b3ce-ba1481686ce2")
 	)
 	(junction
-		(at 208.28 60.96)
+		(at 203.2 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2401a4f8-c7f4-4466-99b7-9378c0916970")
-	)
-	(junction
-		(at 189.23 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "247a2f7c-3a3a-4a4d-a30e-3270582734b0")
-	)
-	(junction
-		(at 204.47 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "25611526-e61b-4d0e-be56-7997036fec85")
 	)
 	(junction
 		(at 201.93 40.64)
@@ -2864,6 +2797,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "487112fc-7429-4185-acc2-a605bed15d12")
+	)
+	(junction
+		(at 165.1 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4881552b-2da2-4380-b345-0c0be2daa271")
 	)
 	(junction
 		(at 162.56 40.64)
@@ -2944,6 +2883,12 @@
 		(uuid "9e783b3d-ae69-48d5-96b1-43ecd60d6756")
 	)
 	(junction
+		(at 199.39 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2569035-02dd-4a15-ab77-6cc853836bd2")
+	)
+	(junction
 		(at 80.01 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2992,6 +2937,12 @@
 		(uuid "c1bc038e-33ce-410d-94fd-fe7bd73aa6a0")
 	)
 	(junction
+		(at 173.99 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8ccae12-d923-4b05-af12-2560cfd8de0e")
+	)
+	(junction
 		(at 67.31 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3004,7 +2955,13 @@
 		(uuid "e5eaa40f-1b7b-4fb2-a970-a932806b31dc")
 	)
 	(junction
-		(at 195.58 60.96)
+		(at 121.92 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec31bbb2-1b62-4466-9b3f-84adc321c89e")
+	)
+	(junction
+		(at 190.5 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5e5b852-fe6f-4c4e-a60c-040bde99fd8a")
@@ -3028,16 +2985,6 @@
 	(no_connect
 		(at 160.02 72.39)
 		(uuid "d32b563e-813a-4e11-95ab-a1d84ed3d5bc")
-	)
-	(wire
-		(pts
-			(xy 189.23 60.96) (xy 195.58 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "018e14a2-203b-4898-836e-7bf3bfd5b079")
 	)
 	(wire
 		(pts
@@ -3111,6 +3058,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 74.93) (xy 132.08 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13134c94-f066-44f0-bd3b-6c0cdaecccf9")
+	)
+	(wire
+		(pts
 			(xy 255.27 143.51) (xy 255.27 146.05)
 		)
 		(stroke
@@ -3181,23 +3138,13 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 67.31) (xy 195.58 69.85)
+			(xy 190.5 67.31) (xy 190.5 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1b819aa9-58a5-4f6f-9437-9cee127f3bcf")
-	)
-	(wire
-		(pts
-			(xy 204.47 39.37) (xy 204.47 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1cc9b51d-d312-4ace-8b34-91424cfd2123")
 	)
 	(wire
 		(pts
@@ -3221,7 +3168,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 40.64) (xy 204.47 40.64)
+			(xy 201.93 40.64) (xy 214.63 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3271,7 +3218,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 63.5) (xy 209.55 66.04)
+			(xy 204.47 63.5) (xy 204.47 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3298,6 +3245,16 @@
 			(type default)
 		)
 		(uuid "2ba8d8d3-fa43-4e80-8c9c-6a0302145c9b")
+	)
+	(wire
+		(pts
+			(xy 199.39 38.1) (xy 199.39 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bb0fe39-0849-4f05-b019-13da2a8e5d5e")
 	)
 	(wire
 		(pts
@@ -3491,6 +3448,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 74.93) (xy 121.92 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "514b961b-9245-4fa9-8720-4a046da3eb6a")
+	)
+	(wire
+		(pts
 			(xy 88.9 24.13) (xy 88.9 26.67)
 		)
 		(stroke
@@ -3551,13 +3518,23 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 60.96) (xy 195.58 62.23)
+			(xy 190.5 60.96) (xy 190.5 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5b580579-4cd9-4e54-a392-8eaa4418eda3")
+	)
+	(wire
+		(pts
+			(xy 199.39 40.64) (xy 201.93 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ec155f1-d6cb-4dfe-8d8e-15c5e282cffa")
 	)
 	(wire
 		(pts
@@ -3611,16 +3588,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 60.96) (xy 189.23 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a35d128-de35-49c8-841e-f078fbba6b63")
-	)
-	(wire
-		(pts
 			(xy 80.01 151.13) (xy 80.01 152.4)
 		)
 		(stroke
@@ -3631,7 +3598,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 60.96) (xy 212.09 60.96)
+			(xy 203.2 60.96) (xy 207.01 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3741,7 +3708,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 68.58) (xy 163.83 68.58)
+			(xy 160.02 68.58) (xy 165.1 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3761,7 +3728,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 74.93) (xy 132.08 74.93)
+			(xy 78.74 74.93) (xy 121.92 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3841,16 +3808,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 40.64) (xy 201.93 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98332080-e5d8-4e2f-af3d-825709b0392e")
-	)
-	(wire
-		(pts
 			(xy 201.93 43.18) (xy 201.93 40.64)
 		)
 		(stroke
@@ -3871,7 +3828,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 60.96) (xy 208.28 60.96)
+			(xy 190.5 60.96) (xy 203.2 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3918,6 +3875,16 @@
 			(type default)
 		)
 		(uuid "a4eb0d92-bd05-4fb5-b336-fad026f424c5")
+	)
+	(wire
+		(pts
+			(xy 173.99 60.96) (xy 190.5 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ceb8f9-4e59-4dc5-b265-285ea450a592")
 	)
 	(wire
 		(pts
@@ -4031,7 +3998,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 60.96) (xy 189.23 60.96)
+			(xy 162.56 60.96) (xy 173.99 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4128,6 +4095,16 @@
 			(type default)
 		)
 		(uuid "caf52ee9-bf18-4615-b7dd-710d04a233f7")
+	)
+	(wire
+		(pts
+			(xy 165.1 67.31) (xy 165.1 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc907aa9-e0d9-48e0-9777-4352ca0eceb0")
 	)
 	(wire
 		(pts
@@ -4241,7 +4218,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 58.42) (xy 208.28 60.96)
+			(xy 203.2 58.42) (xy 203.2 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4251,7 +4228,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 63.5) (xy 209.55 63.5)
+			(xy 207.01 63.5) (xy 204.47 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4321,6 +4298,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 68.58) (xy 168.91 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15b2f1a-2d7d-459e-a12e-b69539af7ae0")
+	)
+	(wire
+		(pts
 			(xy 86.36 22.86) (xy 86.36 24.13)
 		)
 		(stroke
@@ -4331,7 +4318,17 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 40.64) (xy 201.93 40.64)
+			(xy 173.99 59.69) (xy 173.99 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3e129f4-4046-4322-8753-b02eda2b4eb5")
+	)
+	(wire
+		(pts
+			(xy 187.96 40.64) (xy 199.39 40.64)
 		)
 		(stroke
 			(width 0)
@@ -4551,7 +4548,7 @@
 	)
 	(global_label "WAKE_SLEEP"
 		(shape input)
-		(at 163.83 68.58 0)
+		(at 168.91 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4561,7 +4558,7 @@
 		)
 		(uuid "06fb5316-9cad-4163-a5bd-635c00ac07a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.5474 68.58 0)
+			(at 183.6274 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4664,7 +4661,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:SML-P13PTT_LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 80.01 147.32 0)
 			(effects
 				(font
@@ -4777,7 +4774,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NVTA7002NT1G"
+		(property "Value" "IRLML2402TRPBF"
 			(at 264.668 149.606 0)
 			(effects
 				(font
@@ -4786,7 +4783,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:NVTA7002N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 266.7 143.51 0)
 			(effects
 				(font
@@ -4795,7 +4792,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nta7002n-d.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579710850028408832"
 			(at 261.62 146.05 0)
 			(effects
 				(font
@@ -4804,7 +4801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
+		(property "Description" "N-Channel 1.2A 110pF 2.6nC@4.5V 20V 250mΩ@4.5V,0.93A 25pF@16V 540mW 700mV SOT-23 MOSFETs"
 			(at 261.62 146.05 0)
 			(effects
 				(font
@@ -4819,6 +4816,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -4827,6 +4825,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/InfineonTechnologies-IRLML2402TRPBF/C2588"
+			(at 261.62 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 261.62 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "IRLML2402TRPBF"
+			(at 261.62 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4892,7 +4918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 81.026 80.01 90)
 			(effects
 				(font
@@ -4909,6 +4935,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 78.74 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 78.74 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 78.74 80.01 0)
 			(effects
 				(font
@@ -5017,25 +5059,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 189.23 62.23 0)
-		(mirror x)
+		(lib_id "Connector:TestPoint_Small")
+		(at 165.1 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "15a41c46-8a96-4db0-84b2-c3b24d3e13e3")
-		(property "Reference" "TP300"
-			(at 189.23 69.342 90)
+		(uuid "13bad8af-4788-45d1-8b27-bbc5b639deb7")
+		(property "Reference" "TP422"
+			(at 162.052 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+VBAT"
-			(at 189.23 76.2 90)
+		(property "Value" "TestPoint_Small"
+			(at 166.37 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 170.18 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5043,17 +5095,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 194.31 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 194.31 62.23 0)
+		(property "Datasheet" ""
+			(at 170.18 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5062,7 +5105,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 189.23 62.23 0)
+			(at 165.1 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5070,29 +5113,13 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 189.23 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Secound Source" ""
-			(at 189.23 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
-			(uuid "6696ba04-1fb9-4ab5-93f0-3b2cfc812acc")
+			(uuid "ef89604c-bd0e-4d65-989d-bbfb96721233")
 		)
 		(instances
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
-					(reference "TP300")
+					(reference "TP422")
 					(unit 1)
 				)
 			)
@@ -5116,7 +5143,7 @@
 				)
 			)
 		)
-		(property "Value" "BSS314PE"
+		(property "Value" "BSS314PEH6327"
 			(at 58.42 127 90)
 			(effects
 				(font
@@ -5133,7 +5160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.it/datasheet/3/70/1/Infineon-BSS314PE-DataSheet-v02_03-EN.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586187024612642816"
 			(at 58.42 133.35 0)
 			(effects
 				(font
@@ -5142,7 +5169,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, gate/source/drain"
+		(property "Description" "P-Channel 1.5A 2.9nC@10V 230mΩ@4.5V,1.2A 2V@6.3uA 30V 500mW P-Channel SOT-23 MOSFETs"
 			(at 58.42 133.35 0)
 			(effects
 				(font
@@ -5157,6 +5184,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -5165,6 +5193,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/InfineonTechnologies-BSS314PEH6327/C151506"
+			(at 58.42 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 58.42 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BSS314PEH6327"
+			(at 58.42 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "3"
@@ -5265,7 +5321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics "
+		(property "Manufacturer" "Murata Electronics"
 			(at 106.68 34.29 0)
 			(effects
 				(font
@@ -5343,7 +5399,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 235.966 152.4 90)
 			(effects
 				(font
@@ -5360,6 +5416,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 233.68 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 233.68 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 233.68 152.4 0)
 			(effects
 				(font
@@ -5497,7 +5569,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 209.55 66.04 0)
+		(at 204.47 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5505,7 +5577,7 @@
 		(dnp no)
 		(uuid "2bacd3d0-49ad-400b-893f-13e15680ded3")
 		(property "Reference" "#PWR0308"
-			(at 209.55 72.39 0)
+			(at 204.47 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5514,7 +5586,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 209.55 69.85 0)
+			(at 204.47 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5522,7 +5594,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 66.04 0)
+			(at 204.47 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5531,7 +5603,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 66.04 0)
+			(at 204.47 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5540,7 +5612,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 209.55 66.04 0)
+			(at 204.47 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5562,7 +5634,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 217.17 60.96 0)
+		(at 212.09 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5570,7 +5642,7 @@
 		(dnp no)
 		(uuid "2cc4989e-3a1e-4925-8a70-1fdc25a6d347")
 		(property "Reference" "J300"
-			(at 221.234 60.96 0)
+			(at 216.154 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5578,7 +5650,7 @@
 			)
 		)
 		(property "Value" "JST_B2B"
-			(at 222.758 63.5 0)
+			(at 217.678 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5586,7 +5658,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
-			(at 217.17 60.96 0)
+			(at 212.09 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5594,8 +5666,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 217.17 60.96 0)
+		(property "Datasheet" ""
+			(at 212.09 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5604,7 +5676,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 217.17 60.96 0)
+			(at 212.09 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5613,7 +5685,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 217.17 60.96 0)
+			(at 212.09 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5621,7 +5693,7 @@
 			)
 		)
 		(property "Secound Source" ""
-			(at 217.17 60.96 0)
+			(at 212.09 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5743,7 +5815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 250.19 143.51 0)
 			(effects
 				(font
@@ -6009,7 +6081,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 256.54 130.556 90)
 			(effects
 				(font
@@ -6026,6 +6098,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 256.54 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 256.54 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 256.54 128.27 0)
 			(effects
 				(font
@@ -6117,6 +6205,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 123.19 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-071KL"
+			(at 123.19 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e3f2161a-daae-4e35-a852-597b9a442b0a")
 		)
@@ -6193,87 +6297,6 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
 					(reference "#PWR0319")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 204.47 39.37 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "4f8390ef-8329-46d8-b352-33a888465b91")
-		(property "Reference" "TP508"
-			(at 204.47 32.258 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 204.47 25.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 199.39 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 199.39 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 204.47 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 204.47 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Secound Source" ""
-			(at 204.47 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "82c7fc56-b0d5-42c9-85ce-0e84f91e3c1f")
-		)
-		(instances
-			(project "Plantomatic2000"
-				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
-					(reference "TP508")
 					(unit 1)
 				)
 			)
@@ -6379,7 +6402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 266.7 132.08 0)
 			(effects
 				(font
@@ -6426,6 +6449,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 121.92 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d865d4d-4f4f-4e5b-aadb-ca5fc4756137")
+		(property "Reference" "TP420"
+			(at 118.872 79.248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 123.19 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 127 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 121.92 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fccf9061-8897-4a47-8199-93ce7cb4341f")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
+					(reference "TP420")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 199.39 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e83cf40-a703-4da5-9a0e-9a5a5e474075")
+		(property "Reference" "TP423"
+			(at 196.342 36.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 200.66 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 204.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 199.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74894437-6148-4517-9e08-b5cb9e98de27")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
+					(reference "TP423")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 67.31 128.27 0)
 		(mirror y)
@@ -6460,7 +6617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 62.23 128.27 0)
 			(effects
 				(font
@@ -6717,7 +6874,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics "
+		(property "Manufacturer" "Murata Electronics"
 			(at 201.93 45.72 0)
 			(effects
 				(font
@@ -6795,7 +6952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 50.8 141.986 90)
 			(effects
 				(font
@@ -6819,6 +6976,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 50.8 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
+			(at 50.8 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "17011a1c-e558-4897-8eae-537420df8202")
 		)
@@ -6829,110 +7002,6 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
 					(reference "R310")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 227.33 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "68426c3c-ea3a-47e9-b039-0a08c9acfb84")
-		(property "Reference" "C305"
-			(at 229.362 43.7262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 229.362 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
-			(at 227.33 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893102903316480"
-			(at 227.33 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "35V 20%"
-			(at 233.68 47.752 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Secound Source" ""
-			(at 227.33 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://jlcpcb.com/partdetail/PANASONIC-EEEFK1V470P/C178565"
-			(at 227.33 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "PANASONIC "
-			(at 227.33 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "EEEFK1V470P"
-			(at 227.33 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "48d4d866-2f09-4328-9fde-0bce31807c2a")
-		)
-		(pin "1"
-			(uuid "a45b7cf8-33de-46f6-9efb-1d7476a107fa")
-		)
-		(instances
-			(project "Plantomatic2000"
-				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
-					(reference "C305")
 					(unit 1)
 				)
 			)
@@ -7213,7 +7282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics "
+		(property "Manufacturer" "Murata Electronics"
 			(at 187.96 45.72 0)
 			(effects
 				(font
@@ -7280,7 +7349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 246.38 146.05 0)
 			(effects
 				(font
@@ -7289,7 +7358,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 246.38 148.336 90)
 			(effects
 				(font
@@ -7306,6 +7375,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 246.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 246.38 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-07470RL"
 			(at 246.38 146.05 0)
 			(effects
 				(font
@@ -7438,7 +7523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 81.026 69.85 90)
 			(effects
 				(font
@@ -7455,6 +7540,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 78.74 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 78.74 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 78.74 69.85 0)
 			(effects
 				(font
@@ -7806,6 +7907,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 80.01 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-071KL"
+			(at 80.01 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2b3300e1-b41e-483d-9bd1-e017cb82e477")
 		)
@@ -7953,7 +8070,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 195.58 64.77 0)
+		(at 190.5 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7961,7 +8078,7 @@
 		(dnp no)
 		(uuid "c5291463-6236-478d-90e5-1a7e74073299")
 		(property "Reference" "C307"
-			(at 197.358 62.992 0)
+			(at 192.278 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7970,7 +8087,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 197.358 64.77 0)
+			(at 192.278 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7979,7 +8096,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 195.58 64.77 0)
+			(at 190.5 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7988,7 +8105,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893594979196928"
-			(at 195.58 64.77 0)
+			(at 190.5 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7997,7 +8114,7 @@
 			)
 		)
 		(property "Description" "25V 10%"
-			(at 201.676 66.802 0)
+			(at 196.596 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8005,7 +8122,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 201.676 66.802 0)
+			(at 196.596 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8014,7 +8131,7 @@
 			)
 		)
 		(property "Secound Source" ""
-			(at 195.58 64.77 0)
+			(at 190.5 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8023,7 +8140,7 @@
 			)
 		)
 		(property "Link" "https://jlcpcb.com/partdetail/320824-GRM188R61E106KA73D/C344022"
-			(at 195.58 64.77 0)
+			(at 190.5 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8031,8 +8148,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics "
-			(at 195.58 64.77 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 190.5 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8041,7 +8158,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM188R61E106KA73D"
-			(at 195.58 64.77 0)
+			(at 190.5 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8133,6 +8250,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 184.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "AT0402BRD0730K1L"
+			(at 184.15 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3f701e6b-b605-4b53-b8a1-e48e012f5c7d")
 		)
@@ -8143,6 +8276,73 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
 					(reference "R306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 173.99 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd1b1773-2079-4e4f-8523-02985cafa3b9")
+		(property "Reference" "TP421"
+			(at 170.942 58.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 175.26 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 179.07 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 173.99 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a80dcf0-da8a-46f0-bd10-cd16c168d559")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
+					(reference "TP421")
 					(unit 1)
 				)
 			)
@@ -8209,110 +8409,6 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
 					(reference "#PWR0318")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 214.63 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d7d2bed3-cd4a-40d5-a6cd-37dae719a847")
-		(property "Reference" "C304"
-			(at 216.662 43.7262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 216.662 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
-			(at 214.63 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893102903316480"
-			(at 214.63 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "35V 20%"
-			(at 220.98 47.752 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Secound Source" ""
-			(at 214.63 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://jlcpcb.com/partdetail/PANASONIC-EEEFK1V470P/C178565"
-			(at 214.63 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "PANASONIC "
-			(at 214.63 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "EEEFK1V470P"
-			(at 214.63 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "afbd0edc-c5d6-4747-af5b-de3668da62b9")
-		)
-		(pin "1"
-			(uuid "1fcd226e-0d15-4e82-acd6-fca40b1ee1eb")
-		)
-		(instances
-			(project "Plantomatic2000"
-				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
-					(reference "C304")
 					(unit 1)
 				)
 			)
@@ -8453,6 +8549,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 109.22 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-071KL"
+			(at 109.22 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dc87c92d-b4fa-4f2d-b535-b080586acac4")
 		)
@@ -8463,6 +8575,101 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
 					(reference "R300")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 227.33 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dccd70b9-308d-410b-8582-95b04ad55fe7")
+		(property "Reference" "C129"
+			(at 229.108 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 229.108 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 227.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588884002523009024"
+			(at 227.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25V 20%"
+			(at 233.426 47.498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/TDK-C3216X5R1E476MTJ00E/C76659"
+			(at 227.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 227.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "C3216X5R1E476MTJ00E"
+			(at 227.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca09a1a0-6133-40bb-b4da-db1f3672f71a")
+		)
+		(pin "2"
+			(uuid "8c8b7dec-94ad-43ba-ad2b-d9d9af9d54e6")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
+					(reference "C129")
 					(unit 1)
 				)
 			)
@@ -8502,7 +8709,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq25890.pdf"
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/bq25892.pdf?ts=1760290345281&ref_url=https%253A%252F%252Fjlcpcb.com%252F"
 			(at 145.796 58.674 0)
 			(effects
 				(font
@@ -8511,7 +8718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "12uA 3.9V~14V 4.208V 5.056A Charging IC I2C Lithium Battery Support Support WQFN-24-EP(4x4) Battery Management"
 			(at 146.05 62.23 0)
 			(effects
 				(font
@@ -8526,6 +8733,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -8534,6 +8742,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/TexasInstruments-BQ25892RTWR/C165480"
+			(at 146.05 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 146.05 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BQ25892RTWR"
+			(at 146.05 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "20"
@@ -8621,6 +8857,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 214.63 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e20c69a8-274f-4cae-a893-5d04698fd81b")
+		(property "Reference" "C128"
+			(at 216.408 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 216.408 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 214.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588884002523009024"
+			(at 214.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25V 20%"
+			(at 220.726 47.498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/TDK-C3216X5R1E476MTJ00E/C76659"
+			(at 214.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 214.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "C3216X5R1E476MTJ00E"
+			(at 214.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6311d44e-f916-436b-8982-cc79903eee7c")
+		)
+		(pin "2"
+			(uuid "a2ad1df8-26cd-48d8-9d98-80824135dad8")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/e4d92317-3ec9-4724-90e4-ad771f134a3e"
+					(reference "C128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 72.39 137.16 0)
 		(unit 1)
@@ -8665,7 +8996,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/16W"
+		(property "Description" "0.1% 1/16W"
 			(at 74.676 137.16 90)
 			(effects
 				(font
@@ -8682,6 +9013,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 72.39 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 72.39 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RT0402BRD0722K1L"
 			(at 72.39 137.16 0)
 			(effects
 				(font
@@ -8706,7 +9053,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 208.28 58.42 0)
+		(at 203.2 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8714,7 +9061,7 @@
 		(dnp no)
 		(uuid "e4863df2-fd1e-47ce-8458-2d276fec171e")
 		(property "Reference" "#PWR0306"
-			(at 208.28 62.23 0)
+			(at 203.2 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8723,7 +9070,7 @@
 			)
 		)
 		(property "Value" "+VBAT"
-			(at 208.28 54.864 0)
+			(at 203.2 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8731,7 +9078,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 58.42 0)
+			(at 203.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8740,7 +9087,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 58.42 0)
+			(at 203.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8749,7 +9096,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 208.28 58.42 0)
+			(at 203.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8771,7 +9118,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 195.58 69.85 0)
+		(at 190.5 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8779,7 +9126,7 @@
 		(dnp no)
 		(uuid "e4f06af6-1c7b-4b4c-a419-53c1d5048df1")
 		(property "Reference" "#PWR0309"
-			(at 195.58 76.2 0)
+			(at 190.5 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8788,7 +9135,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 195.58 73.66 0)
+			(at 190.5 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8796,7 +9143,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 69.85 0)
+			(at 190.5 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8805,7 +9152,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 69.85 0)
+			(at 190.5 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8814,7 +9161,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 195.58 69.85 0)
+			(at 190.5 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8926,7 +9273,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:SML-P13PTT_LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 96.52 53.34 0)
 			(effects
 				(font
@@ -9048,7 +9395,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:SML-P13PTT_LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 96.52 57.15 0)
 			(effects
 				(font
@@ -9202,6 +9549,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -9210,6 +9558,25 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RT0402BRD07130RL"
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9515,6 +9882,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 184.15 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 184.15 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" " RT0402BRD075K23L"
 			(at 184.15 83.82 0)
 			(effects
 				(font

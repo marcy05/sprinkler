@@ -317,168 +317,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized_Small"
-				(at 0.254 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Polarized capacitor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Polarized_Small_0_1"
-				(rectangle
-					(start -1.524 0.6858)
-					(end 1.524 0.3048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.524) (xy -0.762 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy -1.016 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.8542)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.8542)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -3114,7 +2952,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NVTA7002NT1G"
+		(property "Value" "IRLML2402TRPBF"
 			(at 220.218 108.966 0)
 			(effects
 				(font
@@ -3123,7 +2961,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:NVTA7002N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 222.25 102.87 0)
 			(effects
 				(font
@@ -3132,7 +2970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nta7002n-d.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579710850028408832"
 			(at 217.17 105.41 0)
 			(effects
 				(font
@@ -3141,7 +2979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
+		(property "Description" "N-Channel 1.2A 110pF 2.6nC@4.5V 20V 250mΩ@4.5V,0.93A 25pF@16V 540mW 700mV SOT-23 MOSFETs"
 			(at 217.17 105.41 0)
 			(effects
 				(font
@@ -3156,6 +2994,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -3164,6 +3003,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/InfineonTechnologies-IRLML2402TRPBF/C2588"
+			(at 217.17 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 217.17 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "IRLML2402TRPBF"
+			(at 217.17 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3211,7 +3078,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:SML-P13PTT_LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 110.49 93.98 0)
 			(effects
 				(font
@@ -3341,7 +3208,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 100.33 80.01 0)
 			(effects
 				(font
@@ -3598,7 +3465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 190.5 82.55 0)
 			(effects
 				(font
@@ -3676,7 +3543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 72.39 88.646 90)
 			(effects
 				(font
@@ -3693,6 +3560,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 72.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 72.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 72.39 86.36 0)
 			(effects
 				(font
@@ -3733,7 +3616,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NVTA7002NT1G"
+		(property "Value" "IRLML2402TRPBF"
 			(at 80.518 108.966 0)
 			(effects
 				(font
@@ -3742,7 +3625,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:NVTA7002N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 82.55 102.87 0)
 			(effects
 				(font
@@ -3751,7 +3634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nta7002n-d.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579710850028408832"
 			(at 77.47 105.41 0)
 			(effects
 				(font
@@ -3760,7 +3643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
+		(property "Description" "N-Channel 1.2A 110pF 2.6nC@4.5V 20V 250mΩ@4.5V,0.93A 25pF@16V 540mW 700mV SOT-23 MOSFETs"
 			(at 77.47 105.41 0)
 			(effects
 				(font
@@ -3775,6 +3658,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -3783,6 +3667,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/InfineonTechnologies-IRLML2402TRPBF/C2588"
+			(at 77.47 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 77.47 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "IRLML2402TRPBF"
+			(at 77.47 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3883,7 +3795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics "
+		(property "Manufacturer" "Murata Electronics"
 			(at 36.83 82.55 0)
 			(effects
 				(font
@@ -3985,6 +3897,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 110.49 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-071KL"
+			(at 110.49 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d348ee75-be8b-4f6b-a629-4f0393af285b")
 		)
@@ -4034,7 +3962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 201.93 105.41 0)
 			(effects
 				(font
@@ -4043,7 +3971,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 201.93 107.696 90)
 			(effects
 				(font
@@ -4060,6 +3988,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 201.93 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 201.93 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-07470RL"
 			(at 201.93 105.41 0)
 			(effects
 				(font
@@ -4117,7 +4061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 205.74 104.14 0)
 			(effects
 				(font
@@ -4243,7 +4187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 49.53 82.55 0)
 			(effects
 				(font
@@ -4492,7 +4436,7 @@
 				)
 			)
 		)
-		(property "Value" "BSS314PE"
+		(property "Value" "BSS314PEH6327"
 			(at 80.01 73.66 90)
 			(effects
 				(font
@@ -4509,7 +4453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.it/datasheet/3/70/1/Infineon-BSS314PE-DataSheet-v02_03-EN.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586187024612642816"
 			(at 80.01 80.01 0)
 			(effects
 				(font
@@ -4518,7 +4462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, gate/source/drain"
+		(property "Description" "P-Channel 1.5A 2.9nC@10V 230mΩ@4.5V,1.2A 2V@6.3uA 30V 500mW P-Channel SOT-23 MOSFETs"
 			(at 80.01 80.01 0)
 			(effects
 				(font
@@ -4533,6 +4477,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -4541,6 +4486,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/InfineonTechnologies-BSS314PEH6327/C151506"
+			(at 80.01 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 80.01 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BSS314PEH6327"
+			(at 80.01 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "3"
@@ -4606,7 +4579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 56.896 114.3 90)
 			(effects
 				(font
@@ -4623,6 +4596,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 54.61 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 54.61 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 54.61 114.3 0)
 			(effects
 				(font
@@ -4812,7 +4801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 238.76 80.01 0)
 			(effects
 				(font
@@ -4959,7 +4948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 66.04 102.87 0)
 			(effects
 				(font
@@ -5050,7 +5039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 194.056 111.76 90)
 			(effects
 				(font
@@ -5067,6 +5056,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 191.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 191.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 191.77 111.76 0)
 			(effects
 				(font
@@ -5169,7 +5174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics "
+		(property "Manufacturer" "Murata Electronics"
 			(at 177.8 82.55 0)
 			(effects
 				(font
@@ -5220,7 +5225,7 @@
 				)
 			)
 		)
-		(property "Value" "BSS314PE"
+		(property "Value" "BSS314PEH6327"
 			(at 219.71 73.66 90)
 			(effects
 				(font
@@ -5237,7 +5242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.it/datasheet/3/70/1/Infineon-BSS314PE-DataSheet-v02_03-EN.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586187024612642816"
 			(at 219.71 80.01 0)
 			(effects
 				(font
@@ -5246,7 +5251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, gate/source/drain"
+		(property "Description" "P-Channel 1.5A 2.9nC@10V 230mΩ@4.5V,1.2A 2V@6.3uA 30V 500mW P-Channel SOT-23 MOSFETs"
 			(at 219.71 80.01 0)
 			(effects
 				(font
@@ -5261,6 +5266,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -5269,6 +5275,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/InfineonTechnologies-BSS314PEH6327/C151506"
+			(at 219.71 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 219.71 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BSS314PEH6327"
+			(at 219.71 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "3"
@@ -5284,6 +5318,101 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/be7e12f5-96cc-48bd-904a-16aa2948c930"
 					(reference "Q701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 165.1 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8363bfc5-2f7b-4513-8e74-75d57e6ed730")
+		(property "Reference" "C133"
+			(at 166.878 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 166.878 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 165.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588884002523009024"
+			(at 165.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25V 20%"
+			(at 171.196 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/TDK-C3216X5R1E476MTJ00E/C76659"
+			(at 165.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 165.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "C3216X5R1E476MTJ00E"
+			(at 165.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ad65f0f-1658-4202-83b4-45a1ddc8192c")
+		)
+		(pin "2"
+			(uuid "b207f727-a641-4e3e-b957-0df739d69df7")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/be7e12f5-96cc-48bd-904a-16aa2948c930"
+					(reference "C133")
 					(unit 1)
 				)
 			)
@@ -5334,7 +5463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/16W"
+		(property "Description" "0.1% 1/16W"
 			(at 102.616 83.82 90)
 			(effects
 				(font
@@ -5358,6 +5487,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 100.33 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RT0402BRD0722K1L"
+			(at 100.33 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d12de58d-425d-4ddc-9bfe-bed850e606f9")
 		)
@@ -5368,110 +5513,6 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/be7e12f5-96cc-48bd-904a-16aa2948c930"
 					(reference "R700")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 165.1 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8741e9a4-5272-4939-8239-5078cc6b7448")
-		(property "Reference" "C703"
-			(at 166.878 80.5562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 166.878 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
-			(at 165.1 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893102903316480"
-			(at 165.1 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "35V 20%"
-			(at 171.196 84.582 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Secound Source" ""
-			(at 165.1 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://jlcpcb.com/partdetail/PANASONIC-EEEFK1V470P/C178565"
-			(at 165.1 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "PANASONIC"
-			(at 165.1 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "EEEFK1V470P"
-			(at 165.1 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c25faad1-7222-4f0f-a6b7-dd175b82593d")
-		)
-		(pin "1"
-			(uuid "ac55b55c-806e-4cdc-9e4b-3eeebfd35c4a")
-		)
-		(instances
-			(project "Plantomatic2000"
-				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/be7e12f5-96cc-48bd-904a-16aa2948c930"
-					(reference "C703")
 					(unit 1)
 				)
 			)
@@ -5511,7 +5552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 63.5 105.41 0)
 			(effects
 				(font
@@ -5520,7 +5561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 63.5 107.696 90)
 			(effects
 				(font
@@ -5537,6 +5578,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 63.5 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 63.5 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-07470RL"
 			(at 63.5 105.41 0)
 			(effects
 				(font
@@ -5670,7 +5727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 212.09 88.646 90)
 			(effects
 				(font
@@ -5687,6 +5744,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 212.09 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 212.09 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 212.09 86.36 0)
 			(effects
 				(font
@@ -5746,7 +5819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 271.78 74.93 0)
 			(effects
 				(font
@@ -5802,110 +5875,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 24.13 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a5909bc3-3b08-432d-9be9-2eb3256284ee")
-		(property "Reference" "C700"
-			(at 25.908 80.5562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 25.908 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
-			(at 24.13 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893102903316480"
-			(at 24.13 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "35V 20%"
-			(at 30.226 84.582 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Secound Source" ""
-			(at 24.13 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://jlcpcb.com/partdetail/PANASONIC-EEEFK1V470P/C178565"
-			(at 24.13 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "PANASONIC"
-			(at 24.13 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "EEEFK1V470P"
-			(at 24.13 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "04dab11c-e0b8-4fcd-b29b-dcb3e1a3117f")
-		)
-		(pin "1"
-			(uuid "376ae6bd-335e-49c9-8d47-7252f77a4a11")
-		)
-		(instances
-			(project "Plantomatic2000"
-				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/be7e12f5-96cc-48bd-904a-16aa2948c930"
-					(reference "C700")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 250.19 83.82 0)
 		(unit 1)
@@ -5950,7 +5919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 252.476 83.82 90)
 			(effects
 				(font
@@ -5967,6 +5936,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 250.19 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 250.19 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-074K7L"
 			(at 250.19 83.82 0)
 			(effects
 				(font
@@ -6156,7 +6141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 82.55 92.71 0)
 			(effects
 				(font
@@ -6229,7 +6214,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:SML-P13PTT_LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 250.19 92.71 0)
 			(effects
 				(font
@@ -6490,7 +6475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 220.98 83.82 0)
 			(effects
 				(font
@@ -6581,7 +6566,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/16W"
+		(property "Description" "0.1% 1/16W"
 			(at 242.316 83.82 90)
 			(effects
 				(font
@@ -6605,6 +6590,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 240.03 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RT0402BRD0722K1L"
+			(at 240.03 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "86d54e31-cf50-4164-a253-f5be9ec5c5c8")
 		)
@@ -6615,6 +6616,101 @@
 			(project "Plantomatic2000"
 				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/be7e12f5-96cc-48bd-904a-16aa2948c930"
 					(reference "R702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 24.13 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e54c7c5b-1532-4ea0-92f4-ae09784f5368")
+		(property "Reference" "C132"
+			(at 25.908 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 25.908 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 24.13 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588884002523009024"
+			(at 24.13 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25V 20%"
+			(at 30.226 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/TDK-C3216X5R1E476MTJ00E/C76659"
+			(at 24.13 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 24.13 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "C3216X5R1E476MTJ00E"
+			(at 24.13 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6fcd183-643a-4505-8993-3bc97cf314a2")
+		)
+		(pin "2"
+			(uuid "28937c50-1763-4cb1-8258-4f8e022704e6")
+		)
+		(instances
+			(project "Plantomatic2000"
+				(path "/7b3f5236-3811-4a22-865a-1f6a26bdd727/be7e12f5-96cc-48bd-904a-16aa2948c930"
+					(reference "C132")
 					(unit 1)
 				)
 			)
@@ -6657,7 +6753,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 124.46 77.47 0)
 			(effects
 				(font

@@ -5107,6 +5107,17 @@
 		)
 		(uuid "ad896c2e-1962-4628-a139-4311e9691edd")
 	)
+	(hierarchical_label "BOOST_ENABLE"
+		(shape output)
+		(at 91.44 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b41df216-d7e2-4a9e-9cdf-8d63a6638d89")
+	)
 	(hierarchical_label "SELECT_LINE_BUTTON_PIN"
 		(shape input)
 		(at 91.44 102.87 0)
@@ -5128,17 +5139,6 @@
 			(justify left)
 		)
 		(uuid "dd4278e8-f506-45d3-b38d-75eabdee7942")
-	)
-	(hierarchical_label "BOOST_ENABLE"
-		(shape output)
-		(at 91.44 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f37d9949-222d-4d65-9513-bff7778f270d")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5308,7 +5308,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586152831288426496"
 			(at 114.3 92.71 0)
 			(effects
 				(font
@@ -5317,7 +5317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1/16W"
+		(property "Description" "1/16W 1%"
 			(at 114.3 94.996 90)
 			(effects
 				(font
@@ -5334,7 +5334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 114.3 92.71 0)
 			(effects
 				(font
@@ -5343,7 +5343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "AC0402FR-070RL"
 			(at 114.3 92.71 0)
 			(effects
 				(font
@@ -5483,7 +5483,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 53.34 45.72 0)
 			(effects
 				(font
@@ -5687,7 +5687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 140.716 87.63 90)
 			(effects
 				(font
@@ -5704,6 +5704,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 138.43 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 138.43 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-074K7L"
 			(at 138.43 87.63 0)
 			(effects
 				(font
@@ -5761,7 +5777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 162.56 100.33 0)
 			(effects
 				(font
@@ -5852,7 +5868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 150.876 87.63 90)
 			(effects
 				(font
@@ -5869,6 +5885,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 148.59 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 148.59 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-074K7L"
 			(at 148.59 87.63 0)
 			(effects
 				(font
@@ -6002,7 +6034,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 214.376 113.03 90)
 			(effects
 				(font
@@ -6019,6 +6051,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 212.09 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 212.09 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-074K7L"
 			(at 212.09 113.03 0)
 			(effects
 				(font
@@ -6086,7 +6134,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 53.086 36.83 90)
 			(effects
 				(font
@@ -6103,6 +6151,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 50.8 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 50.8 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 50.8 36.83 0)
 			(effects
 				(font
@@ -6205,7 +6269,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 198.12 46.99 0)
 			(effects
 				(font
@@ -6348,7 +6412,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 206.756 113.03 90)
 			(effects
 				(font
@@ -6365,6 +6429,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 204.47 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 204.47 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-074K7L"
 			(at 204.47 113.03 0)
 			(effects
 				(font
@@ -6532,7 +6612,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 234.95 106.68 0)
 			(effects
 				(font
@@ -6773,7 +6853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics "
+		(property "Manufacturer" "Murata Electronics"
 			(at 222.25 106.68 0)
 			(effects
 				(font
@@ -6841,7 +6921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 152.4 93.98 0)
 			(effects
 				(font
@@ -7102,7 +7182,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NVTA7002NT1G"
+		(property "Value" "IRLML2402TRPBF"
 			(at 267.208 72.136 0)
 			(effects
 				(font
@@ -7111,7 +7191,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:NVTA7002N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 269.24 66.04 0)
 			(effects
 				(font
@@ -7120,7 +7200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nta7002n-d.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579710850028408832"
 			(at 264.16 68.58 0)
 			(effects
 				(font
@@ -7129,7 +7209,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
+		(property "Description" "N-Channel 1.2A 110pF 2.6nC@4.5V 20V 250mΩ@4.5V,0.93A 25pF@16V 540mW 700mV SOT-23 MOSFETs"
 			(at 264.16 68.58 0)
 			(effects
 				(font
@@ -7144,6 +7224,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -7152,6 +7233,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/InfineonTechnologies-IRLML2402TRPBF/C2588"
+			(at 264.16 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 264.16 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "IRLML2402TRPBF"
+			(at 264.16 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7217,7 +7326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 244.856 76.2 90)
 			(effects
 				(font
@@ -7234,6 +7343,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 242.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 242.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 242.57 76.2 0)
 			(effects
 				(font
@@ -7488,7 +7613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 252.73 67.31 0)
 			(effects
 				(font
@@ -7635,7 +7760,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586152831288426496"
 			(at 120.65 62.23 0)
 			(effects
 				(font
@@ -7644,7 +7769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1/16W"
+		(property "Description" "1/16W 1%"
 			(at 120.65 64.516 90)
 			(effects
 				(font
@@ -7661,7 +7786,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 120.65 62.23 0)
 			(effects
 				(font
@@ -7670,7 +7795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "AC0402FR-070RL"
 			(at 120.65 62.23 0)
 			(effects
 				(font
@@ -7924,7 +8049,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 251.46 68.58 0)
 			(effects
 				(font
@@ -7933,7 +8058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 251.46 70.866 90)
 			(effects
 				(font
@@ -7950,6 +8075,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 251.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 251.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-07470RL"
 			(at 251.46 68.58 0)
 			(effects
 				(font
@@ -8393,10 +8534,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c50dcecc-fe78-4511-860c-c2a7121cdd08")
 		(property "Reference" "U501"
-			(at 71.9933 52.07 0)
+			(at 56.896 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8404,8 +8544,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESP32-WROOM-32E"
-			(at 71.9933 54.61 0)
+		(property "Value" "ESP32-WROOM-32E-N4"
+			(at 70.612 124.714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8422,7 +8562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588886930931535873"
 			(at 69.85 90.17 0)
 			(effects
 				(font
@@ -8431,7 +8571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RF Module, ESP32-D0WD-V3 SoC, without PSRAM, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"
+		(property "Description" "ESP32-WROOM-32E-N4"
 			(at 69.85 90.17 0)
 			(effects
 				(font
@@ -8446,6 +8586,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -8454,6 +8595,27 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Espressif Systems"
+			(at 71.9933 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "ESP32-WROOM-32E-N4"
+			(at 71.9933 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
 			)
 		)
 		(pin "13"
@@ -8618,7 +8780,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586152831288426496"
 			(at 127 100.33 0)
 			(effects
 				(font
@@ -8627,7 +8789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1/16W"
+		(property "Description" "1/16W 1%"
 			(at 127 102.616 90)
 			(effects
 				(font
@@ -8644,7 +8806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 127 100.33 0)
 			(effects
 				(font
@@ -8653,7 +8815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "AC0402FR-070RL"
 			(at 127 100.33 0)
 			(effects
 				(font
@@ -8738,7 +8900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 125.73 87.376 90)
 			(effects
 				(font
@@ -8755,6 +8917,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 125.73 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 125.73 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 125.73 85.09 0)
 			(effects
 				(font
@@ -9027,7 +9205,7 @@
 		(dnp yes)
 		(uuid "db6aa750-1136-4e21-ae00-e83608a43d3b")
 		(property "Reference" "C500"
-			(at 22.352 33.528 0)
+			(at 22.098 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9036,7 +9214,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 22.352 35.56 0)
+			(at 22.098 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9044,7 +9222,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 20.32 35.56 0)
 			(effects
 				(font
@@ -9053,7 +9231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706866429190144"
 			(at 20.32 35.56 0)
 			(effects
 				(font
@@ -9062,21 +9240,21 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 20.32 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "10V 20%"
+		(property "Description" "25V 20%"
 			(at 26.416 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 26.416 37.592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -9085,6 +9263,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/46786-CL21A226MAQNNNE/C45783"
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL21A226MAQNNNE"
+			(at 20.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9182,7 +9388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 74.93 35.56 0)
 			(effects
 				(font
@@ -9392,7 +9598,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 199.136 113.03 90)
 			(effects
 				(font
@@ -9409,6 +9615,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 196.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 196.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-074K7L"
 			(at 196.85 113.03 0)
 			(effects
 				(font
@@ -9476,7 +9698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 224.536 26.67 90)
 			(effects
 				(font
@@ -9493,6 +9715,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 222.25 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 222.25 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-07220RL"
 			(at 222.25 26.67 0)
 			(effects
 				(font
@@ -9708,7 +9946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics "
+		(property "Manufacturer" "Murata Electronics"
 			(at 184.15 46.99 0)
 			(effects
 				(font

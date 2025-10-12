@@ -2182,7 +2182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 85.09 88.9 0)
 			(effects
 				(font
@@ -2252,7 +2252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 213.36 90.17 0)
 			(effects
 				(font
@@ -2346,7 +2346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 73.406 107.95 90)
 			(effects
 				(font
@@ -2363,6 +2363,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 71.12 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 71.12 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 71.12 107.95 0)
 			(effects
 				(font
@@ -2487,7 +2503,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -2616,7 +2632,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 195.58 88.9 0)
 			(effects
 				(font
@@ -2749,7 +2765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 81.28 102.87 0)
 			(effects
 				(font
@@ -2758,7 +2774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 81.28 105.156 90)
 			(effects
 				(font
@@ -2775,6 +2791,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 81.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 81.28 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-07470RL"
 			(at 81.28 102.87 0)
 			(effects
 				(font
@@ -2832,7 +2864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 204.47 105.41 0)
 			(effects
 				(font
@@ -2915,7 +2947,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://eu.mouser.com/ProductDetail/STMicroelectronics/STN3NF06L?qs=VREXnN%2FAp%252BtujmZVCVKGgA%3D%3D&srsltid=AfmBOooDUSGEvTvsGTI3cICKREi36a1JB1pR-TC-y9iQo2YLDLO6qmrY"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588883600968462336"
 			(at 95.25 102.87 0)
 			(effects
 				(font
@@ -2924,7 +2956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 120mΩ@5V 2.8V@250uA 3.3W 30pF 340pF 4A 60V 63pF 9nC@5V N-Channel SOT-223 MOSFETs"
 			(at 95.25 102.87 0)
 			(effects
 				(font
@@ -2939,6 +2971,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -2947,6 +2980,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/STMicroelectronics-STN3NF06L/C222218"
+			(at 95.25 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 95.25 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "STN3NF06L"
+			(at 95.25 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3015,7 +3076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 183.896 110.49 90)
 			(effects
 				(font
@@ -3032,6 +3093,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
 			(at 181.61 110.49 0)
 			(effects
 				(font
@@ -3089,7 +3166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 101.6 87.63 0)
 			(effects
 				(font
@@ -3170,7 +3247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 93.98 105.41 0)
 			(effects
 				(font
@@ -3296,7 +3373,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 105.41 76.2 0)
 			(effects
 				(font
@@ -3615,7 +3692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:EEEFK1V470P"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
 			(at 232.41 76.2 0)
 			(effects
 				(font
@@ -3624,7 +3701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893102903316480"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899068991324160"
 			(at 232.41 76.2 0)
 			(effects
 				(font
@@ -3633,7 +3710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "35V 20%"
+		(property "Description" "50V 20%"
 			(at 239.268 78.232 0)
 			(effects
 				(font
@@ -3641,7 +3718,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Nichicon"
 			(at 232.41 76.2 0)
 			(effects
 				(font
@@ -3650,7 +3727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "EEE-FK1V470P"
+		(property "Manufacturer Part Number" "UCD1H221MNL1GS"
 			(at 232.41 76.2 0)
 			(effects
 				(font
@@ -3659,7 +3736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://jlcpcb.com/partdetail/PANASONIC-EEEFK1V470P/C178565"
+		(property "Link" "https://jlcpcb.com/partdetail/Nichicon-UCD1H221MNL1GS/C116211"
 			(at 232.41 76.2 0)
 			(effects
 				(font
@@ -3802,7 +3879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://eu.mouser.com/ProductDetail/STMicroelectronics/STN3NF06L?qs=VREXnN%2FAp%252BtujmZVCVKGgA%3D%3D&srsltid=AfmBOooDUSGEvTvsGTI3cICKREi36a1JB1pR-TC-y9iQo2YLDLO6qmrY"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588883600968462336"
 			(at 205.74 102.87 0)
 			(effects
 				(font
@@ -3811,7 +3888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-Channel 120mΩ@5V 2.8V@250uA 3.3W 30pF 340pF 4A 60V 63pF 9nC@5V N-Channel SOT-223 MOSFETs"
 			(at 205.74 102.87 0)
 			(effects
 				(font
@@ -3826,6 +3903,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Secound Source" ""
@@ -3834,6 +3912,34 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://jlcpcb.com/partdetail/STMicroelectronics-STN3NF06L/C222218"
+			(at 205.74 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 205.74 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "STN3NF06L"
+			(at 205.74 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4086,7 +4192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 212.09 87.63 0)
 			(effects
 				(font
@@ -4159,7 +4265,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Custom_Global_Footprints:EEEFK1V470P"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
 			(at 119.38 76.2 0)
 			(effects
 				(font
@@ -4168,7 +4274,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893102903316480"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588899068991324160"
 			(at 119.38 76.2 0)
 			(effects
 				(font
@@ -4177,7 +4283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "35V 20%"
+		(property "Description" "50V 20%"
 			(at 126.238 78.232 0)
 			(effects
 				(font
@@ -4185,7 +4291,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Nichicon"
 			(at 119.38 76.2 0)
 			(effects
 				(font
@@ -4194,7 +4300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "EEE-FK1V470P"
+		(property "Manufacturer Part Number" "UCD1H221MNL1GS"
 			(at 119.38 76.2 0)
 			(effects
 				(font
@@ -4203,7 +4309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://jlcpcb.com/partdetail/PANASONIC-EEEFK1V470P/C178565"
+		(property "Link" "https://jlcpcb.com/partdetail/Nichicon-UCD1H221MNL1GS/C116211"
 			(at 119.38 76.2 0)
 			(effects
 				(font
@@ -4389,7 +4495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 217.17 76.2 0)
 			(effects
 				(font
@@ -4456,7 +4562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 191.77 102.87 0)
 			(effects
 				(font
@@ -4465,7 +4571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1% 1/5W"
+		(property "Description" "1% 1/16W"
 			(at 191.77 105.156 90)
 			(effects
 				(font
@@ -4482,6 +4588,22 @@
 			)
 		)
 		(property "Secound Source" ""
+			(at 191.77 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 191.77 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-07470RL"
 			(at 191.77 102.87 0)
 			(effects
 				(font
