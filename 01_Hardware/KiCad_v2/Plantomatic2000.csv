@@ -1,54 +1,67 @@
-Reference,Qty,PCB Quantity,Ordered,Description,Value,Footprint,Manufacturer,Manufacturer Part Number,Part Link
-BT101,1,,,,Battery+AF8-Cell,Battery:BatteryHolder+AF8-MYOUNG+AF8-BS+AC0-07+AC0-A1BJ001+AF8-CR2032,,,
-+ACI-C101,C106,C111+ACI-,3,,,,1uF,Capacitor+AF8-SMD:C+AF8-0402+AF8-1005Metric,,,
-C102,1,,,,100nF tantulum,Capacitor+AF8-SMD:C+AF8-1206+AF8-3216Metric,,,
-C103,1,,,,10uF tantulum,Capacitor+AF8-SMD:C+AF8-1206+AF8-3216Metric,,,
-+ACI-C104,C134+ACI-,2,,,,22uF,Capacitor+AF8-SMD:C+AF8-0603+AF8-1608Metric,,,
-+ACI-C105,C113,C115,C116,C117,C118,C119,C122,C124,C129,C130,C132,C136,C138,C139,C140,C141,C142,C143,C145,C146,C147,C148+ACI-,23,,,,100nF,Capacitor+AF8-SMD:C+AF8-0402+AF8-1005Metric,,,
-+ACI-C107,C108,C137,C144+ACI-,4,,,,10uF,Capacitor+AF8-SMD:C+AF8-0402+AF8-1005Metric,,,
-+ACI-C109,C110,C123+ACI-,3,,,,10uF,Capacitor+AF8-SMD:C+AF8-0603+AF8-1608Metric,,,
-C112,1,,,,2.2uF,Capacitor+AF8-SMD:C+AF8-0402+AF8-1005Metric,,,
-+ACI-C114,C133+ACI-,2,,,,1uF,Capacitor+AF8-SMD:C+AF8-0603+AF8-1608Metric,,,
-+ACI-C120,C121+ACI-,2,,,,47uF,Capacitor+AF8-SMD:C+AF8-0603+AF8-1608Metric,,,
-C125,1,,,,58pF,Capacitor+AF8-SMD:C+AF8-0402+AF8-1005Metric,,,
-C126,1,,,,4.7nF,Capacitor+AF8-SMD:C+AF8-0402+AF8-1005Metric,,,
-C127,1,,,,2.2uF,Capacitor+AF8-SMD:C+AF8-0603+AF8-1608Metric,,,
-+ACI-C128,C131+ACI-,2,,,,4.7uF,Capacitor+AF8-SMD:C+AF8-0603+AF8-1608Metric,,,
-C135,1,,,,4.7nF,Capacitor+AF8-SMD:C+AF8-0402+AF8-1005Metric,,,
-D106,1,,,,1N4148W,Diode+AF8-SMD:D+AF8-SOD+AC0-123,,,
-+ACI-D107,D111,D112,D113,D114,D103,D104+ACI-,7,,,,SML+AC0-P12U2TT86R,LED+AF8-SMD:LED+AF8-0402+AF8-1005Metric,,,
-+ACI-D108,D109,D110+ACI-,3,,,,SS14,Custom+AF8-Global+AF8-Footprints:SS14M+AF8-Flyback+AF8-Diode,,,
-J101,1,,,,Conn+AF8-02x05+AF8-Odd+AF8-Even,Connector+AF8-PinHeader+AF8-1.27mm:PinHeader+AF8-2x05+AF8-P1.27mm+AF8-Vertical+AF8-SMD,,,
-J102,1,,,,Conn+AF8-02x03+AF8-Odd+AF8-Even,Connector+AF8-PinHeader+AF8-1.27mm:PinHeader+AF8-2x03+AF8-P1.27mm+AF8-Vertical+AF8-SMD,,,
-J103,1,,,,USB+AF8-C+AF8-Receptacle+AF8-USB2.0+AF8-16P,Connector+AF8-USB:USB+AF8-C+AF8-Receptacle+AF8-Palconn+AF8-UTC16+AC0-G,,,
-+ACI-J105, J110,J116+ACI-,3,,,,JST+AF8-B4B,Connector+AF8-JST:JST+AF8-EH+AF8-B4B+AC0-EH+AC0-A+AF8-1x04+AF8-P2.50mm+AF8-Vertical,,,
-+ACI-J112,J113, J114, J106, J107, J108, J109, J111, J115, J117+ACI-,10,,,,JST+AF8-B2B,Connector+AF8-JST:JST+AF8-EH+AF8-B2B+AC0-EH+AC0-A+AF8-1x02+AF8-P2.50mm+AF8-Vertical,,,
-L103,1,,,,4.7uH (SPM12565VT+AC0-4R7M+AC0-D),Custom+AF8-Global+AF8-Footprints:SPM12565VT+AC0-4R7M,,,
-+ACI-Q101,Q102+ACI-,2,,,,IRLL014NP,Package+AF8-TO+AF8-SOT+AF8-SMD:SOT+AC0-223,,,
-+ACI-Q104,Q106,Q107,Q109+ACI-,4,,,,NVTA7002NT1G,Package+AF8-TO+AF8-SOT+AF8-SMD:SOT+AC0-323+AF8-SC+AC0-70,,,
-+ACI-Q105,Q108,Q110+ACI-,3,,,,RU1E002SPTCL,Package+AF8-TO+AF8-SOT+AF8-SMD:SOT+AC0-323+AF8-SC+AC0-70,,,
-+ACI-Q111,Q112+ACI-,2,,,,DTC143Z,Package+AF8-TO+AF8-SOT+AF8-SMD:SOT+AC0-23+AC0-3,,,
-Q113,1,,,,CSD17313Q2,Package+AF8-SON:Texas+AF8-DQK,,,
-+ACI-R102,R105,R107,R125,R127,R131,R141,R156+ACI-,8,,,,470R,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-+ACI-R103,R104,R106,R110,R124,R126,R128,R129,R130,R132,R133,R140,R142,R143,R154+ACI-,15,,,,10K,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-R108,1,,,,158K,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-R109,1,,,,14K3,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-R111,1,,,,40K,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-+ACI-R112,R119,R120,R123,R139,R148,R149,R150,R160,R161,R162,R163+ACI-,12,,,,1K,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-R113,1,,,,22K1,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-+ACI-R114,R115,R134,R135,R136,R137,R138,R146,R147,R164+ACI-,10,,,,0R,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-+ACI-R116,R118,R159+ACI-,3,,,,5K1,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-R117,1,,,,47K5,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-R121,1,,,,10K,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-R122,1,,,,220R,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-+ACI-R144,R145,R151,R152,R153+ACI-,5,,,,4K7,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-+ACI-R155,R157,R158+ACI-,3,,,,12K,Resistor+AF8-SMD:R+AF8-0402+AF8-1005Metric,,,
-+ACI-SW102,SW103+ACI-,2,,,,SW+AF8-Push,Button+AF8-Switch+AF8-SMD:SW+AF8-SPST+AF8-PTS645,,,
-U101,1,,,,XC6220B331MR,Package+AF8-TO+AF8-SOT+AF8-SMD:SOT+AC0-23+AC0-5,,,
-U102,1,,,,nPM1300,Package+AF8-DFN+AF8-QFN:QFN+AC0-32+AC0-1EP+AF8-5x5mm+AF8-P0.5mm+AF8-EP3.6x3.6mm+AF8-ThermalVias,,,
-U103,1,,,,ESP32+AC0-WROOM+AC0-32E,RF+AF8-Module:ESP32+AC0-WROOM+AC0-32E,,,
-U104,1,,,,TPS61287,Custom+AF8-Global+AF8-Footprints:RZP0014A+AC0-MFG,,,
-U105,1,,,,USBLC6+AC0-2P6,Package+AF8-TO+AF8-SOT+AF8-SMD:SOT+AC0-666,,,
-U106,1,,,,CP2102N+AC0-A02+AC0-GQFN24,Package+AF8-DFN+AF8-QFN:QFN+AC0-24+AC0-1EP+AF8-4x4mm+AF8-P0.5mm+AF8-EP2.7x2.6mm+AF8-ThermalVias,,,
-U107,1,,,,DS3231M,Package+AF8-SO:SOIC+AC0-16W+AF8-7.5x10.3mm+AF8-P1.27mm,,,
-U108,1,,,,AT24CS01+AC0-SSHM,Package+AF8-SO:SOIC+AC0-8+AF8-3.9x4.9mm+AF8-P1.27mm,,,
+Reference,Qty,Value,DNP,Exclude from BOM,Exclude from Board,Footprint,Datasheet
+BT500,1,BS-07-A1BJ001_CR2032,,,,Battery:BatteryHolder_MYOUNG_BS-07-A1BJ001_CR2032,~
+"C100,C103,C200,C308",4,4.7uF,,,,Capacitor_SMD:C_0603_1608Metric,
+"C101,C102,C104,C105,C106,C205,C206,C401,C402,C408,C413,C414,C418,C419,C422,C423,C506,C509,C600,C602,C604,C605,C702,C705,C800,C801,C802,C803,C804,C805,C806,C807,C808,C809",34,100nF,,,,Capacitor_SMD:C_0402_1005Metric,~
+"C201,C202,C203,C204,C300,C405,C406,C407,C409,C507",10,1uF,,,,Capacitor_SMD:C_0603_1608Metric,~
+C301,1,8.2uF,,,,Capacitor_SMD:C_0603_1608Metric,~
+"C302,C303,C307,C400,C403,C410,C412,C415,C417,C420,C421,C424,C505,C508,C701,C704",16,10uF,,,,Capacitor_SMD:C_0603_1608Metric,
+"C304,C305,C404,C411,C416",5,47uF,,,,Capacitor_SMD:CP_Elec_6.3x5.8,~
+C306,1,47nF,,,,Capacitor_SMD:C_0402_1005Metric,
+C500,1,22uF,DNP,,,Capacitor_SMD:CP_Elec_10x10,~
+C501,1,100nF,DNP,,,Capacitor_SMD:C_0402_1005Metric,
+C502,1,100nF,,,,Capacitor_SMD:CP_Elec_10x10,
+"C503,C504",2,10uF,,,,Capacitor_SMD:C_1206_3216Metric,~
+"C601,C603",2,220uF,,,,Capacitor_SMD:CP_Elec_10x10,chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://docs.rs-online.com/69a4/0900766b80fa3a40.pdf
+"C700,C703",2,47uF,,,,Capacitor_SMD:C_0603_1608Metric,~
+"D100,D101,D300,D302,D402",5,SML-P13PTT86R,,,,Custom_Global_Footprints:SML-P13PTT_LED_0402_1005Metric,https://fscdn.rohm.com/en/products/databook/datasheet/opto/led/chip_mono/sml-p13ptt86(r)-e.pdf
+"D200,D301,D400,D403,D404,D405,D700,D701",8,SML-P12U2TT86R,,,,Custom_Global_Footprints:SML-P13PTT_LED_0402_1005Metric,"https://fscdn.rohm.com/en/products/databook/datasheet/opto/led/chip_mono/sml-p12utt86(r)-e.pdf,https://fscdn.rohm.com/en/products/databook/datasheet/opto/led/chip_mono/sml-p13ptt86(r)-e.pdf"
+"D401,D500,D600,D601",4,SBR3U40S1F,,,,Custom_Global_Footprints:SBR3U40S1F-7,https://4donline.ihs.com/images/VipMasterIC/IC/DIOD/DIOD-S-A0002960396/DIOD-S-A0002960396-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0
+"FID400,FID401,FID402",3,Fiducial,,Excluded from BOM,,Fiducial:Fiducial_1mm_Mask2mm,~
+"H800,H801,H802,H803,H804,H805",6,MountingHole_Pad,,Excluded from BOM,,MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom,~
+J100,1,USB_C_Receptacle_USB2.0_16P,,,,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+"J300,J600,J601,J801,J802,J803,J806,J808",8,JST_B2B,,,,Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical,~
+J700,1,JST_B4B,,,,Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical_SMD,~
+J701,1,JST_B4B,,,,Connector_USB:USB_C_Receptacle_Palconn_UTC16-G,~
+J800,1,Conn_02x03_Odd_Even,,,,Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical,~
+J804,1,Conn_02x05_Odd_Even,,,,Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical,~
+"J805,J807",2,JST_B2B,,,,Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical,~
+L300,1,SRN6045HA-1R0Y,,,,Custom_Global_Footprints:SRN6045HA-1R0Y,https://bourns.com/docs/product-datasheets/srn6045ha.pdf
+L400,1,ETQ-P5M100YFM,,,,Custom_Global_Footprints:ETQ-P5M100YFM,https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf
+Q100,1,UNH3N,,,,Package_TO_SOT_SMD:SOT-363_SC-70-6,https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/digital/umh3ntn-e.pdf
+"Q200,Q201,Q400,Q401",4,SI7615DN-T1-GE3,,,,Package_SON:Diodes_PowerDI3333-8,https://www.vishay.com/docs/64722/si7615dn.pdf
+Q202,1,DMP6050SSD,,,,Custom_Global_Footprints:DMP6050SSD_SO-8_3.9x4.9mm_P1.27mm,https://www.diodes.com/assets/Datasheets/DMP6050SSD.pdf
+"Q203,Q301,Q402,Q500,Q702,Q703",6,NVTA7002NT1G,,,,Custom_Global_Footprints:NVTA7002N,https://www.onsemi.com/download/data-sheet/pdf/nta7002n-d.pdf
+"Q300,Q701",2,BSS314PE,,,,Custom_Global_Footprints:BSS314PE,https://www.mouser.it/datasheet/3/70/1/Infineon-BSS314PE-DataSheet-v02_03-EN.pdf
+"Q600,Q601",2,STN3NF06L,,,,Package_TO_SOT_SMD:SOT-223-3_TabPin2,https://eu.mouser.com/ProductDetail/STMicroelectronics/STN3NF06L?qs=VREXnN%2FAp%252BtujmZVCVKGgA%3D%3D&srsltid=AfmBOooDUSGEvTvsGTI3cICKREi36a1JB1pR-TC-y9iQo2YLDLO6qmrY
+Q700,1,BSS314PE,,,,Custom_Global_Footprints:NVTA7002N,https://www.mouser.it/datasheet/3/70/1/Infineon-BSS314PE-DataSheet-v02_03-EN.pdf
+"R100,R308,R408,R700,R702",5,22K1,,,,Resistor_SMD:R_0402_1005Metric,
+"R101,R202,R203,R204,R300,R301,R309,R409,R411,R412,R701,R808",12,1K,,,,Resistor_SMD:R_0402_1005Metric,
+"R102,R104,R210,R212,R213,R215,R502,R508,R509,R800,R801,R802,R803,R804,R805,R806,R807",17,0R,,,,Resistor_SMD:R_0402_1005Metric,~
+R103,1,47K5,,,,Resistor_SMD:R_0402_1005Metric,
+"R105,R106,R500",3,220R,,,,Resistor_SMD:R_0402_1005Metric,
+"R107,R200,R207,R303,R307,R310,R312,R401,R402,R403,R407,R501,R504,R505,R602,R603,R704,R705,R708,R709",20,10K,,,,Resistor_SMD:R_0402_1005Metric,
+R201,1,49K9,,,,Resistor_SMD:R_0402_1005Metric,~
+"R205,R311,R405,R503,R600,R601,R706,R707",8,470R,,,,Resistor_SMD:R_0402_1005Metric,~
+"R206,R400,R410,R506,R507,R510,R511,R512,R703",9,4K7,,,,Resistor_SMD:R_0402_1005Metric,
+"R208,R209,R211,R214,R302",5,10K,DNP,,,Resistor_SMD:R_0402_1005Metric,
+R304,1,5K23,,,,Resistor_SMD:R_0402_1005Metric,
+R305,1,130R,,,,Resistor_SMD:R_0402_1005Metric,
+R306,1,30K1,,,,Resistor_SMD:R_0402_1005Metric,
+R404,1,1M,,,,Resistor_SMD:R_0402_1005Metric,~
+R406,1,64K9,,,,Resistor_SMD:R_0402_1005Metric,~
+"SW800,SW801",2,SW_Push,,,,Button_Switch_SMD:SW_SPST_PTS645,~
+TH300,1,103AT-2,,,,Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical,https://www.mouser.com/datasheet/2/362/semitec_atthermistor-1202913.pdf
+"TP100,TP101,TP301,TP404,TP406,TP407,TP410,TP411,TP500,TP501,TP502,TP503,TP504,TP505,TP506,TP507,TP508,TP509,TP600,TP601,TP602,TP603,TP700,TP701,TP702,TP703,TP704,TP800,TP801,TP802,TP803,TP804,TP805",33,~,,Excluded from BOM,,TestPoint:TestPoint_Pad_D1.0mm,~
+TP300,1,+VBAT,,Excluded from BOM,,TestPoint:TestPoint_Pad_D1.0mm,~
+"TP400,TP401,TP402,TP403,TP405,TP408,TP409",7,TestPoint_Small,,,,TestPoint:TestPoint_Pad_D1.0mm,~
+U100,1,USBLC6-2P6,,,,Package_TO_SOT_SMD:SOT-666,https://eu.mouser.com/ProductDetail/STMicroelectronics/USBLC6-2P6?qs=6ARB0lp6jlViGcbUSvj1Mw%3D%3D&srsltid=AfmBOor_ZYjxQ31r19kR2aSn5O28MWVXeKFG-OVlIKrQ5xUBBDZNAJWA
+U101,1,CP2102N-A02-GQFN24,,,,Custom_Global_Footprints:CP2102N_QFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm,https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf
+U200,1,CYPD3177-24LQ,,,,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.75x2.75mm_ThermalVias,https://www.infineon.com/dgdl/Infineon-EZ-PD_BCR_Datasheet_USB_Type-C_Port_Controller_for_Power_Sinks-DataSheet-v03_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ee7ce9d70ad
+U300,1,BQ25892,,,,Package_DFN_QFN:Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,https://www.ti.com/lit/ds/symlink/bq25890.pdf
+U400,1,BDJ2FC0WFP,,,,Package_TO_SOT_SMD:TO-252-4,https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bdxxfc0wefj-e.pdf
+U401,1,TLV61048,,,,Custom_Global_Footprints:TLV61048,https://www.ti.com/lit/ds/symlink/tlv61048.pdf?ts=1757675198140&ref_url=https%253A%252F%252Fwww.google.com%252F
+U402,1,NCP1117-12_SOT223,,,,Package_TO_SOT_SMD:SOT-223,http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
+"U403,U404",2,XC6220B331MR,,,,Package_TO_SOT_SMD:SOT-23-5,https://www.torexsemi.com/file/xc6220/XC6220.pdf
+U500,1,DS3231M,,,,Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm,https://www.analog.com/media/en/technical-documentation/data-sheets/ds3231m.pdf
+U501,1,ESP32-WROOM-32E,,,,RF_Module:ESP32-WROOM-32E,https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+U502,1,AT24CS01-SSHM,,,,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf

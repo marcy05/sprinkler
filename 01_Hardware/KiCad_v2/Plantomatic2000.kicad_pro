@@ -524,7 +524,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 99,
+    "annotate_start_num": 399,
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -610,7 +610,7 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -622,7 +622,7 @@
           "group_by": false,
           "label": "Link",
           "name": "Link",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -634,13 +634,13 @@
           "group_by": false,
           "label": "Manufacturer",
           "name": "Manufacturer",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Manufacturer Part Number",
           "name": "Manufacturer Part Number",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
@@ -648,7 +648,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Manufacturer Part Number"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -694,6 +694,38 @@
     [
       "7b3f5236-3811-4a22-865a-1f6a26bdd727",
       "Root"
+    ],
+    [
+      "5c86226d-52c4-4565-b51d-bd6c0747cfca",
+      "USB_C_TO_SERIAL"
+    ],
+    [
+      "123a77f8-0067-4e93-8a57-ca162b44d4c4",
+      "USB_C_POWER_DELIVERY"
+    ],
+    [
+      "e4d92317-3ec9-4724-90e4-ad771f134a3e",
+      "BATTERY_MANAGEMENT_IC"
+    ],
+    [
+      "9c3e402b-37be-4fff-9c3c-af2f37c1deef",
+      "DC_DC_REGULATORS"
+    ],
+    [
+      "e7e8941d-6697-4cfe-bab6-406e8d5aecbc",
+      "MICROCONTROLLER"
+    ],
+    [
+      "060605c3-dcde-4649-b262-98263b9add4f",
+      "PUMPS"
+    ],
+    [
+      "be7e12f5-96cc-48bd-904a-16aa2948c930",
+      "DISPLAY_AND_WATER_ENABLE"
+    ],
+    [
+      "84e0e775-2ab5-4e87-a788-723e074fb877",
+      "CONNECTORS"
     ]
   ],
   "text_variables": {}

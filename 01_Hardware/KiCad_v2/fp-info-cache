@@ -1,4 +1,4 @@
-24791479205560675
+24798514459199544
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55265,9 +55265,30 @@ SOT-416
 3
 3
 Custom_Global_Footprints
+CP2102N_QFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm
+QFN, 24 Pin (https://www.lcsc.com/datasheet/lcsc_datasheet_2006041834_Everanalog-IC-design-EA3058QDR_C575412.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+29
+25
+Custom_Global_Footprints
+DMP6050SSD_SO-8_3.9x4.9mm_P1.27mm
+SO, 8 Pin (https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SO SO
+0
+8
+8
+Custom_Global_Footprints
 DR74_2R2_R
 
 
+0
+2
+2
+Custom_Global_Footprints
+EEEFK1V470P
+SMD capacitor, aluminum electrolytic, Nichicon, 8.0x10mm
+capacitor electrolytic
 0
 2
 2
@@ -55380,6 +55401,13 @@ Custom_Global_Footprints
 SBR3U40S1F-7
 Nexperia CFP3 (SOD-123W), https://assets.nexperia.com/documents/outline-drawing/SOD123W.pdf
 CFP3 SOD-123W
+0
+2
+2
+Custom_Global_Footprints
+SML-P13PTT_LED_0402_1005Metric
+LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+LED
 0
 2
 2
