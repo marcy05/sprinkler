@@ -4426,6 +4426,16 @@
 		)
 		(uuid "18430987-8ebb-4be2-a2fe-60f3fd07b2e0")
 	)
+	(label "PMID"
+		(at 127 43.18 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b39615a-f570-42e6-a76e-15bea4c8d96b")
+	)
 	(label "VBUS_FET_SAFE_EN"
 		(at 45.72 148.59 0)
 		(effects
@@ -4445,6 +4455,16 @@
 			(justify left bottom)
 		)
 		(uuid "5cabfa2a-e4d6-44d1-ae8e-1264a3cfa211")
+	)
+	(label "BTST"
+		(at 161.29 50.8 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "679e9649-153a-4a82-b666-7edb25e748d7")
 	)
 	(label "CE"
 		(at 127 71.12 0)
@@ -4525,6 +4545,16 @@
 			(justify left bottom)
 		)
 		(uuid "cee08221-933f-44ae-97db-33b1752c9a94")
+	)
+	(label "SW"
+		(at 167.64 40.64 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8640629-808f-423a-a8c5-ad7c15071021")
 	)
 	(global_label "WAKE_SLEEP"
 		(shape input)
@@ -4985,7 +5015,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 199.39 101.6 0)
 			(effects
 				(font

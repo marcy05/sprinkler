@@ -1,4 +1,4 @@
-24798514459199544
+24800276555208518
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55450,6 +55450,13 @@ Custom_Global_Footprints
 SWPA5040S
 
 
+0
+2
+2
+Custom_Global_Footprints
+SW_101-C-W_XKB
+
+TS-1101-C-W 
 0
 2
 2

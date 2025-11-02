@@ -4192,6 +4192,16 @@
 		)
 		(uuid "ef9d1168-ee7a-486c-b7cc-d0141b3ba785")
 	)
+	(label "Drain"
+		(at 147.32 34.29 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "fbdda0f0-e5e2-4bb1-91d2-181dec3a8447")
+	)
 	(global_label "ESP_SDA"
 		(shape bidirectional)
 		(at 104.14 87.63 180)
@@ -8739,7 +8749,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ea711b79-7589-4d44-80e4-c0ebbe3b60de")
 		(property "Reference" "U200"
 			(at 118.364 68.58 0)

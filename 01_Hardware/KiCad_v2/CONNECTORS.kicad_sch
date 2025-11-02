@@ -7438,7 +7438,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645"
+		(property "Footprint" "Custom_Global_Footprints:SW_101-C-W_XKB"
 			(at 52.07 52.07 0)
 			(effects
 				(font
@@ -7524,7 +7524,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645"
+		(property "Footprint" "Custom_Global_Footprints:SW_101-C-W_XKB"
 			(at 19.05 52.07 0)
 			(effects
 				(font

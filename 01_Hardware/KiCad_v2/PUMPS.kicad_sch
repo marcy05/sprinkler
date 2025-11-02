@@ -2080,6 +2080,46 @@
 		)
 		(uuid "fc2313e4-8c85-434b-9880-b79139958568")
 	)
+	(label "PUMP_2_SOURCE"
+		(at 207.01 111.76 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f611eea-e4f9-4fcb-b88b-92efea2d1eb9")
+	)
+	(label "PUMP_2_DRAIN"
+		(at 181.61 93.98 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "6fd36d5f-0e19-4e7d-8fc1-493109fb5dd7")
+	)
+	(label "PUMP_2_SOURCE"
+		(at 96.52 110.49 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9c5f14a-8c8b-4283-9cf7-fe4e4205814e")
+	)
+	(label "PUMP_1_DRAIN"
+		(at 69.85 93.98 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "e67ae877-edd1-40ba-8727-48b5bb31c256")
+	)
 	(hierarchical_label "PUMP2_EN"
 		(shape input)
 		(at 175.26 102.87 180)
