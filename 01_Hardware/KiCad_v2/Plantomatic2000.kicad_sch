@@ -32,6 +32,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 101.6) (xy 165.1 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1978edf7-a1e0-402d-bbbe-1272acde0605")
+	)
+	(wire
+		(pts
 			(xy 97.79 111.76) (xy 105.41 111.76)
 		)
 		(stroke
@@ -102,7 +112,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 106.68) (xy 167.64 127)
+			(xy 170.18 93.98) (xy 170.18 127)
 		)
 		(stroke
 			(width 0)
@@ -132,7 +142,17 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 106.68) (xy 167.64 106.68)
+			(xy 158.75 139.7) (xy 165.1 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63baef95-2ee8-4bfb-8999-58c33b827fcc")
+	)
+	(wire
+		(pts
+			(xy 158.75 93.98) (xy 170.18 93.98)
 		)
 		(stroke
 			(width 0)
@@ -192,7 +212,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 127) (xy 175.26 127)
+			(xy 170.18 127) (xy 175.26 127)
 		)
 		(stroke
 			(width 0)
@@ -262,6 +282,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 97.79) (xy 158.75 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac6ac8f8-0fe5-49d7-b833-36493fa111d4")
+	)
+	(wire
+		(pts
 			(xy 158.75 81.28) (xy 175.26 81.28)
 		)
 		(stroke
@@ -292,6 +322,26 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 143.51) (xy 167.64 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c49b3c7c-a95d-421f-b855-f6f21846525c")
+	)
+	(wire
+		(pts
+			(xy 158.75 143.51) (xy 167.64 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d48af754-7318-4d68-8037-be280bcab5ed")
+	)
+	(wire
+		(pts
 			(xy 109.22 115.57) (xy 109.22 101.6)
 		)
 		(stroke
@@ -299,6 +349,16 @@
 			(type default)
 		)
 		(uuid "d9595227-12f6-44cc-8396-d35b81869884")
+	)
+	(wire
+		(pts
+			(xy 158.75 101.6) (xy 165.1 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9d08434-ef4c-4d12-be10-f1b88c37109a")
 	)
 	(wire
 		(pts
@@ -466,6 +526,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "ESP_TX" input
+			(at 158.75 143.51 0)
+			(uuid "8a3ea441-cdc2-4c63-a959-75b6b2704833")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP_RX" output
+			(at 158.75 139.7 0)
+			(uuid "9dd9374e-2ed9-4c31-adb1-5c58ed251f38")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -789,7 +869,7 @@
 			)
 		)
 		(pin "BOOST_ENABLE" output
-			(at 158.75 106.68 0)
+			(at 158.75 93.98 0)
 			(uuid "6bb80603-a59e-44c8-a2e3-05b47e9ecb42")
 			(effects
 				(font
@@ -901,6 +981,26 @@
 		(pin "WATER_SENSOR_SIG" input
 			(at 158.75 88.9 0)
 			(uuid "ab3e56d9-1999-45a4-9fd3-bab5e8d29023")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP_TX" output
+			(at 158.75 97.79 0)
+			(uuid "d57d0737-dfb7-409a-b8ac-8c7ffcf5303f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP_RX" input
+			(at 158.75 101.6 0)
+			(uuid "4ca7d3ff-7c1a-40df-99a7-a4580407bf59")
 			(effects
 				(font
 					(size 1.27 1.27)

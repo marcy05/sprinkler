@@ -3192,11 +3192,12 @@
 			)
 		)
 		(property "Value" "~"
-			(at 95.25 93.98 90)
+			(at 89.662 88.138 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -4057,11 +4058,12 @@
 			)
 		)
 		(property "Value" "~"
-			(at 210.82 90.17 90)
+			(at 204.978 94.742 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -4806,6 +4808,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -6166,6 +6169,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -6495,11 +6499,12 @@
 			)
 		)
 		(property "Value" "~"
-			(at 234.95 88.9 90)
+			(at 225.552 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"

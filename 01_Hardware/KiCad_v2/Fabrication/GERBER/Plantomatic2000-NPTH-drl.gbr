@@ -1,0 +1,22 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.6*%
+%TF.CreationDate,2025-11-17T11:06:33+01:00*%
+%TF.ProjectId,Plantomatic2000,506c616e-746f-46d6-9174-696332303030,v0.2*%
+%TF.SameCoordinates,PX5e82560PY8847b20*%
+%TF.FileFunction,NonPlated,1,4,NPTH,Drill*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 9.0.6) date 2025-11-17 11:06:33*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,ComponentDrill*%
+%ADD10C,0.650000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,J100*%
+X5565000Y15295000D03*
+X5565000Y9515000D03*
+M02*

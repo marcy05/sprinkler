@@ -4934,7 +4934,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Type" ""
@@ -5101,7 +5100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 170.18 67.31 0)
 			(effects
 				(font
@@ -6210,7 +6209,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Type" ""
@@ -6504,7 +6502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 127 77.47 0)
 			(effects
 				(font
@@ -6571,7 +6569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 204.47 38.1 0)
 			(effects
 				(font
@@ -6940,9 +6938,9 @@
 		(at 50.8 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "668c9005-c9b6-4ac4-b26d-43c370cf8944")
 		(property "Reference" "R310"
 			(at 48.26 139.7 90)
@@ -6986,7 +6984,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Type" ""
@@ -7566,7 +7563,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Type" ""
@@ -7931,7 +7927,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Type" ""
@@ -8360,7 +8355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 179.07 59.69 0)
 			(effects
 				(font
@@ -8582,7 +8577,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Type" ""
@@ -9058,7 +9052,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Type" ""
@@ -9804,7 +9797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178720680333312"
+		(property "Datasheet" ""
 			(at 168.91 81.28 0)
 			(effects
 				(font
@@ -9848,7 +9841,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics "
+		(property "Manufacturer" ""
 			(at 168.91 81.28 0)
 			(effects
 				(font
@@ -9857,7 +9850,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CL10A475KA8NQNC"
+		(property "Manufacturer Part Number" ""
 			(at 168.91 81.28 0)
 			(effects
 				(font
