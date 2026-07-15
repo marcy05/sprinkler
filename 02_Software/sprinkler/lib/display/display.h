@@ -7,6 +7,7 @@
 #include <RTClib.h>
 #include <daily_timer.h>
 #include <logger.h>
+#include <pump_manager.h>
 
 // https://lastminuteengineers.com/oled-display-esp32-tutorial/
 
@@ -40,6 +41,8 @@ public:
     void sleep_screen();
 
     void update_pump_timer(uint8_t pump_numb, DailyTimer &timer);
+
+    void update_display_state(PumpManager &pump1, PumpManager &pump2);
 
     uint8_t selected_pump = 0;
 

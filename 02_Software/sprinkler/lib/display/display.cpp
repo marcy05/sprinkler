@@ -255,3 +255,76 @@ void DisplayManager::update_pump_timer(uint8_t pump_numb, DailyTimer &timer)
     display.display();
     delay(100);
 }
+
+void DisplayManager::update_display_state(PumpManager &pump1, PumpManager &pump2)
+{
+    if (pump1.get_activate_status() != pump1_last_status)
+    {
+        pump1_last_status = pump1.get_activate_status();
+        if (pump1.get_activate_status())
+        {
+            debugln("M-Pump1 activated.");
+            running_pump1();
+        }
+        else
+        {
+            debugln("M-Pump1 stopped.");
+            stop_pump1();
+        }
+    }
+
+    if (pump1.is_pump_tank_empty() != pump1_tank_empty_last_status)
+    {
+        pump1_tank_empty_last_status = pump1.is_pump_tank_empty();
+        if (pump1_tank_empty_last_status)
+        {
+            empty_pump1();
+        }
+        else
+        {
+            if (pump1.get_activate_status())
+            {
+                running_pump1();
+            }
+            else
+            {
+                stop_pump1();
+            }
+        }
+    }
+
+    if (pump2.get_activate_status() != pump2_last_status)
+    {
+        pump2_last_status = pump2.get_activate_status();
+        if (pump2.get_activate_status())
+        {
+            debugln("M-Pump2 activated.");
+            running_pump2();
+        }
+        else
+        {
+            debugln("M-Pump2 stopped.");
+            stop_pump2();
+        }
+    }
+
+    if (pump2.is_pump_tank_empty() != pump2_tank_empty_last_status)
+    {
+        pump2_tank_empty_last_status = pump2.is_pump_tank_empty();
+        if (pump2_tank_empty_last_status)
+        {
+            empty_pump2();
+        }
+        else
+        {
+            if (pump2.get_activate_status())
+            {
+                running_pump2();
+            }
+            else
+            {
+                stop_pump2();
+            }
+        }
+    }
+}

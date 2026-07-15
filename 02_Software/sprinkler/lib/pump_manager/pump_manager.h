@@ -17,6 +17,7 @@ public:
     bool is_pump_tank_empty();
     void set_tank_empty();
     void set_tank_full();
+    void monitor_tank_status();
 
 private:
     bool m_active_status = false;

@@ -50,5 +50,21 @@ void PumpManager::set_tank_full(){
     debugln("The tank is full, ready for activation.");
 }
 
+void PumpManager::monitor_tank_status()
+{
+    if (TankSensor::isTankEmpty())
+    {
+        set_tank_empty();
+        debugln("Set pump empty");
+    }
+    else
+    {
+        if (is_pump_tank_empty())
+        {
+            set_tank_full();
+        }
+    }
+}
+
 PumpManager pump1 = PumpManager(Constants::PUMP1_PIN_EN);
 PumpManager pump2 = PumpManager(Constants::PUMP2_PIN_EN);

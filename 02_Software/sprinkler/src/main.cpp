@@ -6,9 +6,10 @@
 #include <logger.h>
 #include <display.h>
 #include <pump_manager.h>
-
 #include <rtc_manager.h>
 #include <daily_timer.h>
+#include <input_manager.h>
+#include <automation_manager.h>
 
 #define DEVELOPMENT 1
 #define PRODUCTION 2
@@ -33,14 +34,12 @@ constexpr int PUMP2_ID = 2;
 DailyTimer pump1_timer(PUMP1_ID, rtc);
 DailyTimer pump2_timer(PUMP2_ID, rtc);
 
+InputManager inputManager(myDisplay, rtcManager, pump1_timer, pump2_timer, pump1, pump2);
+AutomationManager automationManager(pump1_timer, pump2_timer, pump1, pump2);
+
 /******************************************************************************
                                     FUNCTIONS
 ******************************************************************************/
-void manual_handler();
-void handle_pump_line(DailyTimer &timer, PumpManager &pump, PumpManager &other_pump, int pump_id);
-void timer_activation_handler(DailyTimer &p1_timer, DailyTimer &p2_timer, PumpManager &p1, PumpManager &p2);
-void display_handler();
-void monitor_tank_emptiness(PumpManager &pump);
 
 /******************************************************************************
                                       SETUP
@@ -153,11 +152,11 @@ void loop()
     rtcManager.activateAlarm();
   }
 
-  manual_handler();
-  timer_activation_handler(pump1_timer, pump2_timer, pump1, pump2);
-  display_handler();
-  monitor_tank_emptiness(pump1);
-  monitor_tank_emptiness(pump2);
+  inputManager.process_input();
+  automationManager.check_scheduled_activations();
+  myDisplay.update_display_state(pump1, pump2);
+  pump1.monitor_tank_status();
+  pump2.monitor_tank_status();
 
   debug("Water sensor. Digital: ");
   int value = digitalRead(Constants::WATER_SENSOR_SIG);
@@ -174,166 +173,4 @@ void loop()
 
 
   delay(100);
-}
-
-/******************************************************************************
-                            FUNCTIONS DEFINITION
-******************************************************************************/
-
-void manual_handler()
-{
-  if (Buttons::SELECT_LINE_BUTTON.pressed)
-  {
-    Buttons::SELECT_LINE_BUTTON.pressed = false;
-    myDisplay.change_line();
-    debugln("M-Line changed");
-  }
-
-  if (myDisplay.selected_line == myDisplay.time_line)
-  {
-    if (Buttons::HOUR_BUTTON.pressed)
-    {
-      Buttons::HOUR_BUTTON.pressed = false;
-      rtcManager.increaseOneHour();
-    }
-    if (Buttons::MIN_BUTTON.pressed)
-    {
-      Buttons::MIN_BUTTON.pressed = false;
-      rtcManager.increaseOneMinute();
-    }
-    if (Buttons::START_BUTTON.pressed)
-    {
-      Buttons::START_BUTTON.pressed = false;
-    }
-  }
-  else if (myDisplay.selected_line == myDisplay.pump1_line)
-  {
-    handle_pump_line(pump1_timer, pump1, pump2, PUMP1_ID);
-  }
-  else if (myDisplay.selected_line == myDisplay.pump2_line)
-  {
-    handle_pump_line(pump2_timer, pump2, pump1, PUMP2_ID);
-  }
-}
-
-void handle_pump_line(DailyTimer &timer, PumpManager &pump, PumpManager &other_pump, int pump_id)
-{
-  if (Buttons::START_BUTTON.pressed)
-  {
-    Buttons::START_BUTTON.pressed = false;
-    pump.activate_toggle(other_pump);
-  }
-  if (Buttons::HOUR_BUTTON.pressed)
-  {
-    Buttons::HOUR_BUTTON.pressed = false;
-    timer.increase_one_hour();
-    myDisplay.update_pump_timer(pump_id, timer);
-  }
-  if (Buttons::MIN_BUTTON.pressed)
-  {
-    Buttons::MIN_BUTTON.pressed = false;
-    timer.increase_one_min();
-    myDisplay.update_pump_timer(pump_id, timer);
-  }
-}
-
-void timer_activation_handler(DailyTimer &p1_timer, DailyTimer &p2_timer, PumpManager &p1, PumpManager &p2)
-{
-  if (p1_timer.is_activation_time(p2_timer))
-  {
-    debugln("M-Pump1 timer - Activation start");
-    p1.activate_toggle(p2);
-  }
-
-  if (p2_timer.is_activation_time(p1_timer))
-  {
-    debugln("M-Pump2 timer - Activation start");
-    p2.activate_toggle(p1);
-  }
-
-  if (p1_timer.is_activation_timeout())
-  {
-    debugln("M-Pump1 timer - Activation period finished");
-    p1.activate_toggle(p2);
-  }
-
-  if (p2_timer.is_activation_timeout())
-  {
-    debugln("M-Pump2 timer - Activation period finished");
-    p2.activate_toggle(p1);
-  }
-}
-
-void display_handler()
-{
-  if (pump1.get_activate_status() != myDisplay.pump1_last_status)
-  {
-    myDisplay.pump1_last_status = pump1.get_activate_status();
-    if (pump1.get_activate_status())
-    {
-      debugln("M-Pump1 activated.");
-      myDisplay.running_pump1();
-    }
-    else
-    {
-      debugln("M-Pump1 stopped.");
-      myDisplay.stop_pump1();
-    }
-  }
-
-  if (pump1.is_pump_tank_empty() != myDisplay.pump1_tank_empty_last_status){
-    myDisplay.pump1_tank_empty_last_status = pump1.is_pump_tank_empty();
-    if (myDisplay.pump1_tank_empty_last_status){
-      myDisplay.empty_pump1();
-    }
-    else {
-      if (pump1.get_activate_status()){
-        myDisplay.running_pump1();
-      } else {
-        myDisplay.stop_pump1();
-      }
-    }
-
-  }
-
-  if (pump2.get_activate_status() != myDisplay.pump2_last_status)
-  {
-    myDisplay.pump2_last_status = pump2.get_activate_status();
-    if (pump2.get_activate_status())
-    {
-      debugln("M-Pump2 activated.");
-      myDisplay.running_pump2();
-    }
-    else
-    {
-      debugln("M-Pump2 stopped.");
-      myDisplay.stop_pump2();
-    }
-  }
-
-  if (pump2.is_pump_tank_empty() != myDisplay.pump2_tank_empty_last_status){
-    myDisplay.pump2_tank_empty_last_status = pump2.is_pump_tank_empty();
-    if (myDisplay.pump2_tank_empty_last_status){
-      myDisplay.empty_pump2();
-    } else {
-      if (pump2.get_activate_status()){
-        myDisplay.running_pump2();
-      } else {
-        myDisplay.stop_pump2();
-      }
-    }
-
-  }
-
-}
-
-void monitor_tank_emptiness(PumpManager &pump){
-  if(TankSensor::isTankEmpty()){
-    pump.set_tank_empty();
-    debugln("Set pump empty");
-  } else {
-    if (pump.is_pump_tank_empty()){
-      pump.set_tank_full();
-    }
-  }
 }
