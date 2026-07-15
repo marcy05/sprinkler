@@ -109,6 +109,7 @@ void IRAM_ATTR isr_start()
 void setup_water_sensor_enable()
 {
   pinMode(Constants::WATER_SENSOR_EN, OUTPUT);
+  digitalWrite(Constants::WATER_SENSOR_EN, HIGH);
   debugln("HWA-Setup water sensor enable GPIO.");
 }
 
@@ -121,17 +122,20 @@ void setup_water_sensor_signal_input()
 void setup_display_enable()
 {
   pinMode(Constants::DISPLAY_EN, OUTPUT);
+  digitalWrite(Constants::DISPLAY_EN, HIGH);
   debugln("HWA-Setup display enable GPIO.");
 }
 
 void setup_pump1()
 {
   pinMode(Constants::PUMP1_PIN_EN, OUTPUT);
+  digitalWrite(Constants::PUMP1_PIN_EN, HIGH);
 }
 
 void setup_pump2()
 {
   pinMode(Constants::PUMP2_PIN_EN, OUTPUT);
+  digitalWrite(Constants::PUMP2_PIN_EN, HIGH);
 }
 
 void setup_boost_enable()

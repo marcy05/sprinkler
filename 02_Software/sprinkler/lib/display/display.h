@@ -9,6 +9,8 @@
 #include <logger.h>
 #include <pump_manager.h>
 
+#define SCREEN_ADDRESS 0x3C
+
 // https://lastminuteengineers.com/oled-display-esp32-tutorial/
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels

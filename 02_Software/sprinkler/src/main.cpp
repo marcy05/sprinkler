@@ -10,6 +10,7 @@
 #include <daily_timer.h>
 #include <input_manager.h>
 #include <automation_manager.h>
+#include <Wire.h>
 
 #define DEVELOPMENT 1
 #define PRODUCTION 2
@@ -158,19 +159,16 @@ void loop()
   pump1.monitor_tank_status();
   pump2.monitor_tank_status();
 
-  debug("Water sensor. Digital: ");
-  int value = digitalRead(Constants::WATER_SENSOR_SIG);
-  debug(value);
-  debug(" Analog: ");
-  debug(analogRead(Constants::WATER_SENSOR_SIG));
-  debug(" TankEmpty?: ");
-  debugln(TankSensor::isTankEmpty());
+  // debug("Water sensor. Digital: ");
+  // int value = digitalRead(Constants::WATER_SENSOR_SIG);
+  // debug(value);
+  // debug(" TankEmpty?: ");
+  // debugln(TankSensor::isTankEmpty());
 
   debug("Pump1 empty? ");
   debugln(pump1.is_pump_tank_empty());
   debug("Pump2 empty? ");
   debugln(pump2.is_pump_tank_empty());
-
 
   delay(100);
 }

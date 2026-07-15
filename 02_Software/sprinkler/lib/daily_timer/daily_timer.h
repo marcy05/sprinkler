@@ -5,8 +5,6 @@
 #include <Preferences.h>
 #include <logger.h>
 
-#define SCREEN_ADDRESS 0x3C
-
 class DailyTimer
 {
 public:
